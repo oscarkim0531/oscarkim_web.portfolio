@@ -1,7 +1,103 @@
 const projects = [
   {
-    id: "after-the-rain",
+    id: "cancellation-terms",
     number: "01",
+    title: "Cancellation Terms",
+    subtitle: "무심코 통과한 약관의 무게",
+    year: "2026",
+    type: "School Project",
+    category: "graphic",
+    categoryLabel: "Graphic",
+    cover: {
+      src: "./01_Graphic_Cancellation-Terms/cancellation-terms-06-flipbook-object.png",
+      alt: "",
+      position: "50% 4%"
+    },
+    hero: {
+      src: "./01_Graphic_Cancellation-Terms/cancellation-terms-06-flipbook-object.png",
+      alt: "검은 천 위에 놓인 흰색 Cancellation Terms 플립북의 표지와 펼친 내지",
+      position: "50% 4%"
+    },
+    description: [
+      "디지털 환경에서 ‘해지하기’라는 목적을 위해 우리는 수많은 약관을 무심코 통과합니다. 이 프로젝트는 약관을 정보가 아닌 통과해야 할 장애물로 치부하는 소비자의 맹목적인 태도를 다룹니다. 웹사이트(Prompt B)와 하드카피(Prompt C)를 통해, 무관심 속에 방치된 텍스트들이 어떻게 파편화된 데이터로 변질되는지, 그리고 그 정보의 누적이 결국 어떻게 사용자를 압도하는 ‘맹점’이 되어 돌아오는지를 탐구했습니다.",
+      "우리가 등한시한 약관의 문장들은 사라지는 것이 아니라, 데이터 덩어리가 되어 시스템을 가득 채우게 됩니다. 이 작업은 휘발되는 디지털 정보를 플립북이라는 물리적 물성으로 표현함으로써, 외면했던 정보의 무게를 사용자가 손끝으로 감각하게 만드는 과정입니다. 시스템이 유도한 인지적 맹점을 마주하고, 그 속에 숨겨진 언어들을 나타냅니다."
+    ],
+    descriptionEn: "Cancellation Terms examines how users pass through cancellation policies without reading them, treating the text as a barrier rather than information. Across an interactive website and a physical flipbook, overlooked clauses fragment and accumulate into an overwhelming blind spot, making the weight of ignored language both visible and tactile.",
+    facts: [
+      { label: "Format", value: "Interactive Website, Flipbook, Moving Image" },
+      { label: "Course", value: "Research Design Studio (1)" },
+      { label: "Institution", value: "Hongik University" },
+      { label: "Advisor", value: "Prof. Yuseon Park" }
+    ],
+    credits: {
+      courseKo: "홍익대학교 사회문화적디자인스튜디오(1)",
+      courseEn: "Hongik University, ResearchDesignStudio(1)",
+      advisor: "prof. Yuseon Park"
+    },
+    media: [
+      {
+        type: "image",
+        src: "./01_Graphic_Cancellation-Terms/cancellation-terms-02-research.png",
+        alt: "구독 서비스별 해지 약관을 수집하고 문장 구조를 분류한 리서치 스프레드시트",
+        section: "Research / 01",
+        title: "Terms Archive",
+        caption: "구독 서비스별 해지 약관을 수집하고 문장 구조와 반복되는 언어를 조사한 리서치 아카이브."
+      },
+      {
+        type: "image",
+        src: "./01_Graphic_Cancellation-Terms/cancellation-terms-03-website.png",
+        alt: "검은 화면 위에 약관의 단어와 이동 경로가 붉은 선으로 연결된 Cancellation Terms 웹사이트",
+        section: "Prompt B / 02",
+        title: "Trace & Archive",
+        caption: "Trace는 사용자가 약관 사이를 이동한 경로를 기록하고, Archive는 그 배경이 된 원문을 드러냅니다."
+      },
+      {
+        type: "image",
+        src: "./01_Graphic_Cancellation-Terms/cancellation-terms-04-interaction.png",
+        alt: "긴 약관 문장 위에서 선택된 단어들이 붉은 상자와 연결선으로 분리되는 웹 인터랙션",
+        section: "Prompt B / 03",
+        title: "Blind Spot",
+        caption: "스크롤을 따라 약관의 문장이 단어와 연결 관계로 해체되며 인지적 맹점을 형성하는 인터랙션."
+      },
+      {
+        type: "video",
+        src: "./01_Graphic_Cancellation-Terms/cancellation-terms-video.mp4",
+        poster: "./01_Graphic_Cancellation-Terms/cancellation-terms-01-fragments.png",
+        width: 1080,
+        height: 1528,
+        section: "Moving Image / 04",
+        title: "Accumulation",
+        caption: "약관의 문장과 데이터 블록이 시간에 따라 누적되고 파편화되는 과정을 기록한 36초 무음 영상."
+      },
+      {
+        type: "image",
+        src: "./01_Graphic_Cancellation-Terms/cancellation-terms-01-fragments.png",
+        alt: "약관 문장 위에 붉은 단어 상자와 색상 데이터 블록이 누적되는 세 단계의 그래픽",
+        section: "Translation / 05",
+        title: "From Text to Data",
+        caption: "파편화된 약관의 문장들이 중첩되며 하나의 시각적 맹점을 형성하는 변환 과정."
+      },
+      {
+        type: "image",
+        src: "./01_Graphic_Cancellation-Terms/cancellation-terms-05-flipbook-system.png",
+        alt: "법률 기호 표지부터 약관 문장과 색상 블록으로 변하는 플립북의 페이지 시스템",
+        section: "Prompt C / 06",
+        title: "Flipbook System",
+        caption: "디지털 화면에서 축적된 텍스트와 데이터 블록을 페이지의 연속으로 번역한 플립북 시스템."
+      },
+      {
+        type: "image",
+        src: "./01_Graphic_Cancellation-Terms/cancellation-terms-07-flipbook-motion.png",
+        alt: "손으로 플립북을 넘기며 약관 텍스트가 붉고 회색인 데이터 블록으로 바뀌는 모습",
+        section: "Prompt C / 07",
+        title: "Tactile Weight",
+        caption: "페이지를 넘길수록 언어의 밀도가 높아지고 끝내 데이터의 덩어리로 변하는 물리적 경험."
+      }
+    ]
+  },
+  {
+    id: "after-the-rain",
+    number: "02",
     title: "After the Rain",
     subtitle: "비가 지난 자리의 시각 언어",
     artTitle: "After\nthe Rain",
@@ -19,7 +115,7 @@ const projects = [
   },
   {
     id: "module-17",
-    number: "02",
+    number: "03",
     title: "Module 17",
     subtitle: "가변형 문화 공간 아이덴티티",
     artTitle: "Module\n17",
@@ -37,7 +133,7 @@ const projects = [
   },
   {
     id: "reading-rhythm",
-    number: "03",
+    number: "04",
     title: "Reading Rhythm",
     subtitle: "읽는 속도를 설계하는 타이포그래피",
     artTitle: "Reading\nRhythm",
@@ -55,7 +151,7 @@ const projects = [
   },
   {
     id: "quiet-archive",
-    number: "04",
+    number: "05",
     title: "A Quiet Archive",
     subtitle: "사라지는 동네의 표면 기록",
     artTitle: "Quiet\nArchive",
@@ -73,7 +169,7 @@ const projects = [
   },
   {
     id: "between-pages",
-    number: "05",
+    number: "06",
     title: "Between Pages",
     subtitle: "독립 출판을 위한 편집 시스템",
     artTitle: "Between\nPages",
@@ -91,7 +187,7 @@ const projects = [
   },
   {
     id: "type-specimen-01",
-    number: "06",
+    number: "07",
     title: "Type Specimen 01",
     subtitle: "대비와 균형에 관한 활자 실험",
     artTitle: "Aa",
@@ -109,7 +205,7 @@ const projects = [
   },
   {
     id: "common-ground",
-    number: "07",
+    number: "08",
     title: "Common Ground",
     subtitle: "지역 커뮤니티 마켓 브랜딩",
     artTitle: "Common\nGround",
@@ -127,7 +223,7 @@ const projects = [
   },
   {
     id: "city-in-fragments",
-    number: "08",
+    number: "09",
     title: "City in Fragments",
     subtitle: "도시 조각을 재배열한 포스터",
     artTitle: "City in\nFragments",
@@ -217,6 +313,193 @@ function artworkMarkup(project) {
   `;
 }
 
+function projectCardVisualMarkup(project) {
+  if (!project.cover) return artworkMarkup(project);
+
+  return `
+    <img
+      class="project-card__image"
+      src="${project.cover.src}"
+      alt="${project.cover.alt || ""}"
+      width="${project.cover.width || 2250}"
+      height="${project.cover.height || 2813}"
+      loading="lazy"
+      decoding="async"
+      style="--project-cover-position: ${project.cover.position || "50% 50%"}"
+    >
+  `;
+}
+
+function detailHeroMarkup(project) {
+  const hero = project.hero || project.cover;
+
+  if (!hero) {
+    return `
+      <div class="detail-hero" role="img" aria-label="프로젝트 ${project.number}의 흑백 샘플 커버 이미지">
+        ${artworkMarkup(project)}
+      </div>
+    `;
+  }
+
+  return `
+    <figure class="detail-hero detail-hero--media">
+      <img
+        class="detail-hero__image"
+        src="${hero.src}"
+        alt="${hero.alt}"
+        width="${hero.width || 2250}"
+        height="${hero.height || 2813}"
+        decoding="async"
+        fetchpriority="high"
+        style="--detail-hero-position: ${hero.position || "50% 50%"}"
+      >
+    </figure>
+  `;
+}
+
+function detailOverviewMarkup(project) {
+  const paragraphs = Array.isArray(project.description)
+    ? project.description
+    : [project.description];
+  const supportingParagraphs = paragraphs
+    .slice(1)
+    .map((paragraph) => `<p class="detail-copy__support" lang="ko">${paragraph}</p>`)
+    .join("");
+  const englishSummary = project.descriptionEn
+    ? `<p class="detail-copy__english" lang="en">${project.descriptionEn}</p>`
+    : "";
+
+  return `
+    <section class="detail-copy" aria-labelledby="overview-${project.id}">
+      <h2 class="detail-copy__label" id="overview-${project.id}" lang="en">01 / Overview</h2>
+      <div class="detail-copy__body">
+        <p class="detail-copy__lead" lang="ko">${paragraphs[0]}</p>
+        ${supportingParagraphs}
+        ${englishSummary}
+      </div>
+    </section>
+  `;
+}
+
+function detailFactsMarkup(project) {
+  const facts = project.facts || [
+    { label: "Duration", value: project.duration },
+    { label: "Format", value: project.format },
+    { label: "Role", value: project.role },
+    { label: "Tools", value: project.tools }
+  ];
+
+  return `
+    <dl class="detail-facts" lang="en">
+      ${facts.map((fact) => `
+        <div class="detail-facts__item">
+          <dt>${fact.label}</dt>
+          <dd${fact.lang ? ` lang="${fact.lang}"` : ""}>${fact.value}</dd>
+        </div>
+      `).join("")}
+    </dl>
+  `;
+}
+
+function detailMediaItemMarkup(item, index, project) {
+  const captionId = `media-${project.id}-${index + 1}`;
+  const asset = item.type === "video"
+    ? `
+      <video
+        controls
+        playsinline
+        preload="metadata"
+        poster="${item.poster}"
+        width="${item.width}"
+        height="${item.height}"
+        aria-describedby="${captionId}"
+      >
+        <source src="${item.src}" type="video/mp4">
+        이 브라우저에서는 프로젝트 영상을 재생할 수 없습니다.
+      </video>
+    `
+    : `
+      <img
+        src="${item.src}"
+        alt="${item.alt}"
+        width="${item.width || 2250}"
+        height="${item.height || 2813}"
+        loading="lazy"
+        decoding="async"
+      >
+    `;
+
+  return `
+    <figure class="detail-media detail-media--${item.type}">
+      <div class="detail-media__stage">
+        ${asset}
+      </div>
+      <figcaption class="detail-media__caption" id="${captionId}">
+        <span class="detail-media__section" lang="en">${item.section}</span>
+        <span class="detail-media__text">
+          <strong lang="en">${item.title}</strong>
+          <span lang="ko">${item.caption}</span>
+        </span>
+      </figcaption>
+    </figure>
+  `;
+}
+
+function detailMediaMarkup(project) {
+  if (!project.media) {
+    return `
+      <div class="detail-gallery" aria-label="프로젝트 샘플 이미지 갤러리">
+        <div class="detail-gallery__item detail-gallery__item--crop-a" role="img" aria-label="프로젝트 ${project.number} 비주얼 확대 보기 1">
+          ${artworkMarkup(project)}
+        </div>
+        <div class="detail-gallery__item detail-gallery__item--crop-b" role="img" aria-label="프로젝트 ${project.number} 비주얼 확대 보기 2">
+          ${artworkMarkup(project)}
+        </div>
+      </div>
+    `;
+  }
+
+  const imageCount = project.media.filter((item) => item.type === "image").length
+    + ((project.hero || project.cover) ? 1 : 0);
+  const videoCount = project.media.filter((item) => item.type === "video").length;
+
+  return `
+    <section class="detail-media-section" aria-labelledby="media-${project.id}">
+      <header class="detail-media-section__header">
+        <h2 id="media-${project.id}" lang="en">02 / Project Media</h2>
+        <p lang="en">${twoDigits(imageCount)} Images · ${twoDigits(videoCount)} Film</p>
+      </header>
+      <div class="detail-media-sequence">
+        ${project.media.map((item, index) => detailMediaItemMarkup(item, index, project)).join("")}
+      </div>
+    </section>
+  `;
+}
+
+function detailCreditsMarkup(project) {
+  if (!project.credits) return "";
+
+  return `
+    <section class="detail-credits" aria-labelledby="credits-${project.id}">
+      <h2 class="detail-credits__label" id="credits-${project.id}" lang="en">03 / Credits</h2>
+      <div class="detail-credits__body">
+        <p class="detail-credits__course" lang="ko">${project.credits.courseKo}</p>
+        <p class="detail-credits__course-en" lang="en">${project.credits.courseEn}</p>
+        <dl class="detail-credits__meta" lang="en">
+          <div>
+            <dt>Advisor</dt>
+            <dd>${project.credits.advisor}</dd>
+          </div>
+          <div>
+            <dt>Project Type</dt>
+            <dd>${project.type}</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+  `;
+}
+
 function projectCardMarkup(project) {
   return `
     <article class="project-card-wrap">
@@ -226,7 +509,7 @@ function projectCardMarkup(project) {
         data-project-id="${project.id}"
       >
         <div class="project-card__media">
-          ${artworkMarkup(project)}
+          ${projectCardVisualMarkup(project)}
         </div>
         <div class="project-card__meta">
           <span class="project-card__index">${project.number}</span>
@@ -311,7 +594,7 @@ function renderDetail(project) {
   projectDetail.hidden = false;
   workView.setAttribute("aria-labelledby", "detail-title");
   projectDetail.innerHTML = `
-    <article aria-labelledby="detail-title">
+    <article class="detail-project${project.title.length > 15 ? " detail-project--long-title" : ""}" aria-labelledby="detail-title">
       <div class="detail-toolbar" lang="en">
         <a class="detail-back" href="#category/${activeCategory}" data-detail-back lang="en">
           <span class="detail-back__arrow" aria-hidden="true">←</span>
@@ -342,45 +625,11 @@ function renderDetail(project) {
         </div>
       </header>
 
-      <div class="detail-hero" role="img" aria-label="프로젝트 ${project.number}의 흑백 샘플 커버 이미지">
-        ${artworkMarkup(project)}
-      </div>
-
-      <section class="detail-copy" aria-labelledby="overview-${project.id}">
-        <h2 class="detail-copy__label" id="overview-${project.id}" lang="en">01 / Overview</h2>
-        <div class="detail-copy__body">
-          <p class="detail-copy__lead" lang="ko">${project.description}</p>
-          <p class="detail-copy__english" lang="en">${project.descriptionEn}</p>
-        </div>
-      </section>
-
-      <dl class="detail-facts" lang="en">
-        <div class="detail-facts__item">
-          <dt>Duration</dt>
-          <dd>${project.duration}</dd>
-        </div>
-        <div class="detail-facts__item">
-          <dt>Format</dt>
-          <dd>${project.format}</dd>
-        </div>
-        <div class="detail-facts__item">
-          <dt>Role</dt>
-          <dd>${project.role}</dd>
-        </div>
-        <div class="detail-facts__item">
-          <dt>Tools</dt>
-          <dd>${project.tools}</dd>
-        </div>
-      </dl>
-
-      <div class="detail-gallery" aria-label="프로젝트 샘플 이미지 갤러리">
-        <div class="detail-gallery__item detail-gallery__item--crop-a" role="img" aria-label="프로젝트 ${project.number} 비주얼 확대 보기 1">
-          ${artworkMarkup(project)}
-        </div>
-        <div class="detail-gallery__item detail-gallery__item--crop-b" role="img" aria-label="프로젝트 ${project.number} 비주얼 확대 보기 2">
-          ${artworkMarkup(project)}
-        </div>
-      </div>
+      ${detailHeroMarkup(project)}
+      ${detailOverviewMarkup(project)}
+      ${detailFactsMarkup(project)}
+      ${detailMediaMarkup(project)}
+      ${detailCreditsMarkup(project)}
 
       <a class="detail-next" href="#project/${activeCategory}/${nextProject.id}" lang="en">
         <span class="detail-next__label">Next Project / ${nextProject.number}</span>
