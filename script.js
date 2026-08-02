@@ -8,6 +8,7 @@ const projects = [
     type: "School Project",
     category: "graphic",
     categoryLabel: "Graphic",
+    layout: "wide",
     cover: {
       src: "./01_Graphic_Cancellation-Terms/cancellation-terms-06-flipbook-object.png",
       alt: "",
@@ -105,6 +106,7 @@ const projects = [
     type: "School Project",
     category: "graphic",
     categoryLabel: "Graphic",
+    layout: "portrait",
     artClass: "art--signal",
     duration: "8 Weeks",
     format: "Poster Series",
@@ -123,6 +125,7 @@ const projects = [
     type: "Team Project",
     category: "branding",
     categoryLabel: "Branding",
+    layout: "square",
     artClass: "art--module",
     duration: "10 Weeks",
     format: "Identity System",
@@ -141,6 +144,7 @@ const projects = [
     type: "School Project",
     category: "typography",
     categoryLabel: "Typography",
+    layout: "portrait",
     artClass: "art--rhythm",
     duration: "6 Weeks",
     format: "Type Experiment",
@@ -159,6 +163,7 @@ const projects = [
     type: "Personal Project",
     category: "photography",
     categoryLabel: "Photography",
+    layout: "portrait",
     artClass: "art--archive",
     duration: "Ongoing",
     format: "Photo Essay",
@@ -177,6 +182,7 @@ const projects = [
     type: "School Project",
     category: "editorial",
     categoryLabel: "Editorial",
+    layout: "wide",
     artClass: "art--pages",
     duration: "9 Weeks",
     format: "Book, 192 Pages",
@@ -195,6 +201,7 @@ const projects = [
     type: "Personal Project",
     category: "typography",
     categoryLabel: "Typography",
+    layout: "square",
     artClass: "art--specimen",
     duration: "5 Weeks",
     format: "Typeface Specimen",
@@ -213,6 +220,7 @@ const projects = [
     type: "Team Project",
     category: "branding",
     categoryLabel: "Branding",
+    layout: "portrait",
     artClass: "art--ground",
     duration: "12 Weeks",
     format: "Brand Identity",
@@ -231,6 +239,7 @@ const projects = [
     type: "Personal Project",
     category: "graphic",
     categoryLabel: "Graphic",
+    layout: "wide",
     artClass: "art--fragments",
     duration: "4 Weeks",
     format: "Poster Series",
@@ -412,6 +421,7 @@ function detailMediaItemMarkup(item, index, project) {
         poster="${item.poster}"
         width="${item.width}"
         height="${item.height}"
+        aria-label="${item.title} — silent project film"
         aria-describedby="${captionId}"
       >
         <source src="${item.src}" type="video/mp4">
@@ -502,7 +512,7 @@ function detailCreditsMarkup(project) {
 
 function projectCardMarkup(project) {
   return `
-    <article class="project-card-wrap">
+    <article class="project-card-wrap project-card-wrap--${project.layout || "wide"}">
       <a
         class="project-card"
         href="#project/${activeCategory}/${project.id}"
@@ -525,6 +535,7 @@ function projectCardMarkup(project) {
             <span class="project-card__label">Type</span>
             ${project.type}
           </span>
+          <span class="project-card__arrow" aria-hidden="true">↗</span>
         </div>
       </a>
     </article>
@@ -538,6 +549,8 @@ function getVisibleProjects() {
 }
 
 function updateCategoryNavigation() {
+  let activeLink = null;
+
   categoryLinks.forEach((link) => {
     const category = link.dataset.category;
     const isActive = category === activeCategory;
@@ -547,12 +560,23 @@ function updateCategoryNavigation() {
 
     link.classList.toggle("is-active", isActive);
     if (isActive) {
+      activeLink = link;
       link.setAttribute("aria-current", "page");
     } else {
       link.removeAttribute("aria-current");
     }
     link.querySelector(".category-link__count").textContent = twoDigits(count);
   });
+
+  if (activeLink && window.matchMedia?.("(max-width: 900px)")?.matches) {
+    requestAnimationFrame(() => {
+      activeLink.scrollIntoView({
+        behavior: "auto",
+        block: "nearest",
+        inline: "nearest"
+      });
+    });
+  }
 }
 
 function renderIndex({ focusReturnedProject = false } = {}) {
@@ -563,6 +587,7 @@ function renderIndex({ focusReturnedProject = false } = {}) {
   projectDetail.innerHTML = "";
   projectGrid.hidden = false;
   viewIntro.hidden = false;
+  viewIntro.classList.toggle("view-intro--filtered", activeCategory !== "all");
   workView.setAttribute("aria-labelledby", "view-title");
 
   sectionCode.textContent = `${category.index} / Work Index`;
@@ -594,7 +619,7 @@ function renderDetail(project) {
   projectDetail.hidden = false;
   workView.setAttribute("aria-labelledby", "detail-title");
   projectDetail.innerHTML = `
-    <article class="detail-project${project.title.length > 15 ? " detail-project--long-title" : ""}" aria-labelledby="detail-title">
+    <article class="detail-project${project.title.length > 15 ? " detail-project--long-title" : ""}" id="detail-project" tabindex="-1" aria-labelledby="detail-title">
       <div class="detail-toolbar" lang="en">
         <a class="detail-back" href="#category/${activeCategory}" data-detail-back lang="en">
           <span class="detail-back__arrow" aria-hidden="true">←</span>
@@ -644,8 +669,8 @@ function renderDetail(project) {
   announcer.textContent = `${project.title} 프로젝트 상세 페이지`;
 
   requestAnimationFrame(() => {
-    const title = document.querySelector("#detail-title");
-    if (title) title.focus({ preventScroll: true });
+    const detailProject = document.querySelector("#detail-project");
+    if (detailProject) detailProject.focus({ preventScroll: true });
   });
 }
 
