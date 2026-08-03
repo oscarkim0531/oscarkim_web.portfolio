@@ -8,7 +8,6 @@ const projects = [
     type: "School Project",
     category: "graphic",
     categoryLabel: "Graphic",
-    layout: "wide",
     cover: {
       src: "./01_Graphic_Cancellation-Terms/cancellation-terms-06-flipbook-object.png",
       alt: "",
@@ -95,207 +94,21 @@ const projects = [
         caption: "페이지를 넘길수록 언어의 밀도가 높아지고 끝내 데이터의 덩어리로 변하는 물리적 경험."
       }
     ]
-  },
-  {
-    id: "after-the-rain",
-    number: "02",
-    title: "After the Rain",
-    subtitle: "비가 지난 자리의 시각 언어",
-    artTitle: "After\nthe Rain",
-    year: "2026",
-    type: "School Project",
-    category: "graphic",
-    categoryLabel: "Graphic",
-    layout: "portrait",
-    artClass: "art--signal",
-    duration: "8 Weeks",
-    format: "Poster Series",
-    role: "Concept, Art Direction, Design",
-    tools: "InDesign, Photoshop",
-    description: "도시에서 비가 멈춘 직후 발견되는 반사, 얼룩, 겹침을 하나의 시각 문법으로 번역한 포스터 시리즈입니다. 원과 선의 반복, 극단적인 흑백 대비를 통해 사라지는 장면의 리듬을 기록했습니다.",
-    descriptionEn: "A poster series translating reflections, stains, and overlapping traces found just after rainfall into a graphic language. Repeated circles, lines, and stark contrast turn a fleeting urban scene into a rhythmic visual system."
-  },
-  {
-    id: "module-17",
-    number: "03",
-    title: "Module 17",
-    subtitle: "가변형 문화 공간 아이덴티티",
-    artTitle: "Module\n17",
-    year: "2025",
-    type: "Team Project",
-    category: "branding",
-    categoryLabel: "Branding",
-    layout: "square",
-    artClass: "art--module",
-    duration: "10 Weeks",
-    format: "Identity System",
-    role: "Strategy, Identity, Application",
-    tools: "Illustrator, Figma",
-    description: "전시와 공연에 따라 성격이 달라지는 가상의 문화 공간을 위해 모듈형 아이덴티티를 설계했습니다. 17개의 기본 단위를 조립하는 규칙이 로고, 사인, 티켓, 디지털 화면까지 일관된 인상을 만듭니다.",
-    descriptionEn: "A modular identity for a fictional cultural venue that changes character with every exhibition and performance. Seventeen base units combine through a clear rule set across logos, signage, tickets, and digital screens."
-  },
-  {
-    id: "reading-rhythm",
-    number: "04",
-    title: "Reading Rhythm",
-    subtitle: "읽는 속도를 설계하는 타이포그래피",
-    artTitle: "Reading\nRhythm",
-    year: "2025",
-    type: "School Project",
-    category: "typography",
-    categoryLabel: "Typography",
-    layout: "portrait",
-    artClass: "art--rhythm",
-    duration: "6 Weeks",
-    format: "Type Experiment",
-    role: "Research, Typesetting, Design",
-    tools: "InDesign, Glyphs",
-    description: "글줄의 폭, 행간, 정렬 방식이 독자의 호흡을 어떻게 바꾸는지 실험한 타이포그래피 연구입니다. 같은 문장을 서로 다른 속도로 읽게 만드는 여섯 개의 조판 규칙을 책과 포스터로 확장했습니다.",
-    descriptionEn: "A typographic study of how line length, leading, and alignment alter a reader’s pace. Six typesetting rules make the same text feel slow, abrupt, dense, or open, then expand into a book and poster series."
-  },
-  {
-    id: "quiet-archive",
-    number: "05",
-    title: "A Quiet Archive",
-    subtitle: "사라지는 동네의 표면 기록",
-    artTitle: "Quiet\nArchive",
-    year: "2025",
-    type: "Personal Project",
-    category: "photography",
-    categoryLabel: "Photography",
-    layout: "portrait",
-    artClass: "art--archive",
-    duration: "Ongoing",
-    format: "Photo Essay",
-    role: "Photography, Editing, Design",
-    tools: "Lightroom, InDesign",
-    description: "재개발을 앞둔 동네를 천천히 걸으며 문, 벽, 빛의 흔적을 수집한 사진 에세이입니다. 장소를 설명하는 넓은 풍경보다 곧 사라질 표면의 작은 단서에 집중했습니다.",
-    descriptionEn: "A photographic essay made while walking through a neighborhood awaiting redevelopment. Rather than wide documentary views, it attends to small surface clues—doors, walls, shadows, and traces that may soon disappear."
-  },
-  {
-    id: "between-pages",
-    number: "06",
-    title: "Between Pages",
-    subtitle: "독립 출판을 위한 편집 시스템",
-    artTitle: "Between\nPages",
-    year: "2024",
-    type: "School Project",
-    category: "editorial",
-    categoryLabel: "Editorial",
-    layout: "wide",
-    artClass: "art--pages",
-    duration: "9 Weeks",
-    format: "Book, 192 Pages",
-    role: "Editorial Direction, Design",
-    tools: "InDesign, Photoshop",
-    description: "여섯 명의 창작자가 말하는 작업 사이의 시간을 엮은 인터뷰 북입니다. 본문, 주석, 이미지가 서로 다른 속도로 흐르도록 세 개의 그리드를 겹쳐 한 권 안에 여러 읽기 경로를 만들었습니다.",
-    descriptionEn: "An interview book about the time between projects, told by six makers. Three overlapping grids let body text, annotations, and images move at different speeds, creating multiple reading paths within 192 pages."
-  },
-  {
-    id: "type-specimen-01",
-    number: "07",
-    title: "Type Specimen 01",
-    subtitle: "대비와 균형에 관한 활자 실험",
-    artTitle: "Aa",
-    year: "2024",
-    type: "Personal Project",
-    category: "typography",
-    categoryLabel: "Typography",
-    layout: "square",
-    artClass: "art--specimen",
-    duration: "5 Weeks",
-    format: "Typeface Specimen",
-    role: "Type Design, Specimen Design",
-    tools: "Glyphs, InDesign",
-    description: "높은 획 대비와 낮은 중심선을 가진 디스플레이 서체의 초기 실험입니다. 완성된 폰트보다 글자 사이의 긴장과 크기에 따른 인상 변화를 관찰하는 데 초점을 맞춘 스페시먼입니다.",
-    descriptionEn: "An early display-type experiment built around sharp stroke contrast and a low center of gravity. The specimen focuses less on a finished font and more on tension between letters and the changing impression of scale."
-  },
-  {
-    id: "common-ground",
-    number: "08",
-    title: "Common Ground",
-    subtitle: "지역 커뮤니티 마켓 브랜딩",
-    artTitle: "Common\nGround",
-    year: "2024",
-    type: "Team Project",
-    category: "branding",
-    categoryLabel: "Branding",
-    layout: "portrait",
-    artClass: "art--ground",
-    duration: "12 Weeks",
-    format: "Brand Identity",
-    role: "Research, Visual System, Campaign",
-    tools: "Illustrator, After Effects",
-    description: "생산자와 주민이 직접 만나는 지역 마켓을 위한 브랜드 시스템입니다. 겹치는 원을 만남의 최소 단위로 삼고, 참여하는 사람과 장소에 따라 계속 달라지는 조합 규칙을 만들었습니다.",
-    descriptionEn: "A brand system for a neighborhood market where producers and residents meet directly. Overlapping circles become the smallest unit of encounter, generating combinations that change with each person, place, and event."
-  },
-  {
-    id: "city-in-fragments",
-    number: "09",
-    title: "City in Fragments",
-    subtitle: "도시 조각을 재배열한 포스터",
-    artTitle: "City in\nFragments",
-    year: "2023",
-    type: "Personal Project",
-    category: "graphic",
-    categoryLabel: "Graphic",
-    layout: "wide",
-    artClass: "art--fragments",
-    duration: "4 Weeks",
-    format: "Poster Series",
-    role: "Photography, Collage, Design",
-    tools: "Photoshop, InDesign",
-    description: "일상에서 촬영한 도시의 단편을 자르고 확대해 새로운 공간으로 재구성한 포스터 시리즈입니다. 익숙한 장면이 낯설어지는 경계를 흑백 이미지와 기하학적 구조로 탐색했습니다.",
-    descriptionEn: "A poster series that cuts, enlarges, and rearranges everyday urban photographs into unfamiliar spaces. Monochrome images and geometric structures explore the point where a familiar scene begins to feel strange."
   }
 ];
 
 const categories = {
-  all: {
-    index: "00",
-    title: ["Selected", "Works"],
-    label: "All Works",
-    description: "그래픽 디자인을 중심으로 타이포그래피, 이미지, 브랜드 시스템을 탐구한 작업을 모았습니다."
-  },
-  graphic: {
-    index: "01",
-    title: ["Graphic", "Works"],
-    label: "Graphic",
-    description: "메시지를 구조화하고 인상을 만드는 포스터, 이미지, 시각 체계에 대한 실험입니다."
-  },
-  branding: {
-    index: "02",
-    title: ["Brand", "Systems"],
-    label: "Branding",
-    description: "하나의 생각이 여러 매체에서 일관되게 작동하도록 규칙과 표정을 설계한 작업입니다."
-  },
-  typography: {
-    index: "03",
-    title: ["Type", "Studies"],
-    label: "Typography",
-    description: "글자의 형태, 조판의 리듬, 읽는 속도 사이의 관계를 관찰하고 실험한 작업입니다."
-  },
-  editorial: {
-    index: "04",
-    title: ["Editorial", "Works"],
-    label: "Editorial",
-    description: "텍스트와 이미지의 순서를 조직해 한 권 안에 여러 읽기 경험을 만드는 작업입니다."
-  },
-  photography: {
-    index: "05",
-    title: ["Photo", "Essays"],
-    label: "Photography",
-    description: "장소와 시간의 작은 변화를 관찰하고 이미지의 연속으로 기록한 작업입니다."
-  }
+  all: { label: "All Works" },
+  graphic: { label: "Graphic" },
+  branding: { label: "Branding" },
+  typography: { label: "Typography" },
+  editorial: { label: "Editorial" },
+  photography: { label: "Photography" }
 };
 
 const projectGrid = document.querySelector("#project-grid");
 const projectDetail = document.querySelector("#project-detail");
-const viewIntro = document.querySelector("#view-intro");
 const viewTitle = document.querySelector("#view-title");
-const sectionCode = document.querySelector("#section-code");
-const workCount = document.querySelector("#work-count");
-const categoryDescription = document.querySelector("#category-description");
 const categoryLinks = [...document.querySelectorAll(".category-link")];
 const announcer = document.querySelector("#app-announcer");
 const workView = document.querySelector("#work-view");
@@ -309,22 +122,7 @@ function twoDigits(value) {
   return String(value).padStart(2, "0");
 }
 
-function artworkMarkup(project) {
-  return `
-    <div class="artwork ${project.artClass}" aria-hidden="true">
-      <span class="artwork__eyebrow">${project.categoryLabel} / ${project.year}</span>
-      <strong class="artwork__title">${project.artTitle}</strong>
-      <span class="artwork__code">OK—${project.number}</span>
-      <span class="artwork__shape artwork__shape--one"></span>
-      <span class="artwork__shape artwork__shape--two"></span>
-      <span class="artwork__shape artwork__shape--three"></span>
-    </div>
-  `;
-}
-
 function projectCardVisualMarkup(project) {
-  if (!project.cover) return artworkMarkup(project);
-
   return `
     <img
       class="project-card__image"
@@ -341,14 +139,6 @@ function projectCardVisualMarkup(project) {
 
 function detailHeroMarkup(project) {
   const hero = project.hero || project.cover;
-
-  if (!hero) {
-    return `
-      <div class="detail-hero" role="img" aria-label="프로젝트 ${project.number}의 흑백 샘플 커버 이미지">
-        ${artworkMarkup(project)}
-      </div>
-    `;
-  }
 
   return `
     <figure class="detail-hero detail-hero--media">
@@ -391,12 +181,7 @@ function detailOverviewMarkup(project) {
 }
 
 function detailFactsMarkup(project) {
-  const facts = project.facts || [
-    { label: "Duration", value: project.duration },
-    { label: "Format", value: project.format },
-    { label: "Role", value: project.role },
-    { label: "Tools", value: project.tools }
-  ];
+  const facts = project.facts;
 
   return `
     <dl class="detail-facts" lang="en">
@@ -456,19 +241,6 @@ function detailMediaItemMarkup(item, index, project) {
 }
 
 function detailMediaMarkup(project) {
-  if (!project.media) {
-    return `
-      <div class="detail-gallery" aria-label="프로젝트 샘플 이미지 갤러리">
-        <div class="detail-gallery__item detail-gallery__item--crop-a" role="img" aria-label="프로젝트 ${project.number} 비주얼 확대 보기 1">
-          ${artworkMarkup(project)}
-        </div>
-        <div class="detail-gallery__item detail-gallery__item--crop-b" role="img" aria-label="프로젝트 ${project.number} 비주얼 확대 보기 2">
-          ${artworkMarkup(project)}
-        </div>
-      </div>
-    `;
-  }
-
   const imageCount = project.media.filter((item) => item.type === "image").length
     + ((project.hero || project.cover) ? 1 : 0);
   const videoCount = project.media.filter((item) => item.type === "video").length;
@@ -512,7 +284,7 @@ function detailCreditsMarkup(project) {
 
 function projectCardMarkup(project) {
   return `
-    <article class="project-card-wrap project-card-wrap--${project.layout || "wide"}">
+    <article class="project-card-wrap">
       <a
         class="project-card"
         href="#project/${activeCategory}/${project.id}"
@@ -522,20 +294,21 @@ function projectCardMarkup(project) {
           ${projectCardVisualMarkup(project)}
         </div>
         <div class="project-card__meta">
-          <span class="project-card__index">${project.number}</span>
-          <span class="project-card__title-group">
+          <div class="project-card__heading">
+            <span class="project-card__index" lang="en">${project.number}</span>
             <strong class="project-card__title" lang="en">${project.title}</strong>
-            <span class="project-card__subtitle" lang="ko">${project.subtitle}</span>
-          </span>
-          <span class="project-card__datum project-card__datum--year" lang="en">
-            <span class="project-card__label">Year</span>
-            ${project.year}
-          </span>
-          <span class="project-card__datum" lang="en">
-            <span class="project-card__label">Type</span>
-            ${project.type}
-          </span>
-          <span class="project-card__arrow" aria-hidden="true">↗</span>
+            <span class="project-card__arrow" aria-hidden="true">↗</span>
+          </div>
+          <dl class="project-card__details" lang="en">
+            <div>
+              <dt>Year</dt>
+              <dd>${project.year}</dd>
+            </div>
+            <div>
+              <dt>Type</dt>
+              <dd>${project.type}</dd>
+            </div>
+          </dl>
         </div>
       </a>
     </article>
@@ -586,14 +359,11 @@ function renderIndex({ focusReturnedProject = false } = {}) {
   projectDetail.hidden = true;
   projectDetail.innerHTML = "";
   projectGrid.hidden = false;
-  viewIntro.hidden = false;
-  viewIntro.classList.toggle("view-intro--filtered", activeCategory !== "all");
+  viewTitle.hidden = false;
   workView.setAttribute("aria-labelledby", "view-title");
 
-  sectionCode.textContent = `${category.index} / Work Index`;
-  workCount.textContent = twoDigits(visibleProjects.length);
-  viewTitle.innerHTML = `<span>${category.title[0]}</span><span>${category.title[1]}</span>`;
-  categoryDescription.textContent = category.description;
+  viewTitle.textContent = category.label;
+  projectGrid.setAttribute("aria-label", `${category.label} 프로젝트 ${visibleProjects.length}개`);
   projectGrid.innerHTML = visibleProjects.map(projectCardMarkup).join("");
 
   updateCategoryNavigation();
@@ -609,30 +379,27 @@ function renderIndex({ focusReturnedProject = false } = {}) {
 }
 
 function renderDetail(project) {
-  const navigationProjects = getVisibleProjects();
-  const currentIndex = navigationProjects.findIndex((item) => item.id === project.id);
-  const nextIndex = (currentIndex + 1) % navigationProjects.length;
-  const nextProject = navigationProjects[nextIndex];
-
-  viewIntro.hidden = true;
   projectGrid.hidden = true;
+  viewTitle.hidden = true;
   projectDetail.hidden = false;
   workView.setAttribute("aria-labelledby", "detail-title");
   projectDetail.innerHTML = `
     <article class="detail-project${project.title.length > 15 ? " detail-project--long-title" : ""}" id="detail-project" tabindex="-1" aria-labelledby="detail-title">
       <div class="detail-toolbar" lang="en">
-        <a class="detail-back" href="#category/${activeCategory}" data-detail-back lang="en">
+        <a
+          class="detail-back"
+          href="#category/${activeCategory}"
+          data-detail-back
+          aria-label="Back to ${categories[activeCategory].label} project list"
+          lang="en"
+        >
           <span class="detail-back__arrow" aria-hidden="true">←</span>
-          Back to ${categories[activeCategory].label}
+          Back
         </a>
         <p class="detail-toolbar__position">Project ${project.number} / ${twoDigits(projects.length)}</p>
       </div>
 
       <header class="detail-heading">
-        <div class="detail-heading__topline" lang="en">
-          <span>${project.categoryLabel}</span>
-          <span>Oscar Kim — Selected Works</span>
-        </div>
         <h1 class="detail-title" id="detail-title" tabindex="-1" lang="en">${project.title}</h1>
         <div class="detail-subtitle" lang="en">
           <p class="detail-subtitle__item">
@@ -655,12 +422,6 @@ function renderDetail(project) {
       ${detailFactsMarkup(project)}
       ${detailMediaMarkup(project)}
       ${detailCreditsMarkup(project)}
-
-      <a class="detail-next" href="#project/${activeCategory}/${nextProject.id}" lang="en">
-        <span class="detail-next__label">Next Project / ${nextProject.number}</span>
-        <span class="detail-next__title" lang="en">${nextProject.title}</span>
-        <span class="detail-next__arrow" aria-hidden="true">→</span>
-      </a>
     </article>
   `;
 
@@ -750,7 +511,6 @@ function renderRoute({ isInitial = false } = {}) {
 document.addEventListener("click", (event) => {
   const projectCard = event.target.closest?.(".project-card");
   const detailBack = event.target.closest?.("[data-detail-back]");
-  const detailNext = event.target.closest?.(".detail-next");
   const isModifiedClick = event.button !== 0
     || event.metaKey
     || event.ctrlKey
@@ -771,22 +531,6 @@ document.addEventListener("click", (event) => {
       },
       "",
       projectCard.getAttribute("href")
-    );
-    renderRoute();
-    return;
-  }
-
-  if (detailNext) {
-    event.preventDefault();
-    history.replaceState(
-      {
-        ...history.state,
-        view: "project",
-        originCategory: activeCategory,
-        listScrollPosition
-      },
-      "",
-      detailNext.getAttribute("href")
     );
     renderRoute();
     return;
