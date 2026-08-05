@@ -418,16 +418,9 @@ figure {
 
 .project-card__heading {
   display: grid;
-  grid-template-columns: 1.7rem minmax(0, 1fr) auto;
+  grid-template-columns: minmax(0, 1fr) auto;
   gap: 0.55rem;
   align-items: start;
-}
-
-.project-card__index {
-  padding-top: 0.12rem;
-  font-size: 0.56rem;
-  font-variant-numeric: tabular-nums;
-  letter-spacing: 0.07em;
 }
 
 .project-card__title {
@@ -541,10 +534,6 @@ figure {
 .detail-back:hover .detail-back__arrow,
 .detail-back:focus-visible .detail-back__arrow {
   transform: translateX(-0.22rem);
-}
-
-.detail-toolbar__position {
-  font-variant-numeric: tabular-nums;
 }
 
 .detail-heading {
@@ -845,6 +834,94 @@ figure {
   letter-spacing: -0.02em;
 }
 
+/* After Event — image-led study -------------------------------- */
+
+.after-event-flow {
+  padding: clamp(1.2rem, 1.8vw, 2.2rem) var(--page-pad) 0;
+}
+
+.after-event-sequence {
+  display: grid;
+  gap: clamp(1rem, 1.4vw, 1.7rem);
+}
+
+.after-event-image {
+  width: 100%;
+  overflow: hidden;
+  background: #000000;
+}
+
+.after-event-image img {
+  width: 100%;
+  height: auto;
+}
+
+.after-event-statement {
+  width: 60%;
+  max-width: 64rem;
+  margin: clamp(6rem, 8.5vw, 10rem) 0;
+}
+
+.after-event-statement__language {
+  font-size: clamp(0.88rem, 0.82vw, 1.02rem);
+  letter-spacing: -0.012em;
+  line-height: 1.68;
+}
+
+.after-event-statement__language p + p {
+  margin-top: 1.75em;
+}
+
+.after-event-statement__language--ko {
+  margin-top: clamp(4rem, 5.2vw, 6.2rem);
+  word-break: keep-all;
+  font-size: clamp(0.88rem, 0.84vw, 1.03rem);
+  letter-spacing: -0.025em;
+  line-height: 1.78;
+}
+
+.after-event-statement strong {
+  font-weight: 600;
+}
+
+.after-event-statement em {
+  font-style: italic;
+}
+
+.after-event-caption {
+  width: 60%;
+  max-width: 64rem;
+  margin-top: clamp(4.5rem, 6vw, 7rem);
+  padding-bottom: clamp(8rem, 11vw, 13rem);
+}
+
+.after-event-caption dl {
+  border-top: 1px solid var(--line-soft);
+}
+
+.after-event-caption__row {
+  display: grid;
+  grid-template-columns: minmax(10rem, 0.78fr) minmax(0, 1.22fr);
+  gap: clamp(1rem, 2vw, 2.5rem);
+  padding: 0.72rem 0;
+  border-bottom: 1px solid var(--line-soft);
+}
+
+.after-event-caption dt {
+  font-size: 0.55rem;
+  font-weight: 500;
+  letter-spacing: 0.055em;
+  line-height: 1.35;
+  text-transform: uppercase;
+}
+
+.after-event-caption dd {
+  overflow-wrap: anywhere;
+  font-size: clamp(0.66rem, 0.7vw, 0.76rem);
+  letter-spacing: -0.012em;
+  line-height: 1.45;
+}
+
 .noscript-message {
   padding: 2rem var(--page-pad);
   border-top: 1px solid var(--line);
@@ -975,6 +1052,15 @@ figure {
 
   .detail-project--long-title .detail-title {
     font-size: clamp(3.4rem, 10vw, 6.3rem);
+  }
+
+  .after-event-statement {
+    width: 72%;
+    margin-block: clamp(5rem, 10vw, 7.5rem);
+  }
+
+  .after-event-caption {
+    width: 78%;
   }
 }
 
@@ -1121,7 +1207,6 @@ figure {
     gap: 0.65rem;
   }
 
-  .project-card__index,
   .project-card__details dt,
   .detail-media__section {
     font-size: 0.65rem;
@@ -1148,6 +1233,42 @@ figure {
     margin-top: 3.8rem;
   }
 
+  .after-event-flow {
+    padding-top: 1rem;
+  }
+
+  .after-event-sequence {
+    gap: 1rem;
+  }
+
+  .after-event-statement {
+    width: 100%;
+    margin-block: clamp(4.5rem, 18vw, 6.5rem);
+  }
+
+  .after-event-statement__language {
+    font-size: 0.9rem;
+    line-height: 1.7;
+  }
+
+  .after-event-statement__language--ko {
+    margin-top: 3.8rem;
+    font-size: 0.9rem;
+    line-height: 1.78;
+  }
+
+  .after-event-caption {
+    width: 100%;
+    margin-top: 3.8rem;
+    padding-bottom: clamp(6rem, 24vw, 9rem);
+  }
+
+  .after-event-caption__row {
+    grid-template-columns: 1fr;
+    gap: 0.35rem;
+    padding-block: 0.8rem;
+  }
+
 }
 
 @media (max-width: 420px) {
@@ -1159,6 +1280,11 @@ figure {
   .detail-project--long-title .detail-title {
     overflow-wrap: anywhere;
     font-size: clamp(2.35rem, 11.5vw, 4.5rem);
+  }
+
+  .after-event-statement__language,
+  .after-event-statement__language--ko {
+    font-size: 0.86rem;
   }
 
 }

@@ -1,20 +1,19 @@
 const projects = [
   {
     id: "cancellation-terms",
-    number: "01",
     title: "Cancellation Terms",
     subtitle: "무심코 통과한 약관의 무게",
     year: "2026",
     type: "School Project",
-    category: "graphic",
-    categoryLabel: "Graphic",
+    categories: ["graphic", "typography", "editorial"],
+    categoryLabel: "Graphic, Typography, Editorial",
     cover: {
-      src: "./01_Graphic_Cancellation-Terms/cancellation-terms-06-flipbook-object.png",
+      src: "./2026_Graphic_Cancellation-Terms/cancellation-terms-06-flipbook-object.png",
       alt: "",
       position: "50% 4%"
     },
     hero: {
-      src: "./01_Graphic_Cancellation-Terms/cancellation-terms-06-flipbook-object.png",
+      src: "./2026_Graphic_Cancellation-Terms/cancellation-terms-06-flipbook-object.png",
       alt: "검은 천 위에 놓인 흰색 Cancellation Terms 플립북의 표지와 펼친 내지",
       position: "50% 4%"
     },
@@ -37,7 +36,7 @@ const projects = [
     media: [
       {
         type: "image",
-        src: "./01_Graphic_Cancellation-Terms/cancellation-terms-02-research.png",
+        src: "./2026_Graphic_Cancellation-Terms/cancellation-terms-02-research.png",
         alt: "구독 서비스별 해지 약관을 수집하고 문장 구조를 분류한 리서치 스프레드시트",
         section: "Research / 01",
         title: "Terms Archive",
@@ -45,7 +44,7 @@ const projects = [
       },
       {
         type: "image",
-        src: "./01_Graphic_Cancellation-Terms/cancellation-terms-03-website.png",
+        src: "./2026_Graphic_Cancellation-Terms/cancellation-terms-03-website.png",
         alt: "검은 화면 위에 약관의 단어와 이동 경로가 붉은 선으로 연결된 Cancellation Terms 웹사이트",
         section: "Prompt B / 02",
         title: "Trace & Archive",
@@ -53,7 +52,7 @@ const projects = [
       },
       {
         type: "image",
-        src: "./01_Graphic_Cancellation-Terms/cancellation-terms-04-interaction.png",
+        src: "./2026_Graphic_Cancellation-Terms/cancellation-terms-04-interaction.png",
         alt: "긴 약관 문장 위에서 선택된 단어들이 붉은 상자와 연결선으로 분리되는 웹 인터랙션",
         section: "Prompt B / 03",
         title: "Blind Spot",
@@ -61,8 +60,8 @@ const projects = [
       },
       {
         type: "video",
-        src: "./01_Graphic_Cancellation-Terms/cancellation-terms-video.mp4",
-        poster: "./01_Graphic_Cancellation-Terms/cancellation-terms-01-fragments.png",
+        src: "./2026_Graphic_Cancellation-Terms/cancellation-terms-video.mp4",
+        poster: "./2026_Graphic_Cancellation-Terms/cancellation-terms-01-fragments.png",
         width: 1080,
         height: 1528,
         section: "Moving Image / 04",
@@ -71,7 +70,7 @@ const projects = [
       },
       {
         type: "image",
-        src: "./01_Graphic_Cancellation-Terms/cancellation-terms-01-fragments.png",
+        src: "./2026_Graphic_Cancellation-Terms/cancellation-terms-01-fragments.png",
         alt: "약관 문장 위에 붉은 단어 상자와 색상 데이터 블록이 누적되는 세 단계의 그래픽",
         section: "Translation / 05",
         title: "From Text to Data",
@@ -79,7 +78,7 @@ const projects = [
       },
       {
         type: "image",
-        src: "./01_Graphic_Cancellation-Terms/cancellation-terms-05-flipbook-system.png",
+        src: "./2026_Graphic_Cancellation-Terms/cancellation-terms-05-flipbook-system.png",
         alt: "법률 기호 표지부터 약관 문장과 색상 블록으로 변하는 플립북의 페이지 시스템",
         section: "Prompt C / 06",
         title: "Flipbook System",
@@ -87,12 +86,75 @@ const projects = [
       },
       {
         type: "image",
-        src: "./01_Graphic_Cancellation-Terms/cancellation-terms-07-flipbook-motion.png",
+        src: "./2026_Graphic_Cancellation-Terms/cancellation-terms-07-flipbook-motion.png",
         alt: "손으로 플립북을 넘기며 약관 텍스트가 붉고 회색인 데이터 블록으로 바뀌는 모습",
         section: "Prompt C / 07",
         title: "Tactile Weight",
         caption: "페이지를 넘길수록 언어의 밀도가 높아지고 끝내 데이터의 덩어리로 변하는 물리적 경험."
       }
+    ]
+  },
+  {
+    id: "after-event",
+    title: "After Event",
+    year: "2025",
+    type: "School Individual Project",
+    categories: ["photography", "editorial"],
+    categoryLabel: "Photography, Editorial",
+    detailLayout: "after-event",
+    cover: {
+      src: "./2025_Photography_After-Event/Portfolio_Images/After-Event_1.png",
+      alt: "",
+      width: 8000,
+      height: 6400,
+      position: "50% 50%"
+    },
+    images: [
+      {
+        src: "./2025_Photography_After-Event/Portfolio_Images/After-Event_1.png",
+        alt: "검은 배경 위에 흰 양초의 사건 전과 후를 보여주는 사진 및 에디토리얼 레이아웃",
+        width: 8000,
+        height: 6400
+      },
+      {
+        src: "./2025_Photography_After-Event/Portfolio_Images/After-Event_2.png",
+        alt: "도자기와 양초, 종이, 점토가 사건 전후로 변화하는 과정을 배열한 열두 장의 흑백 사진",
+        width: 8000,
+        height: 6400
+      },
+      {
+        src: "./2025_Photography_After-Event/Portfolio_Images/After-Event_3.png",
+        alt: "불이 켜진 흰 양초 사진과 After Event 제목이 인쇄된 노출 제본 포토북 표지",
+        width: 8000,
+        height: 6400
+      },
+      {
+        src: "./2025_Photography_After-Event/Portfolio_Images/After-Event_4.png",
+        alt: "검은 배경 위에 펼쳐진 After Event 포토북의 세 가지 내지 구성",
+        width: 8000,
+        height: 6400
+      }
+    ],
+    statement: {
+      en: [
+        "Purity, in this work, does not refer simply to cleanliness or perfection. It describes the most stable and authentic condition an object holds before any external force intervenes. Yet no state can remain permanently untouched. Heat, staining, absorption, pressure, and rupture enter as irreversible events, altering an object’s surface or structure and making a complete return to its former condition impossible.",
+        "<em>After Event</em> traces this transformation through a three-part sequence: <strong>Essence, Incident, and Influence</strong>. Each series begins with an object in its original state, moves through the moment or process of external intervention, and concludes with the physical trace that remains afterward. The exact point represented as the Incident varies according to the material—sometimes it is the action itself, sometimes an ongoing transformation, and sometimes an intermediate state—but every sequence records the same object as it moves from stability toward irreversible change.",
+        "What I seek to capture is not destruction itself, but the lasting influence that an event engraves upon an object. A stain left on a surface, a deformation held within a structure, or a mark that cannot be completely removed is not merely residue; it is evidence of what the object has endured and a physical sign of its inability to return to its original state. Like a personal experience or a scar, this trace becomes an integral part of its existence. <em>After Event</em> is a photographic record of purity permanently marked by influence."
+      ],
+      ko: [
+        "이 작업에서 순수함은 단순히 깨끗하거나 완벽한 상태를 의미하지 않는다. 외부의 힘이 개입하기 전, 물체가 유지하고 있던 가장 안정적이고 본래적인 상태를 뜻한다. 그러나 어떠한 상태도 영원히 외부와 분리된 채 유지될 수는 없다. 열, 착색, 흡수, 압력, 파열과 같은 사건은 물체의 표면과 구조에 비가역적으로 개입하며, 물체가 이전 상태로 완전히 돌아가는 것을 불가능하게 만든다.",
+        "〈After Event〉는 이러한 변화를 <strong>[본질(Essence)]–[사건(Incident)]–[영향(Influence)]</strong>의 세 단계로 기록한다. 각 연작은 사건 이전의 본래적 상태에서 시작해 외부 에너지가 개입하는 순간이나 과정을 거쳐, 사건 이후에도 남아 있는 물리적 흔적으로 끝난다. 사건의 시간적 위치는 물체의 특성에 따라 행위의 순간, 진행 중인 변화, 변화의 중간 상태 등으로 다르게 나타나지만, 모든 연작은 동일한 하나의 물체가 안정된 상태에서 되돌릴 수 없는 변화로 이동하는 과정을 담는다.",
+        "내가 담고자 한 것은 파괴 자체가 아니라 사건이 물체에 새긴 지속적인 영향이다. 표면에 남은 얼룩, 구조에 고정된 변형, 완전히 제거되지 않는 흔적은 단순한 잔여물이 아니라 그 물체가 겪은 변화의 기록이며, 이전 상태로 돌아갈 수 없음을 증명하는 물리적 표식이다. 마치 개인의 경험과 상흔처럼, 그 흔적은 사물의 존재 일부가 되어 남는다. 〈After Event〉는 영구적인 영향이 새겨진 순수함에 대한 사진적 기록이다."
+      ]
+    },
+    caption: [
+      { label: "Project Name", value: "After Event" },
+      { label: "Year", value: "2025" },
+      { label: "Project Type", value: "School Individual Project" },
+      { label: "Course", value: "Hongik University Visual Communication Design / Studio Photography (2)" },
+      { label: "Photography Equipment", value: "Canon DSLR (EOS 5D Mark II, EOS 5D Mark III), Canon EF 100mm F2.8L Macro IS USM, Fomex E600" },
+      { label: "Final Output Specifications", value: "200 × 200 mm, Exposed Thread-Sewn Binding" },
+      { label: "Professor", value: "Prof. Hyunmok Jung" }
     ]
   }
 ];
@@ -282,6 +344,73 @@ function detailCreditsMarkup(project) {
   `;
 }
 
+function afterEventImageMarkup(image, index) {
+  const loadingAttributes = index === 0
+    ? 'fetchpriority="high"'
+    : 'loading="lazy"';
+
+  return `
+    <figure class="after-event-image">
+      <img
+        src="${image.src}"
+        alt="${image.alt}"
+        width="${image.width}"
+        height="${image.height}"
+        decoding="async"
+        ${loadingAttributes}
+      >
+    </figure>
+  `;
+}
+
+function afterEventDetailMarkup(project) {
+  const englishParagraphs = project.statement.en
+    .map((paragraph) => `<p>${paragraph}</p>`)
+    .join("");
+  const koreanParagraphs = project.statement.ko
+    .map((paragraph) => `<p>${paragraph}</p>`)
+    .join("");
+  const captionRows = project.caption
+    .map((item) => `
+      <div class="after-event-caption__row">
+        <dt>${item.label} :</dt>
+        <dd>${item.value}</dd>
+      </div>
+    `)
+    .join("");
+
+  return `
+    <h1 class="sr-only" id="detail-title" tabindex="-1" lang="en">${project.title}</h1>
+    <div class="after-event-flow">
+      <div class="after-event-sequence after-event-sequence--opening">
+        ${afterEventImageMarkup(project.images[0], 0)}
+        ${afterEventImageMarkup(project.images[1], 1)}
+      </div>
+
+      <section class="after-event-statement" aria-label="After Event project statement">
+        <div class="after-event-statement__language" lang="en">
+          ${englishParagraphs}
+        </div>
+        <div class="after-event-statement__language after-event-statement__language--ko" lang="ko">
+          ${koreanParagraphs}
+        </div>
+      </section>
+
+      <div class="after-event-sequence after-event-sequence--closing">
+        ${afterEventImageMarkup(project.images[2], 2)}
+        ${afterEventImageMarkup(project.images[3], 3)}
+      </div>
+
+      <section class="after-event-caption" aria-labelledby="after-event-caption-title">
+        <h2 class="sr-only" id="after-event-caption-title" lang="en">Project Information</h2>
+        <dl lang="en">
+          ${captionRows}
+        </dl>
+      </section>
+    </div>
+  `;
+}
+
 function projectCardMarkup(project) {
   return `
     <article class="project-card-wrap">
@@ -295,7 +424,6 @@ function projectCardMarkup(project) {
         </div>
         <div class="project-card__meta">
           <div class="project-card__heading">
-            <span class="project-card__index" lang="en">${project.number}</span>
             <strong class="project-card__title" lang="en">${project.title}</strong>
             <span class="project-card__arrow" aria-hidden="true">↗</span>
           </div>
@@ -316,9 +444,14 @@ function projectCardMarkup(project) {
 }
 
 function getVisibleProjects() {
-  return activeCategory === "all"
-    ? projects
-    : projects.filter((project) => project.category === activeCategory);
+  const visibleProjects = activeCategory === "all"
+    ? [...projects]
+    : projects.filter((project) => project.categories.includes(activeCategory));
+
+  return visibleProjects.sort((a, b) => (
+    Number(b.year) - Number(a.year)
+    || a.title.localeCompare(b.title, "en")
+  ));
 }
 
 function updateCategoryNavigation() {
@@ -329,7 +462,7 @@ function updateCategoryNavigation() {
     const isActive = category === activeCategory;
     const count = category === "all"
       ? projects.length
-      : projects.filter((project) => project.category === category).length;
+      : projects.filter((project) => project.categories.includes(category)).length;
 
     link.classList.toggle("is-active", isActive);
     if (isActive) {
@@ -379,26 +512,15 @@ function renderIndex({ focusReturnedProject = false } = {}) {
 }
 
 function renderDetail(project) {
-  projectGrid.hidden = true;
-  viewTitle.hidden = true;
-  projectDetail.hidden = false;
-  workView.setAttribute("aria-labelledby", "detail-title");
-  projectDetail.innerHTML = `
-    <article class="detail-project${project.title.length > 15 ? " detail-project--long-title" : ""}" id="detail-project" tabindex="-1" aria-labelledby="detail-title">
-      <div class="detail-toolbar" lang="en">
-        <a
-          class="detail-back"
-          href="#category/${activeCategory}"
-          data-detail-back
-          aria-label="Back to ${categories[activeCategory].label} project list"
-          lang="en"
-        >
-          <span class="detail-back__arrow" aria-hidden="true">←</span>
-          Back
-        </a>
-        <p class="detail-toolbar__position">Project ${project.number} / ${twoDigits(projects.length)}</p>
-      </div>
-
+  const isAfterEvent = project.detailLayout === "after-event";
+  const detailProjectClass = [
+    "detail-project",
+    project.title.length > 15 ? "detail-project--long-title" : "",
+    isAfterEvent ? "detail-project--after-event" : ""
+  ].filter(Boolean).join(" ");
+  const detailContent = isAfterEvent
+    ? afterEventDetailMarkup(project)
+    : `
       <header class="detail-heading">
         <h1 class="detail-title" id="detail-title" tabindex="-1" lang="en">${project.title}</h1>
         <div class="detail-subtitle" lang="en">
@@ -422,6 +544,28 @@ function renderDetail(project) {
       ${detailFactsMarkup(project)}
       ${detailMediaMarkup(project)}
       ${detailCreditsMarkup(project)}
+    `;
+
+  projectGrid.hidden = true;
+  viewTitle.hidden = true;
+  projectDetail.hidden = false;
+  workView.setAttribute("aria-labelledby", "detail-title");
+  projectDetail.innerHTML = `
+    <article class="${detailProjectClass}" id="detail-project" tabindex="-1" aria-labelledby="detail-title">
+      <div class="detail-toolbar" lang="en">
+        <a
+          class="detail-back"
+          href="#category/${activeCategory}"
+          data-detail-back
+          aria-label="Back to ${categories[activeCategory].label} project list"
+          lang="en"
+        >
+          <span class="detail-back__arrow" aria-hidden="true">←</span>
+          Back
+        </a>
+      </div>
+
+      ${detailContent}
     </article>
   `;
 
@@ -450,9 +594,9 @@ function readRoute() {
     const isLegacyRoute = !projectId;
     const targetId = isLegacyRoute ? value : projectId;
     const project = projects.find((item) => item.id === targetId);
-    const category = isLegacyRoute ? project?.category : value;
+    const category = isLegacyRoute ? project?.categories[0] : value;
     const hasValidContext = project && categories[category]
-      && (category === "all" || project.category === category);
+      && (category === "all" || project.categories.includes(category));
 
     if (hasValidContext) {
       return { type: "project", project, category, isLegacyRoute };
