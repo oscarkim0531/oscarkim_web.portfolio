@@ -125,7 +125,7 @@ figure {
   color: var(--muted);
   font-size: 0.62rem;
   font-weight: 500;
-  letter-spacing: 0.09em;
+  letter-spacing: 0.1em;
   line-height: 1;
   text-transform: uppercase;
 }
@@ -155,10 +155,9 @@ figure {
 
 .identity__mark {
   flex: 0 0 auto;
-  color: var(--muted);
-  font-family: var(--display);
-  font-size: 0.62rem;
-  letter-spacing: 0.06em;
+  width: clamp(1.75rem, 1.85vw, 2.1rem);
+  height: auto;
+  object-fit: contain;
 }
 
 .identity__name {
@@ -166,7 +165,7 @@ figure {
   font-family: var(--display);
   font-size: clamp(0.8rem, 1vw, 1rem);
   font-weight: 600;
-  letter-spacing: -0.035em;
+  letter-spacing: -0.02em;
   line-height: 1;
   text-overflow: ellipsis;
   text-transform: uppercase;
@@ -187,7 +186,7 @@ figure {
   padding: 0 var(--page-pad);
   border-right: 1px solid var(--line-soft);
   font-size: clamp(0.66rem, 0.74vw, 0.78rem);
-  letter-spacing: -0.015em;
+  letter-spacing: 0;
 }
 
 .header-index__item:last-child {
@@ -243,7 +242,7 @@ figure {
   color: var(--muted);
   font-size: 0.59rem;
   font-weight: 500;
-  letter-spacing: 0.09em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
 }
 
@@ -283,7 +282,7 @@ figure {
   color: var(--muted);
   font-size: 0.57rem;
   font-variant-numeric: tabular-nums;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.06em;
 }
 
 .category-link__count {
@@ -296,7 +295,7 @@ figure {
   font-family: var(--display);
   font-size: clamp(0.82rem, 1.05vw, 1.05rem);
   font-weight: 450;
-  letter-spacing: -0.045em;
+  letter-spacing: -0.025em;
   line-height: 1;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -332,23 +331,31 @@ figure {
   border-top: 1px solid var(--line-soft);
   color: var(--muted);
   font-size: clamp(0.62rem, 0.7vw, 0.72rem);
-  letter-spacing: -0.01em;
+  letter-spacing: 0.005em;
   line-height: 1.45;
 }
 
 .sidebar__footer > p {
-  max-width: 25ch;
+  max-width: 40ch;
 }
 
 .sidebar__footer-meta {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  gap: 1rem;
+  align-items: flex-start;
+  gap: 0.65rem 1rem;
   margin-top: 2.4rem;
   font-size: 0.56rem;
   font-variant-numeric: tabular-nums;
-  letter-spacing: 0.07em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
+}
+
+.sidebar__footer-meta span:last-child {
+  width: min(34ch, 100%);
+  margin-left: auto;
+  text-align: right;
 }
 
 .work-view {
@@ -433,7 +440,7 @@ figure {
   font-family: var(--display);
   font-size: clamp(0.92rem, 1.03vw, 1.12rem);
   font-weight: 500;
-  letter-spacing: -0.045em;
+  letter-spacing: -0.025em;
   line-height: 1.08;
   transition: background-size 220ms var(--ease);
 }
@@ -456,7 +463,7 @@ figure {
 .project-card__details dt {
   font-size: 0.54rem;
   font-weight: 500;
-  letter-spacing: 0.07em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
@@ -464,7 +471,7 @@ figure {
   min-width: 0;
   margin: 0;
   font-size: clamp(0.64rem, 0.72vw, 0.76rem);
-  letter-spacing: -0.015em;
+  letter-spacing: 0;
   line-height: 1.25;
 }
 
@@ -515,7 +522,7 @@ figure {
   border-bottom: 1px solid var(--line);
   color: var(--muted);
   font-size: 0.59rem;
-  letter-spacing: 0.07em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
@@ -525,6 +532,8 @@ figure {
   align-self: stretch;
   gap: 0.6rem;
   color: var(--ink);
+  font-size: clamp(0.72rem, 0.72vw, 0.82rem);
+  letter-spacing: 0.055em;
 }
 
 .detail-back__arrow {
@@ -550,7 +559,7 @@ figure {
   font-family: var(--display);
   font-size: clamp(4rem, 7.4vw, 8.7rem);
   font-weight: 500;
-  letter-spacing: -0.078em;
+  letter-spacing: -0.06em;
   line-height: 0.82;
   text-transform: uppercase;
 }
@@ -612,7 +621,7 @@ figure {
   color: var(--muted);
   font-size: 0.59rem;
   font-weight: 500;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.09em;
   text-transform: uppercase;
 }
 
@@ -643,6 +652,7 @@ figure {
   margin-top: clamp(3rem, 5vw, 5.5rem);
   color: var(--muted);
   font-size: clamp(0.72rem, 0.82vw, 0.86rem);
+  letter-spacing: 0.008em;
   line-height: 1.55;
 }
 
@@ -663,7 +673,7 @@ figure {
 .detail-facts dt {
   color: var(--muted);
   font-size: 0.59rem;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.09em;
   text-transform: uppercase;
 }
 
@@ -672,7 +682,7 @@ figure {
   max-width: 46ch;
   margin: 0;
   font-size: clamp(0.78rem, 0.92vw, 0.98rem);
-  letter-spacing: -0.02em;
+  letter-spacing: 0;
   line-height: 1.35;
   text-align: right;
 }
@@ -694,7 +704,7 @@ figure {
   color: var(--muted);
   font-size: 0.59rem;
   font-weight: 500;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.09em;
   text-transform: uppercase;
 }
 
@@ -763,7 +773,7 @@ figure {
   color: var(--muted);
   font-size: 0.57rem;
   font-weight: 500;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.09em;
   text-transform: uppercase;
 }
 
@@ -777,7 +787,7 @@ figure {
   font-family: var(--display);
   font-size: clamp(0.82rem, 1vw, 1.02rem);
   font-weight: 500;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.015em;
 }
 
 .detail-media__text > span {
@@ -811,6 +821,7 @@ figure {
   margin-top: 1.5rem;
   color: var(--muted);
   font-size: clamp(0.72rem, 0.86vw, 0.9rem);
+  letter-spacing: 0.008em;
   line-height: 1.45;
 }
 
@@ -824,14 +835,14 @@ figure {
 .detail-credits__meta dt {
   color: var(--muted);
   font-size: 0.57rem;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.09em;
   text-transform: uppercase;
 }
 
 .detail-credits__meta dd {
   margin-top: 0.75rem;
   font-size: clamp(0.76rem, 0.9vw, 0.94rem);
-  letter-spacing: -0.02em;
+  letter-spacing: 0;
 }
 
 /* After Event — image-led study -------------------------------- */
@@ -863,9 +874,9 @@ figure {
 }
 
 .after-event-statement__language {
-  font-size: clamp(0.88rem, 0.82vw, 1.02rem);
-  letter-spacing: -0.012em;
-  line-height: 1.68;
+  font-size: clamp(0.88rem, 0.84vw, 1.03rem);
+  letter-spacing: -0.025em;
+  line-height: 1.78;
 }
 
 .after-event-statement__language p + p {
@@ -873,15 +884,14 @@ figure {
 }
 
 .after-event-statement__language--ko {
-  margin-top: clamp(4rem, 5.2vw, 6.2rem);
   word-break: keep-all;
-  font-size: clamp(0.88rem, 0.84vw, 1.03rem);
-  letter-spacing: -0.025em;
-  line-height: 1.78;
 }
 
-.after-event-statement strong {
-  font-weight: 600;
+.after-event-statement__language--en {
+  margin-top: clamp(4rem, 5.2vw, 6.2rem);
+  font-size: clamp(0.8rem, 0.76vw, 0.92rem);
+  letter-spacing: 0.003em;
+  line-height: 1.7;
 }
 
 .after-event-statement em {
@@ -910,7 +920,7 @@ figure {
 .after-event-caption dt {
   font-size: 0.55rem;
   font-weight: 500;
-  letter-spacing: 0.055em;
+  letter-spacing: 0.065em;
   line-height: 1.35;
   text-transform: uppercase;
 }
@@ -918,7 +928,7 @@ figure {
 .after-event-caption dd {
   overflow-wrap: anywhere;
   font-size: clamp(0.66rem, 0.7vw, 0.76rem);
-  letter-spacing: -0.012em;
+  letter-spacing: 0;
   line-height: 1.45;
 }
 
@@ -1248,13 +1258,13 @@ figure {
 
   .after-event-statement__language {
     font-size: 0.9rem;
-    line-height: 1.7;
+    line-height: 1.78;
   }
 
-  .after-event-statement__language--ko {
+  .after-event-statement__language--en {
     margin-top: 3.8rem;
-    font-size: 0.9rem;
-    line-height: 1.78;
+    font-size: 0.82rem;
+    line-height: 1.72;
   }
 
   .after-event-caption {
@@ -1272,19 +1282,18 @@ figure {
 }
 
 @media (max-width: 420px) {
-  .identity__mark {
-    display: none;
-  }
-
   .detail-title,
   .detail-project--long-title .detail-title {
     overflow-wrap: anywhere;
     font-size: clamp(2.35rem, 11.5vw, 4.5rem);
   }
 
-  .after-event-statement__language,
-  .after-event-statement__language--ko {
+  .after-event-statement__language {
     font-size: 0.86rem;
+  }
+
+  .after-event-statement__language--en {
+    font-size: 0.79rem;
   }
 
 }

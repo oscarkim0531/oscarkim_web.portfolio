@@ -138,12 +138,12 @@ const projects = [
     statement: {
       en: [
         "Purity, in this work, does not refer simply to cleanliness or perfection. It describes the most stable and authentic condition an object holds before any external force intervenes. Yet no state can remain permanently untouched. Heat, staining, absorption, pressure, and rupture enter as irreversible events, altering an object’s surface or structure and making a complete return to its former condition impossible.",
-        "<em>After Event</em> traces this transformation through a three-part sequence: <strong>Essence, Incident, and Influence</strong>. Each series begins with an object in its original state, moves through the moment or process of external intervention, and concludes with the physical trace that remains afterward. The exact point represented as the Incident varies according to the material—sometimes it is the action itself, sometimes an ongoing transformation, and sometimes an intermediate state—but every sequence records the same object as it moves from stability toward irreversible change.",
+        "<em>After Event</em> traces this transformation through a three-part sequence: Essence, Incident, and Influence. Each series begins with an object in its original state, moves through the moment or process of external intervention, and concludes with the physical trace that remains afterward. The exact point represented as the Incident varies according to the material—sometimes it is the action itself, sometimes an ongoing transformation, and sometimes an intermediate state—but every sequence records the same object as it moves from stability toward irreversible change.",
         "What I seek to capture is not destruction itself, but the lasting influence that an event engraves upon an object. A stain left on a surface, a deformation held within a structure, or a mark that cannot be completely removed is not merely residue; it is evidence of what the object has endured and a physical sign of its inability to return to its original state. Like a personal experience or a scar, this trace becomes an integral part of its existence. <em>After Event</em> is a photographic record of purity permanently marked by influence."
       ],
       ko: [
         "이 작업에서 순수함은 단순히 깨끗하거나 완벽한 상태를 의미하지 않는다. 외부의 힘이 개입하기 전, 물체가 유지하고 있던 가장 안정적이고 본래적인 상태를 뜻한다. 그러나 어떠한 상태도 영원히 외부와 분리된 채 유지될 수는 없다. 열, 착색, 흡수, 압력, 파열과 같은 사건은 물체의 표면과 구조에 비가역적으로 개입하며, 물체가 이전 상태로 완전히 돌아가는 것을 불가능하게 만든다.",
-        "〈After Event〉는 이러한 변화를 <strong>[본질(Essence)]–[사건(Incident)]–[영향(Influence)]</strong>의 세 단계로 기록한다. 각 연작은 사건 이전의 본래적 상태에서 시작해 외부 에너지가 개입하는 순간이나 과정을 거쳐, 사건 이후에도 남아 있는 물리적 흔적으로 끝난다. 사건의 시간적 위치는 물체의 특성에 따라 행위의 순간, 진행 중인 변화, 변화의 중간 상태 등으로 다르게 나타나지만, 모든 연작은 동일한 하나의 물체가 안정된 상태에서 되돌릴 수 없는 변화로 이동하는 과정을 담는다.",
+        "〈After Event〉는 이러한 변화를 [본질(Essence)]–[사건(Incident)]–[영향(Influence)]의 세 단계로 기록한다. 각 연작은 사건 이전의 본래적 상태에서 시작해 외부 에너지가 개입하는 순간이나 과정을 거쳐, 사건 이후에도 남아 있는 물리적 흔적으로 끝난다. 사건의 시간적 위치는 물체의 특성에 따라 행위의 순간, 진행 중인 변화, 변화의 중간 상태 등으로 다르게 나타나지만, 모든 연작은 동일한 하나의 물체가 안정된 상태에서 되돌릴 수 없는 변화로 이동하는 과정을 담는다.",
         "내가 담고자 한 것은 파괴 자체가 아니라 사건이 물체에 새긴 지속적인 영향이다. 표면에 남은 얼룩, 구조에 고정된 변형, 완전히 제거되지 않는 흔적은 단순한 잔여물이 아니라 그 물체가 겪은 변화의 기록이며, 이전 상태로 돌아갈 수 없음을 증명하는 물리적 표식이다. 마치 개인의 경험과 상흔처럼, 그 흔적은 사물의 존재 일부가 되어 남는다. 〈After Event〉는 영구적인 영향이 새겨진 순수함에 대한 사진적 기록이다."
       ]
     },
@@ -388,11 +388,11 @@ function afterEventDetailMarkup(project) {
       </div>
 
       <section class="after-event-statement" aria-label="After Event project statement">
-        <div class="after-event-statement__language" lang="en">
-          ${englishParagraphs}
-        </div>
         <div class="after-event-statement__language after-event-statement__language--ko" lang="ko">
           ${koreanParagraphs}
+        </div>
+        <div class="after-event-statement__language after-event-statement__language--en" lang="en">
+          ${englishParagraphs}
         </div>
       </section>
 
