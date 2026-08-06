@@ -1,3 +1,5 @@
+const TEORO_ASSET_ROOT = "./2026_Branding_터로(TEORO)".normalize("NFD");
+
 const projects = [
   {
     id: "cancellation-terms",
@@ -92,6 +94,91 @@ const projects = [
         title: "Tactile Weight",
         caption: "페이지를 넘길수록 언어의 밀도가 높아지고 끝내 데이터의 덩어리로 변하는 물리적 경험."
       }
+    ]
+  },
+  {
+    id: "teoro-branding",
+    title: "터로(TEORO)",
+    titleLang: "ko",
+    year: "2026",
+    type: "School Individual Project",
+    categories: ["branding"],
+    categoryLabel: "Branding",
+    detailLayout: "teoro",
+    cover: {
+      src: `${TEORO_ASSET_ROOT}/Web-Images/teoro-03.webp`,
+      alt: "터로의 과테말라 싱글 오리진 커피 패키지와 큐레이션 카드, 구리 드립 포트",
+      width: 3200,
+      height: 2560,
+      position: "50% 50%"
+    },
+    images: [
+      {
+        src: `${TEORO_ASSET_ROOT}/Web-Images/teoro-01.webp`,
+        alt: "검은 배경 위에 배치된 터로의 세로형과 가로형 로고 시스템",
+        width: 3200,
+        height: 2560
+      },
+      {
+        src: `${TEORO_ASSET_ROOT}/Web-Images/teoro-02.webp`,
+        alt: "원산지 본질의 전달, 정보 전달의 직관성, 원두 로테이션 시스템을 연결한 브랜드 원칙 다이어그램",
+        width: 3200,
+        height: 2560
+      },
+      {
+        src: `${TEORO_ASSET_ROOT}/Web-Images/teoro-03.webp`,
+        alt: "터로의 과테말라 싱글 오리진 커피 패키지와 큐레이션 카드, 구리 드립 포트",
+        width: 3200,
+        height: 2560
+      },
+      {
+        src: `${TEORO_ASSET_ROOT}/Web-Images/teoro-04.webp`,
+        alt: "터로 그래픽이 적용된 커피 컵과 캐리어를 들고 있는 사람",
+        width: 3200,
+        height: 2560
+      },
+      {
+        src: `${TEORO_ASSET_ROOT}/Web-Images/teoro-05.webp`,
+        alt: "과테말라 원산지 정보와 지형 그래픽을 담은 터로 큐레이션 카드의 앞뒷면",
+        width: 3200,
+        height: 2560
+      },
+      {
+        src: `${TEORO_ASSET_ROOT}/Web-Images/teoro-06.webp`,
+        alt: "따뜻한 갈색 톤의 카페 공간에 설치된 터로 Terroir Experience 포스터",
+        width: 3200,
+        height: 2560
+      }
+    ],
+    statements: [
+      {
+        ko: [
+          "터로(TEORO)는 커피의 맛을 단순한 향미 정보가 아니라, 원두가 자라난 토양과 고도, 기후, 가공 방식이 축적된 결과로 바라보는 스페셜티 카페 브랜드입니다. 블렌딩으로 산지의 개성을 희석하기보다 하나의 싱글 오리진을 온전히 조명하며, 커피 한 잔을 통해 원산지의 환경과 풍미 사이의 관계를 경험하도록 합니다.",
+          "브랜드는 원산지 본질의 전달, 정보 전달의 직관성, 원두 로테이션 시스템을 중심으로 운영됩니다. 매달 새로운 산지를 하나의 아카이브 볼륨으로 소개하고, 전문적인 커피 정보를 한글과 시각 언어로 명확하게 전달함으로써 커피를 일회성 소비가 아닌 지속적인 탐구와 취향의 축적으로 확장합니다."
+        ],
+        en: [
+          "TEORO is a specialty coffee brand that understands flavor as the accumulated result of a bean’s soil, altitude, climate, and processing method. Rather than blending away the individuality of each origin, the brand focuses on a single-origin coffee and invites customers to experience the relationship between its environment and distinctive flavor.",
+          "The brand is structured around three principles: preserving the essence of origin, communicating information intuitively, and operating a rotating coffee system. Each month, a new origin is introduced as an individual archive volume, while technical coffee information is translated into accessible language and visual forms. Through this system, coffee becomes an ongoing process of exploration, comparison, and personal taste-building."
+        ]
+      },
+      {
+        ko: [
+          "터로의 브랜드 경험은 큐레이션 카드, Terroir Experience, Terroir Soil을 중심으로 확장됩니다. 큐레이션 카드는 산지의 고도, 토양, 품종, 가공 방식과 테이스팅 노트를 기록한 정보 매체이며, Terroir Experience는 다양한 추출과 설명을 통해 떼루아를 직접 감각하는 체험 프로그램입니다.",
+          "Terroir Soil은 해당 산지의 토양과 커피 경험을 작은 표본 형태로 남기는 아카이브 오브제입니다. 세 가지 애플리케이션은 각각 정보를 읽고, 감각으로 경험하고, 물리적으로 소장하는 역할을 담당하며, 한 잔의 커피가 개인의 기억과 취향으로 축적되는 과정을 완성합니다."
+        ],
+        en: [
+          "TEORO’s brand experience extends through three key applications: the Curation Card, Terroir Experience, and Terroir Soil. The Curation Card records essential information such as altitude, soil, variety, processing method, and tasting notes, while the Terroir Experience allows visitors to explore terroir through guided interpretation and different brewing methods.",
+          "Terroir Soil transforms the origin and the tasting experience into a small, collectible archive object. Together, these applications allow customers to read the information, experience it through the senses, and preserve it in a physical form—turning a temporary cup of coffee into an accumulated record of memory and personal taste."
+        ]
+      }
+    ],
+    caption: [
+      { label: "Project Name", value: "터로(TEORO)", lang: "ko" },
+      { label: "Year", value: "2026" },
+      { label: "Project Type", value: "School Individual Project" },
+      { label: "Course", value: "Hongik University Visual Communication Design / PracticeDesignStudio(1)" },
+      { label: "Final Output Specifications", value: "Brand Guideline" },
+      { label: "Professor", value: "Prof. Hyojin An" }
     ]
   },
   {
@@ -344,13 +431,13 @@ function detailCreditsMarkup(project) {
   `;
 }
 
-function afterEventImageMarkup(image, index) {
+function imageLedProjectImageMarkup(image, index) {
   const loadingAttributes = index === 0
     ? 'fetchpriority="high"'
     : 'loading="lazy"';
 
   return `
-    <figure class="after-event-image">
+    <figure class="image-led-image">
       <img
         src="${image.src}"
         alt="${image.alt}"
@@ -363,50 +450,91 @@ function afterEventImageMarkup(image, index) {
   `;
 }
 
-function afterEventDetailMarkup(project) {
-  const englishParagraphs = project.statement.en
+function imageLedStatementMarkup(statement, ariaLabel) {
+  const englishParagraphs = statement.en
     .map((paragraph) => `<p>${paragraph}</p>`)
     .join("");
-  const koreanParagraphs = project.statement.ko
+  const koreanParagraphs = statement.ko
     .map((paragraph) => `<p>${paragraph}</p>`)
     .join("");
-  const captionRows = project.caption
+
+  return `
+    <section class="image-led-statement" aria-label="${ariaLabel}">
+      <div class="image-led-statement__language image-led-statement__language--ko" lang="ko">
+        ${koreanParagraphs}
+      </div>
+      <div class="image-led-statement__language image-led-statement__language--en" lang="en">
+        ${englishParagraphs}
+      </div>
+    </section>
+  `;
+}
+
+function imageLedCaptionMarkup(caption, headingId) {
+  const captionRows = caption
     .map((item) => `
-      <div class="after-event-caption__row">
-        <dt>${item.label} :</dt>
-        <dd>${item.value}</dd>
+      <div class="image-led-caption__row">
+        <dt lang="en">${item.label} :</dt>
+        <dd lang="${item.lang || "en"}">${item.value}</dd>
       </div>
     `)
     .join("");
 
   return `
-    <h1 class="sr-only" id="detail-title" tabindex="-1" lang="en">${project.title}</h1>
-    <div class="after-event-flow">
-      <div class="after-event-sequence after-event-sequence--opening">
-        ${afterEventImageMarkup(project.images[0], 0)}
-        ${afterEventImageMarkup(project.images[1], 1)}
+    <section class="image-led-caption" aria-labelledby="${headingId}">
+      <h2 class="sr-only" id="${headingId}" lang="en">Project Information</h2>
+      <dl>
+        ${captionRows}
+      </dl>
+    </section>
+  `;
+}
+
+function afterEventDetailMarkup(project) {
+  return `
+    <h1 class="sr-only" id="detail-title" tabindex="-1" lang="${project.titleLang || "en"}">${project.title}</h1>
+    <div class="image-led-flow">
+      <div class="image-led-sequence">
+        ${imageLedProjectImageMarkup(project.images[0], 0)}
+        ${imageLedProjectImageMarkup(project.images[1], 1)}
       </div>
 
-      <section class="after-event-statement" aria-label="After Event project statement">
-        <div class="after-event-statement__language after-event-statement__language--ko" lang="ko">
-          ${koreanParagraphs}
-        </div>
-        <div class="after-event-statement__language after-event-statement__language--en" lang="en">
-          ${englishParagraphs}
-        </div>
-      </section>
+      ${imageLedStatementMarkup(project.statement, "After Event project statement")}
 
-      <div class="after-event-sequence after-event-sequence--closing">
-        ${afterEventImageMarkup(project.images[2], 2)}
-        ${afterEventImageMarkup(project.images[3], 3)}
+      <div class="image-led-sequence">
+        ${imageLedProjectImageMarkup(project.images[2], 2)}
+        ${imageLedProjectImageMarkup(project.images[3], 3)}
       </div>
 
-      <section class="after-event-caption" aria-labelledby="after-event-caption-title">
-        <h2 class="sr-only" id="after-event-caption-title" lang="en">Project Information</h2>
-        <dl lang="en">
-          ${captionRows}
-        </dl>
-      </section>
+      ${imageLedCaptionMarkup(project.caption, "after-event-caption-title")}
+    </div>
+  `;
+}
+
+function teoroDetailMarkup(project) {
+  return `
+    <h1 class="sr-only" id="detail-title" tabindex="-1" lang="${project.titleLang || "ko"}">${project.title}</h1>
+    <div class="image-led-flow">
+      <div class="image-led-sequence">
+        ${imageLedProjectImageMarkup(project.images[0], 0)}
+        ${imageLedProjectImageMarkup(project.images[1], 1)}
+      </div>
+
+      ${imageLedStatementMarkup(project.statements[0], "터로 브랜드 소개")}
+
+      <div class="image-led-sequence">
+        ${imageLedProjectImageMarkup(project.images[2], 2)}
+        ${imageLedProjectImageMarkup(project.images[3], 3)}
+      </div>
+
+      ${imageLedStatementMarkup(project.statements[1], "터로 브랜드 애플리케이션 소개")}
+
+      <div class="image-led-sequence">
+        ${imageLedProjectImageMarkup(project.images[4], 4)}
+        ${imageLedProjectImageMarkup(project.images[5], 5)}
+      </div>
+
+      ${imageLedCaptionMarkup(project.caption, "teoro-caption-title")}
     </div>
   `;
 }
@@ -424,7 +552,7 @@ function projectCardMarkup(project) {
         </div>
         <div class="project-card__meta">
           <div class="project-card__heading">
-            <strong class="project-card__title" lang="en">${project.title}</strong>
+            <strong class="project-card__title" lang="${project.titleLang || "en"}">${project.title}</strong>
             <span class="project-card__arrow" aria-hidden="true">↗</span>
           </div>
           <dl class="project-card__details" lang="en">
@@ -513,16 +641,20 @@ function renderIndex({ focusReturnedProject = false } = {}) {
 
 function renderDetail(project) {
   const isAfterEvent = project.detailLayout === "after-event";
+  const isTeoro = project.detailLayout === "teoro";
+  const isImageLedProject = isAfterEvent || isTeoro;
   const detailProjectClass = [
     "detail-project",
     project.title.length > 15 ? "detail-project--long-title" : "",
-    isAfterEvent ? "detail-project--after-event" : ""
+    isImageLedProject ? "detail-project--image-led" : ""
   ].filter(Boolean).join(" ");
   const detailContent = isAfterEvent
     ? afterEventDetailMarkup(project)
-    : `
+    : isTeoro
+      ? teoroDetailMarkup(project)
+      : `
       <header class="detail-heading">
-        <h1 class="detail-title" id="detail-title" tabindex="-1" lang="en">${project.title}</h1>
+        <h1 class="detail-title" id="detail-title" tabindex="-1" lang="${project.titleLang || "en"}">${project.title}</h1>
         <div class="detail-subtitle" lang="en">
           <p class="detail-subtitle__item">
             <span class="micro-label">Year</span>
