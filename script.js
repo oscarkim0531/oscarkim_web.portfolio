@@ -1,4 +1,4 @@
-const TEORO_ASSET_ROOT = "./2026_Branding_터로(TEORO)".normalize("NFD");
+const TEORO_ASSET_ROOT = "./2026_Branding_터로(TEORO)";
 
 const projects = [
   {
