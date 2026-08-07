@@ -909,6 +909,10 @@ figure {
   padding-bottom: clamp(8rem, 11vw, 13rem);
 }
 
+.image-led-flow--caption-only .image-led-caption {
+  margin-top: clamp(2.5rem, 4vw, 5rem);
+}
+
 .image-led-caption dl {
   border-top: 1px solid var(--line-soft);
 }
