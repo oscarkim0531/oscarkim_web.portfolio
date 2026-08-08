@@ -19,7 +19,7 @@ const projects = [
       { label: "Year", value: "2026" },
       { label: "Project Type", value: "School Individual Project" },
       { label: "Course", value: "Hongik University Visual Communication Design / ResearchDesignStudio(1)" },
-      { label: "Final Output Specifications", value: "Spreadsheet(Prompt A), Website(Prompt B), Flipbook(Prompt C)<br>Flipbook_280p, 148*210mm, Perfect Binding" },
+      { label: "Final Output Specifications", value: "Spreadsheet(Prompt A), Website(Prompt B), Flipbook(Prompt C)<br>Flipbook_280p, Single-Sided Printing, 148*210mm, Perfect Binding" },
       { label: "Professor", value: "Prof. Yuseon Park" },
       { label: "Support", value: "Mindy Seu, Alvin Ashiatey" }
     ]
