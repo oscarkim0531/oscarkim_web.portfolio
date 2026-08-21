@@ -873,6 +873,14 @@ figure {
   margin: clamp(6rem, 8.5vw, 10rem) 0;
 }
 
+.image-led-statement__title {
+  margin-bottom: clamp(2.5rem, 3.6vw, 4.2rem);
+  font-size: clamp(0.68rem, 0.7vw, 0.8rem);
+  font-weight: 400;
+  letter-spacing: 0.055em;
+  line-height: 1.35;
+}
+
 .image-led-statement__language {
   font-size: clamp(0.88rem, 0.84vw, 1.03rem);
   letter-spacing: -0.025em;
@@ -907,10 +915,6 @@ figure {
   max-width: 64rem;
   margin-top: clamp(4.5rem, 6vw, 7rem);
   padding-bottom: clamp(8rem, 11vw, 13rem);
-}
-
-.image-led-flow--caption-only .image-led-caption {
-  margin-top: clamp(2.5rem, 4vw, 5rem);
 }
 
 .image-led-caption dl {

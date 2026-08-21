@@ -8,12 +8,81 @@ const projects = [
     type: "School Individual Project",
     categories: ["graphic", "typography", "editorial"],
     categoryLabel: "Graphic, Typography, Editorial",
-    detailLayout: "caption-only",
+    detailLayout: "cancellation-terms",
     cover: {
-      src: "./2026_Graphic_Cancellation-Terms/Based-files/insta/cancellation-terms-06-flipbook-object.png",
-      alt: "",
-      position: "50% 4%"
+      src: "./2026_Graphic_Cancellation-Terms/Portfolio-Images/Cancellation-Terms_5.png",
+      alt: "붉은 그래픽과 해지 약관 텍스트가 인쇄된 플립북의 페이지를 넘기는 손",
+      width: 4000,
+      height: 2655,
+      position: "50% 50%"
     },
+    images: [
+      {
+        src: "./2026_Graphic_Cancellation-Terms/Portfolio-Images/Cancellation-Terms_1.png",
+        alt: "다양한 구독 서비스의 해지 약관과 가격, 타이포그래피, 색상을 수집한 스프레드시트 아카이브",
+        width: 4000,
+        height: 3200
+      },
+      {
+        src: "./2026_Graphic_Cancellation-Terms/Portfolio-Images/Cancellation-Terms_2.png",
+        alt: "해지 약관 텍스트와 붉은 언어적 파편이 충돌하는 웹 경험 화면",
+        width: 4000,
+        height: 3200
+      },
+      {
+        src: "./2026_Graphic_Cancellation-Terms/Portfolio-Images/Cancellation-Terms_3.png",
+        alt: "Cancellation Terms 웹 경험의 진행 과정을 보여주는 세 개의 모바일 화면",
+        width: 4000,
+        height: 3200
+      },
+      {
+        src: "./2026_Graphic_Cancellation-Terms/Portfolio-Images/Cancellation-Terms_4.png",
+        alt: "검은 배경 위에 놓인 Cancellation Terms 플립북 표지",
+        width: 4000,
+        height: 3200
+      },
+      {
+        src: "./2026_Graphic_Cancellation-Terms/Portfolio-Images/Cancellation-Terms_5.png",
+        alt: "붉은 그래픽과 해지 약관 텍스트가 인쇄된 플립북의 페이지를 넘기는 손",
+        width: 4000,
+        height: 2655
+      },
+      {
+        src: "./2026_Graphic_Cancellation-Terms/Portfolio-Images/Cancellation-Terms_6.png",
+        alt: "해지 약관과 붉은 그래픽이 중첩된 플립북 내지를 펼쳐 든 모습",
+        width: 4000,
+        height: 2661
+      }
+    ],
+    prompts: [
+      {
+        title: "Prompt A — Archive",
+        ko: [
+          "해지 약관은 소비자의 선택을 보장하는 정보이지만, 대부분 서비스의 시각적 체계 속에서 쉽게 지나치는 주변부의 텍스트로 남아 있다. 다양한 구독 서비스의 약관과 가격, 타이포그래피, 색상, 여백을 함께 수집하여 정보의 내용뿐 아니라 그것이 어떤 방식으로 드러나거나 감춰지는지를 비교 가능한 시각적 아카이브로 구성하였다. 이를 통해 개별 약관을 단순한 법적 문서가 아니라, 기업이 사용자의 읽기와 선택을 어떻게 다루는지 보여주는 디자인 자료로 전환하고자 하였다."
+        ],
+        en: [
+          "Cancellation terms are meant to protect consumer choice, yet they often remain peripheral texts that are easily overlooked within a service’s visual system. By collecting terms alongside pricing, typography, color, and spacing, the project forms a comparative visual archive of not only what information says, but also how it is revealed or obscured. Each policy is thus reframed from a legal document into design material that exposes how companies shape users’ reading and decision-making."
+        ]
+      },
+      {
+        title: "Prompt B — Web Experience",
+        ko: [
+          "수집된 해지 약관은 웹사이트 안에서 사용자의 시선과 읽기 방식을 드러내는 경험으로 재구성되었다. 밀도 높은 약관 텍스트와 시선을 끄는 붉은 언어적 파편을 충돌시켜, 정보가 존재하더라도 주의의 배분에 따라 읽히거나 배제될 수 있음을 보여준다. 사용자가 읽기의 속도와 통제권을 직접 마주하게 함으로써, 해지 과정에 작동하는 정보의 과잉과 주의 분산, 선택의 불균형을 감각적으로 인식하도록 하였다."
+        ],
+        en: [
+          "The collected cancellation terms are reinterpreted as a web experience that reveals how users direct their attention and approach reading. Dense contractual text collides with striking red fragments of language, demonstrating how information can remain visible yet be read or excluded according to where attention is placed. By confronting users with the speed and control of their own reading, the work makes the excess of information, distraction of attention, and imbalance of choice within cancellation processes perceptible."
+        ]
+      },
+      {
+        title: "Prompt C — Flipbook",
+        ko: [
+          "디지털 화면에서 일시적으로 나타났다가 사라지는 읽기의 경험을 플립북이라는 물리적 형태로 고정하였다. 페이지가 넘어갈수록 붉은 단어와 색채가 증식하며 정돈된 약관을 점차 가리고, 끝내 무엇이 중요한 정보였는지 구분할 수 없는 상태를 만든다. 무심코 지나친 정보가 누적되어 오히려 독자의 시야를 점유하는 과정을 손끝으로 경험하게 함으로써, 디지털 환경에서의 무관심이 남기는 물리적 무게를 드러내고자 하였다."
+        ],
+        en: [
+          "The fleeting experience of reading on a digital screen is preserved in the physical form of a flipbook. As the pages turn, red words and colors multiply, gradually obscuring the ordered terms until important information can no longer be distinguished from visual noise. By allowing neglected information to accumulate and occupy the reader’s field of vision, the work gives physical weight to the consequences of inattention in digital environments."
+        ]
+      }
+    ],
     caption: [
       { label: "Project Name", value: "Cancellation Terms" },
       { label: "Year", value: "2026" },
@@ -388,6 +457,7 @@ function imageLedStatementMarkup(statement, ariaLabel) {
 
   return `
     <section class="image-led-statement" aria-label="${ariaLabel}">
+      ${statement.title ? `<h2 class="image-led-statement__title" lang="en">${statement.title}</h2>` : ""}
       <div class="image-led-statement__language image-led-statement__language--ko" lang="ko">
         ${koreanParagraphs}
       </div>
@@ -418,15 +488,6 @@ function imageLedCaptionMarkup(caption, headingId) {
   `;
 }
 
-function captionOnlyDetailMarkup(project) {
-  return `
-    <h1 class="sr-only" id="detail-title" tabindex="-1" lang="${project.titleLang || "en"}">${project.title}</h1>
-    <div class="image-led-flow image-led-flow--caption-only">
-      ${imageLedCaptionMarkup(project.caption, `${project.id}-caption-title`)}
-    </div>
-  `;
-}
-
 function afterEventDetailMarkup(project) {
   return `
     <h1 class="sr-only" id="detail-title" tabindex="-1" lang="${project.titleLang || "en"}">${project.title}</h1>
@@ -444,6 +505,36 @@ function afterEventDetailMarkup(project) {
       </div>
 
       ${imageLedCaptionMarkup(project.caption, "after-event-caption-title")}
+    </div>
+  `;
+}
+
+function cancellationTermsDetailMarkup(project) {
+  return `
+    <h1 class="sr-only" id="detail-title" tabindex="-1" lang="en">${project.title}</h1>
+    <div class="image-led-flow">
+      <div class="image-led-sequence">
+        ${imageLedProjectImageMarkup(project.images[0], 0)}
+      </div>
+
+      ${imageLedStatementMarkup(project.prompts[0], "Prompt A Archive project statement")}
+
+      <div class="image-led-sequence">
+        ${imageLedProjectImageMarkup(project.images[1], 1)}
+        ${imageLedProjectImageMarkup(project.images[2], 2)}
+      </div>
+
+      ${imageLedStatementMarkup(project.prompts[1], "Prompt B Web Experience project statement")}
+
+      <div class="image-led-sequence">
+        ${imageLedProjectImageMarkup(project.images[3], 3)}
+        ${imageLedProjectImageMarkup(project.images[4], 4)}
+        ${imageLedProjectImageMarkup(project.images[5], 5)}
+      </div>
+
+      ${imageLedStatementMarkup(project.prompts[2], "Prompt C Flipbook project statement")}
+
+      ${imageLedCaptionMarkup(project.caption, "cancellation-terms-caption-title")}
     </div>
   `;
 }
@@ -577,17 +668,17 @@ function renderIndex({ focusReturnedProject = false } = {}) {
 }
 
 function renderDetail(project) {
-  const isCaptionOnly = project.detailLayout === "caption-only";
+  const isCancellationTerms = project.detailLayout === "cancellation-terms";
   const isAfterEvent = project.detailLayout === "after-event";
   const isTeoro = project.detailLayout === "teoro";
-  const isImageLedProject = isCaptionOnly || isAfterEvent || isTeoro;
+  const isImageLedProject = isCancellationTerms || isAfterEvent || isTeoro;
   const detailProjectClass = [
     "detail-project",
     project.title.length > 15 ? "detail-project--long-title" : "",
     isImageLedProject ? "detail-project--image-led" : ""
   ].filter(Boolean).join(" ");
-  const detailContent = isCaptionOnly
-    ? captionOnlyDetailMarkup(project)
+  const detailContent = isCancellationTerms
+    ? cancellationTermsDetailMarkup(project)
     : isAfterEvent
       ? afterEventDetailMarkup(project)
       : isTeoro
