@@ -1,4 +1,6 @@
+const CANCELLATION_ASSET_ROOT = "./2026_Graphic_Cancellation-Terms/Web-Images";
 const TEORO_ASSET_ROOT = "./2026_Branding_터로(TEORO)";
+const AFTER_EVENT_ASSET_ROOT = "./2025_Photography_After-Event/Web-Images";
 
 const projects = [
   {
@@ -10,48 +12,48 @@ const projects = [
     categoryLabel: "Graphic, Typography, Editorial",
     detailLayout: "cancellation-terms",
     cover: {
-      src: "./2026_Graphic_Cancellation-Terms/Portfolio-Images/Cancellation-Terms_5.png",
+      src: `${CANCELLATION_ASSET_ROOT}/cancellation-terms-05.jpg`,
       alt: "붉은 그래픽과 해지 약관 텍스트가 인쇄된 플립북의 페이지를 넘기는 손",
-      width: 4000,
-      height: 2655,
+      width: 3200,
+      height: 2124,
       position: "50% 50%"
     },
     images: [
       {
-        src: "./2026_Graphic_Cancellation-Terms/Portfolio-Images/Cancellation-Terms_1.png",
+        src: `${CANCELLATION_ASSET_ROOT}/cancellation-terms-01.jpg`,
         alt: "다양한 구독 서비스의 해지 약관과 가격, 타이포그래피, 색상을 수집한 스프레드시트 아카이브",
-        width: 4000,
-        height: 3200
+        width: 3200,
+        height: 2560
       },
       {
-        src: "./2026_Graphic_Cancellation-Terms/Portfolio-Images/Cancellation-Terms_2.png",
+        src: `${CANCELLATION_ASSET_ROOT}/cancellation-terms-02.jpg`,
         alt: "해지 약관 텍스트와 붉은 언어적 파편이 충돌하는 웹 경험 화면",
-        width: 4000,
-        height: 3200
+        width: 3200,
+        height: 2560
       },
       {
-        src: "./2026_Graphic_Cancellation-Terms/Portfolio-Images/Cancellation-Terms_3.png",
+        src: `${CANCELLATION_ASSET_ROOT}/cancellation-terms-03.jpg`,
         alt: "Cancellation Terms 웹 경험의 진행 과정을 보여주는 세 개의 모바일 화면",
-        width: 4000,
-        height: 3200
+        width: 3200,
+        height: 2560
       },
       {
-        src: "./2026_Graphic_Cancellation-Terms/Portfolio-Images/Cancellation-Terms_4.png",
+        src: `${CANCELLATION_ASSET_ROOT}/cancellation-terms-04.jpg`,
         alt: "검은 배경 위에 놓인 Cancellation Terms 플립북 표지",
-        width: 4000,
-        height: 3200
+        width: 3200,
+        height: 2560
       },
       {
-        src: "./2026_Graphic_Cancellation-Terms/Portfolio-Images/Cancellation-Terms_5.png",
+        src: `${CANCELLATION_ASSET_ROOT}/cancellation-terms-05.jpg`,
         alt: "붉은 그래픽과 해지 약관 텍스트가 인쇄된 플립북의 페이지를 넘기는 손",
-        width: 4000,
-        height: 2655
+        width: 3200,
+        height: 2124
       },
       {
-        src: "./2026_Graphic_Cancellation-Terms/Portfolio-Images/Cancellation-Terms_6.png",
+        src: `${CANCELLATION_ASSET_ROOT}/cancellation-terms-06.jpg`,
         alt: "해지 약관과 붉은 그래픽이 중첩된 플립북 내지를 펼쳐 든 모습",
-        width: 4000,
-        height: 2661
+        width: 3200,
+        height: 2129
       }
     ],
     prompts: [
@@ -187,36 +189,36 @@ const projects = [
     categoryLabel: "Photography, Editorial",
     detailLayout: "after-event",
     cover: {
-      src: "./2025_Photography_After-Event/Portfolio_Images/After-Event_1.png",
+      src: `${AFTER_EVENT_ASSET_ROOT}/after-event-01.jpg`,
       alt: "",
-      width: 8000,
-      height: 6400,
+      width: 3200,
+      height: 2560,
       position: "50% 50%"
     },
     images: [
       {
-        src: "./2025_Photography_After-Event/Portfolio_Images/After-Event_1.png",
+        src: `${AFTER_EVENT_ASSET_ROOT}/after-event-01.jpg`,
         alt: "검은 배경 위에 흰 양초의 사건 전과 후를 보여주는 사진 및 에디토리얼 레이아웃",
-        width: 8000,
-        height: 6400
+        width: 3200,
+        height: 2560
       },
       {
-        src: "./2025_Photography_After-Event/Portfolio_Images/After-Event_2.png",
+        src: `${AFTER_EVENT_ASSET_ROOT}/after-event-02.jpg`,
         alt: "도자기와 양초, 종이, 점토가 사건 전후로 변화하는 과정을 배열한 열두 장의 흑백 사진",
-        width: 8000,
-        height: 6400
+        width: 3200,
+        height: 2560
       },
       {
-        src: "./2025_Photography_After-Event/Portfolio_Images/After-Event_3.png",
+        src: `${AFTER_EVENT_ASSET_ROOT}/after-event-03.jpg`,
         alt: "불이 켜진 흰 양초 사진과 After Event 제목이 인쇄된 노출 제본 포토북 표지",
-        width: 8000,
-        height: 6400
+        width: 3200,
+        height: 2560
       },
       {
-        src: "./2025_Photography_After-Event/Portfolio_Images/After-Event_4.png",
+        src: `${AFTER_EVENT_ASSET_ROOT}/after-event-04.jpg`,
         alt: "검은 배경 위에 펼쳐진 After Event 포토북의 세 가지 내지 구성",
-        width: 8000,
-        height: 6400
+        width: 3200,
+        height: 2560
       }
     ],
     statement: {
@@ -268,7 +270,11 @@ function twoDigits(value) {
   return String(value).padStart(2, "0");
 }
 
-function projectCardVisualMarkup(project) {
+function projectCardVisualMarkup(project, index) {
+  const loadingAttributes = index < 3
+    ? 'loading="eager" fetchpriority="high"'
+    : 'loading="lazy"';
+
   return `
     <img
       class="project-card__image"
@@ -276,7 +282,7 @@ function projectCardVisualMarkup(project) {
       alt="${project.cover.alt || ""}"
       width="${project.cover.width || 2250}"
       height="${project.cover.height || 2813}"
-      loading="lazy"
+      ${loadingAttributes}
       decoding="async"
       style="--project-cover-position: ${project.cover.position || "50% 50%"}"
     >
@@ -567,7 +573,7 @@ function teoroDetailMarkup(project) {
   `;
 }
 
-function projectCardMarkup(project) {
+function projectCardMarkup(project, index) {
   return `
     <article class="project-card-wrap">
       <a
@@ -576,7 +582,7 @@ function projectCardMarkup(project) {
         data-project-id="${project.id}"
       >
         <div class="project-card__media">
-          ${projectCardVisualMarkup(project)}
+          ${projectCardVisualMarkup(project, index)}
         </div>
         <div class="project-card__meta">
           <div class="project-card__heading">
