@@ -359,7 +359,7 @@ const projects = [
       { label: "Year", value: "2025" },
       { label: "Project Type", value: "School Individual Project" },
       { label: "Course", value: "Hongik University Visual Communication Design / CommunicationDesign(2)" },
-      { label: "Final Output Specifications", value: "Project 01, Project 02, Project 03 — A3 (297 × 420 mm) Poster" },
+      { label: "Final Output Specifications", value: "Project 01, Project 02, Project 03 — A3 (297 × 420 mm) Poster<br>Process Book — A5 (148 × 210 mm), 28p" },
       { label: "Professor", value: "Prof. Anneke Coppoolse" }
     ]
   }

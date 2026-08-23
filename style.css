@@ -875,10 +875,12 @@ figure {
 
 .image-led-statement__title {
   margin-bottom: clamp(2.5rem, 3.6vw, 4.2rem);
-  font-size: clamp(0.68rem, 0.7vw, 0.8rem);
+  font-family: var(--serif);
+  font-size: clamp(0.76rem, 0.74vw, 0.86rem);
+  font-style: italic;
   font-weight: 400;
-  letter-spacing: 0.055em;
-  line-height: 1.35;
+  letter-spacing: 0.012em;
+  line-height: 1.4;
 }
 
 .image-led-statement__language {
