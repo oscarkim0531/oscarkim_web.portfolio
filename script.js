@@ -1,6 +1,7 @@
 const CANCELLATION_ASSET_ROOT = "./2026_Graphic_Cancellation-Terms/Web-Images";
 const TEORO_ASSET_ROOT = "./2026_Branding_터로(TEORO)";
 const AFTER_EVENT_ASSET_ROOT = "./2025_Photography_After-Event/Web-Images";
+const VISUAL_DISASTER_ASSET_ROOT = "./2025_Graphic_Visual-Disaster/Web-Images";
 
 const projects = [
   {
@@ -241,6 +242,125 @@ const projects = [
       { label: "Photography Equipment", value: "Canon DSLR (EOS 5D Mark II, EOS 5D Mark III), Canon EF 100mm F2.8L Macro IS USM, Fomex E600" },
       { label: "Final Output Specifications", value: "200 × 200 mm, Exposed Thread-Sewn Binding" },
       { label: "Professor", value: "Prof. Hyunmok Jung" }
+    ]
+  },
+  {
+    id: "visual-disaster",
+    title: "Visual Disaster",
+    year: "2025",
+    type: "School Individual Project",
+    categories: ["graphic", "editorial"],
+    categoryLabel: "Graphic, Editorial",
+    detailLayout: "visual-disaster",
+    cover: {
+      src: `${VISUAL_DISASTER_ASSET_ROOT}/visual-disaster-01.jpg`,
+      alt: "Visual Disaster의 세 프로젝트를 보여주는 두 장의 추상 그래픽 포스터와 한 장의 침수 대비 정보 포스터",
+      width: 3200,
+      height: 2560,
+      position: "50% 50%"
+    },
+    images: [
+      {
+        src: `${VISUAL_DISASTER_ASSET_ROOT}/visual-disaster-01.jpg`,
+        alt: "Visual Disaster의 세 프로젝트를 보여주는 두 장의 추상 그래픽 포스터와 한 장의 침수 대비 정보 포스터",
+        width: 3200,
+        height: 2560
+      },
+      {
+        src: `${VISUAL_DISASTER_ASSET_ROOT}/visual-disaster-02.jpg`,
+        alt: "수평 픽셀 시프트와 수직 왜곡이 충돌하는 다채로운 Visual Disaster Observed 포스터",
+        width: 3200,
+        height: 2560
+      },
+      {
+        src: `${VISUAL_DISASTER_ASSET_ROOT}/visual-disaster-03.jpg`,
+        alt: "흐릿한 색면과 노이즈, 불완전한 선을 이용한 Visual Disaster Observed 초기 그래픽 실험",
+        width: 3200,
+        height: 2560
+      },
+      {
+        src: `${VISUAL_DISASTER_ASSET_ROOT}/visual-disaster-04.jpg`,
+        alt: "태양의 강한 빛과 렌즈 플레어 위에 그래픽 파편을 재배치한 Visual Disaster Interfered In 포스터",
+        width: 3200,
+        height: 2560
+      },
+      {
+        src: `${VISUAL_DISASTER_ASSET_ROOT}/visual-disaster-05.jpg`,
+        alt: "태양 잔상과 부분적 지각을 탐구한 Visual Disaster Interfered In의 세 가지 그래픽 실험",
+        width: 3200,
+        height: 2560
+      },
+      {
+        src: `${VISUAL_DISASTER_ASSET_ROOT}/visual-disaster-06.jpg`,
+        alt: "홍대 인근 침수 위험 지역과 대피소, 행동 지침을 정리한 영문 재난 대비 정보 포스터",
+        width: 3200,
+        height: 2560
+      },
+      {
+        src: `${VISUAL_DISASTER_ASSET_ROOT}/visual-disaster-07.jpg`,
+        alt: "Visual Disaster 프로젝트의 개념과 실험, 발전 과정을 기록한 프로세스 북 내지 네 장",
+        width: 3200,
+        height: 2560
+      }
+    ],
+    sections: [
+      {
+        title: "01. Visual Disaster — Overall Concept",
+        ko: [
+          "〈Visual Disaster〉는 ‘재난(Disaster)’이라는 공통 주제를 서로 다른 시각 커뮤니케이션 방식으로 탐구한 세 개의 연속 프로젝트이다. 첫 번째 프로젝트 Visual Disaster — Observed에서는 우연하거나 통제하기 어려운 시각적 혼란을 관찰하고 기록했으며, 두 번째 프로젝트 Visual Disaster — Interfered In에서는 앞서 만들어진 시각적 재난에 디자이너가 직접 개입해 새로운 구조와 의미를 부여했다. 마지막 Disaster Preparedness에서는 표현적이고 추상적인 접근에서 벗어나, 실제 재난 정보를 특정 사용자에게 명확하고 효과적으로 전달하는 정보디자인으로 작업의 관점을 확장했다."
+        ],
+        en: [
+          "Visual Disaster is a series of three connected projects that explore the shared theme of “disaster” through different approaches to visual communication. The first project, Visual Disaster — Observed, focuses on observing and recording uncontrolled visual disruption, while the second, Visual Disaster — Interfered In, introduces deliberate design intervention to restructure and reinterpret the visual disaster created in the previous work. The final project, Disaster Preparedness, shifts away from expressive abstraction toward information design, focusing on the clear and effective communication of practical disaster information to a specific audience."
+        ]
+      },
+      {
+        title: "02. Project 01 — Visual Disaster: Observed",
+        ko: [
+          "첫 번째 프로젝트에서는 ‘Observed’라는 조건을 바탕으로, 안약을 넣은 뒤 일시적으로 변화한 나의 시야를 하나의 시각적 재난으로 관찰했다. 초점이 흐려지고 빛과 색이 과장되어 보이며, 평소에는 안정적으로 인식하던 공간이 흔들리는 경험에 주목했다. 여기서 재난은 외부의 물리적 사건이 아니라, 인위적인 자극에 의해 시각 시스템이 정상적으로 작동하지 않는 순간이었다. 이러한 경험을 바탕으로 흐릿한 색면과 강한 색채, 노이즈와 불완전한 형태를 통해 시야가 통제되지 않는 감각을 시각화했다.",
+          "초기의 그래픽 실험에서는 블러와 그라디언트를 중심으로 안약 이후의 몽환적이고 불분명한 시야를 표현했지만, 이후 단순한 분위기보다 ‘시각 체계의 붕괴’ 자체를 드러내는 방향으로 발전시켰다. 최종적으로 화면 상부에는 이미지가 수평 방향으로 잘리고 어긋나는 Horizontal Pixel Shift를, 하부에는 공간이 길게 늘어지고 흔들리는 Vertical Distortion을 적용했다. 서로 다른 두 방향의 왜곡이 한 화면 안에서 충돌하도록 구성함으로써, 정상적인 시각 정보가 분해되고 다시 조립되는 불안정한 상태를 표현했다."
+        ],
+        en: [
+          "The first project began with the condition of “Observed,” focusing on the temporary changes in my vision after using eye drops as a form of visual disaster. I observed how focus became unstable, how light and colour appeared exaggerated, and how normally stable spatial perception began to feel distorted. Here, disaster was not treated as an external physical event, but as a moment in which the visual system temporarily failed due to artificial intervention. Blurred colour fields, intense chromatic contrasts, noise, and incomplete forms were used to translate this uncontrolled visual experience into a graphic form.",
+          "The early experiments relied mainly on blur and gradients to recreate the hazy and dream-like quality of altered vision. The work later developed toward expressing the structural breakdown of vision itself rather than simply reproducing its atmosphere. In the final poster, Horizontal Pixel Shift fragments and displaces the upper visual field, while Vertical Distortion stretches and destabilizes the lower space. By allowing these two directional failures to collide within a single composition, the poster visualizes a state in which visual information is disrupted, fragmented, and continuously reassembled."
+        ]
+      },
+      {
+        title: "03. Project 02 — Visual Disaster: Interfered In",
+        ko: [
+          "두 번째 프로젝트는 첫 번째 프로젝트에서 만들어진 시각적 재난을 출발점으로 삼아, 디자이너가 그 혼란에 직접 개입하는 방식으로 진행했다. 첫 번째 작업이 안약이라는 인위적인 원인에 의해 발생한 시각적 붕괴를 다루었다면, 이번에는 강한 태양을 바라본 뒤 남는 잔상(Solar Afterimage)이라는 자연적인 원인으로 동일한 ‘시야의 실패’를 확장했다. Project 01의 이미지를 완성된 결과물로 그대로 사용하는 대신, 이미지를 여러 조각으로 해체하고 그중 일부를 선택하여 새로운 시각적 맥락 안에 배치했다.",
+          "그래픽 실험을 통해 강한 광원과 렌즈 플레어가 만드는 흐릿한 배경 위에 Project 01의 선명한 파편들을 배치했고, 이 파편들이 화면 안에서 회전하고 이동하는 듯한 흐름을 형성하도록 구성했다. 밝은 태양빛에 의해 전체 시야는 흐려지고 사라지지만, 일부 조각만은 선명하게 남아 현실의 부분적인 정보를 붙잡는 상태를 표현한다. 이러한 Partial Perception을 통해, 두 번째 프로젝트는 첫 번째 프로젝트에서 생성된 혼란을 단순히 반복하는 것이 아니라 해체하고 선택하며 재조직하는 디자이너의 개입 과정을 보여준다."
+        ],
+        en: [
+          "The second project begins with the visual disaster created in Project 01 and explores how a designer can actively intervene in that existing chaos. While the first project dealt with visual failure caused by the artificial stimulus of eye drops, this project expands the same idea through a natural cause: the solar afterimage produced after looking at intense sunlight. Rather than reusing the Project 01 poster as a complete image, I dismantled it into fragments, selected specific visual elements, and repositioned them within an entirely new context.",
+          "Through a series of graphic experiments, sharp fragments from Project 01 were placed over a blurred visual field created by strong light and lens flare. The fragments were arranged along a loose rotational path, suggesting that the visual field is being pulled and reorganized by the force of the sun. While most of the surrounding vision becomes obscured or overwhelmed by light, selected fragments remain sharply visible, representing small pieces of reality that the brain is still able to perceive. This idea of Partial Perception transforms the original chaos through a process of dismantling, selection, and deliberate visual reorganization."
+        ]
+      },
+      {
+        title: "04. Project 03 — Disaster Preparedness",
+        ko: [
+          "세 번째 프로젝트에서는 앞선 두 프로젝트의 추상적이고 표현적인 접근에서 벗어나, 실제 재난 정보를 전달하는 정보디자인으로 방향을 전환했다. 주어진 주제는 홍대 인근 침수 상황에서 외국인을 위한 재난 대비 정보였으며, 핵심 개념을 “Simplicity for Maximum Clarity”로 설정했다. 침수 위험 지역과 대피소 위치를 가장 중요한 정보로 배치하고, 행동 지침과 비상 물품, 강우 증가 추세를 정보의 성격에 따라 지도, 텍스트, 아이콘, 그래프로 구분했다. 또한 빨강·라이트 시안·딥 네이비의 제한된 색상 체계를 통해 정보의 긴급도와 중요도를 구분하고, 충분한 여백과 단순한 그리드를 사용해 사용자가 필요한 내용을 빠르고 정확하게 찾을 수 있도록 구성했다."
+        ],
+        en: [
+          "The third project shifts away from the abstract and expressive approach of the previous works and moves toward practical information design. The assigned subject was disaster preparedness for foreigners during flooding near Hongdae, and the central concept was defined as “Simplicity for Maximum Clarity.” Flood-risk areas and evacuation shelters were given the highest visual priority, while instructions, emergency supplies, and rainfall trends were translated into maps, text, icons, and graphs according to the function of each type of information. A restricted palette of red, light cyan, and deep navy establishes urgency and hierarchy, while generous negative space and a straightforward grid system allow the audience to locate and understand essential information quickly and accurately."
+        ]
+      },
+      {
+        title: "05. Process Book",
+        ko: [
+          "한 학기 동안 진행한 세 프로젝트의 결과물과 발전 과정을 하나의 Process Book으로 기록했다. 각 프로젝트의 출발점과 컨셉, 초기 아이디어와 그래픽 실험, 최종 결과물에 이르기까지의 시각적 의사결정 과정을 정리했으며, 수업 중 진행한 In-class Activities도 함께 수록했다. 완성된 결과물만을 보여주는 것이 아니라, 관찰과 실험, 피드백과 수정이 반복되며 각 프로젝트가 구체화되는 전체 과정을 하나의 기록으로 구성했다."
+        ],
+        en: [
+          "The outcomes and development of all three projects were documented in a single Process Book produced throughout the semester. It records the initial concepts, early ideas, graphic experiments, and visual decisions that led to each final outcome, together with a selection of in-class activities completed during the course. Rather than presenting only the finished works, the book documents the broader design process through which each project evolved through observation, experimentation, feedback, and revision."
+        ]
+      }
+    ],
+    caption: [
+      { label: "Project Name", value: "Visual Disaster" },
+      { label: "Year", value: "2025" },
+      { label: "Project Type", value: "School Individual Project" },
+      { label: "Course", value: "Hongik University Visual Communication Design / CommunicationDesign(2)" },
+      { label: "Final Output Specifications", value: "Project 01, Project 02, Project 03 — A3 (297 × 420 mm) Poster" },
+      { label: "Professor", value: "Prof. Anneke Coppoolse" }
     ]
   }
 ];
@@ -545,6 +665,47 @@ function cancellationTermsDetailMarkup(project) {
   `;
 }
 
+function visualDisasterDetailMarkup(project) {
+  return `
+    <h1 class="sr-only" id="detail-title" tabindex="-1" lang="en">${project.title}</h1>
+    <div class="image-led-flow">
+      <div class="image-led-sequence">
+        ${imageLedProjectImageMarkup(project.images[0], 0)}
+      </div>
+
+      ${imageLedStatementMarkup(project.sections[0], "Visual Disaster overall concept")}
+
+      <div class="image-led-sequence">
+        ${imageLedProjectImageMarkup(project.images[1], 1)}
+        ${imageLedProjectImageMarkup(project.images[2], 2)}
+      </div>
+
+      ${imageLedStatementMarkup(project.sections[1], "Visual Disaster Observed project statement")}
+
+      <div class="image-led-sequence">
+        ${imageLedProjectImageMarkup(project.images[3], 3)}
+        ${imageLedProjectImageMarkup(project.images[4], 4)}
+      </div>
+
+      ${imageLedStatementMarkup(project.sections[2], "Visual Disaster Interfered In project statement")}
+
+      <div class="image-led-sequence">
+        ${imageLedProjectImageMarkup(project.images[5], 5)}
+      </div>
+
+      ${imageLedStatementMarkup(project.sections[3], "Disaster Preparedness project statement")}
+
+      <div class="image-led-sequence">
+        ${imageLedProjectImageMarkup(project.images[6], 6)}
+      </div>
+
+      ${imageLedStatementMarkup(project.sections[4], "Visual Disaster process book statement")}
+
+      ${imageLedCaptionMarkup(project.caption, "visual-disaster-caption-title")}
+    </div>
+  `;
+}
+
 function teoroDetailMarkup(project) {
   return `
     <h1 class="sr-only" id="detail-title" tabindex="-1" lang="${project.titleLang || "ko"}">${project.title}</h1>
@@ -677,7 +838,8 @@ function renderDetail(project) {
   const isCancellationTerms = project.detailLayout === "cancellation-terms";
   const isAfterEvent = project.detailLayout === "after-event";
   const isTeoro = project.detailLayout === "teoro";
-  const isImageLedProject = isCancellationTerms || isAfterEvent || isTeoro;
+  const isVisualDisaster = project.detailLayout === "visual-disaster";
+  const isImageLedProject = isCancellationTerms || isAfterEvent || isTeoro || isVisualDisaster;
   const detailProjectClass = [
     "detail-project",
     project.title.length > 15 ? "detail-project--long-title" : "",
@@ -689,6 +851,8 @@ function renderDetail(project) {
       ? afterEventDetailMarkup(project)
       : isTeoro
         ? teoroDetailMarkup(project)
+        : isVisualDisaster
+          ? visualDisasterDetailMarkup(project)
       : `
       <header class="detail-heading">
         <h1 class="detail-title" id="detail-title" tabindex="-1" lang="${project.titleLang || "en"}">${project.title}</h1>
