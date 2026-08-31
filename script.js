@@ -3,6 +3,7 @@ const TEORO_ASSET_ROOT = "./2026_Branding_터로(TEORO)";
 const AFTER_EVENT_ASSET_ROOT = "./2025_Photography_After-Event/Web-Images";
 const VISUAL_DISASTER_ASSET_ROOT = "./2025_Graphic_Visual-Disaster/Web-Images";
 const STRATUM_ASSET_ROOT = "./2026_Branding_Stratum/Web-Images";
+const SCHOOL_YEAR_INBOX_ASSET_ROOT = "./2026_Editorial_A-School-Year-in-the-Inbox/Web-Images";
 
 const projects = [
   {
@@ -192,6 +193,86 @@ const projects = [
       { label: "Course", value: "Hongik University Visual Communication Design / PracticeDesignStudio(1)" },
       { label: "Final Output Specifications", value: "Brand Guideline" },
       { label: "Professor", value: "Prof. Hyojin An" }
+    ]
+  },
+  {
+    id: "school-year-inbox",
+    title: "A School Year in the Inbox",
+    year: "2026",
+    type: "Individual Project",
+    categories: ["graphic", "editorial"],
+    categoryLabel: "Graphic, Editorial",
+    detailLayout: "school-year-inbox",
+    cover: {
+      src: `${SCHOOL_YEAR_INBOX_ASSET_ROOT}/a-school-year-in-the-inbox-01.jpg`,
+      alt: "검은 배경 위에 놓인 A School Year in the Inbox 소책자 표지",
+      width: 3200,
+      height: 2560,
+      position: "50% 50%"
+    },
+    images: [
+      {
+        src: `${SCHOOL_YEAR_INBOX_ASSET_ROOT}/a-school-year-in-the-inbox-01.jpg`,
+        alt: "검은 배경 위에 놓인 A School Year in the Inbox 소책자 표지",
+        width: 3200,
+        height: 2560
+      },
+      {
+        src: `${SCHOOL_YEAR_INBOX_ASSET_ROOT}/a-school-year-in-the-inbox-02.jpg`,
+        alt: "공지 활성일을 나타낸 전구 인포그래픽과 월별 공지량 꺾은선 그래프가 수록된 내지",
+        width: 3200,
+        height: 2560
+      },
+      {
+        src: `${SCHOOL_YEAR_INBOX_ASSET_ROOT}/a-school-year-in-the-inbox-03.jpg`,
+        alt: "공지 형식과 이모지, 외부 링크 데이터를 노랑과 보라의 그래픽 체계로 시각화한 네 개의 내지",
+        width: 3200,
+        height: 2560
+      },
+      {
+        src: `${SCHOOL_YEAR_INBOX_ASSET_ROOT}/a-school-year-in-the-inbox-04.jpg`,
+        alt: "A School Year in the Inbox 소책자의 표지와 전체 편집 흐름을 한눈에 보여주는 출판물 구성",
+        width: 3200,
+        height: 2560
+      }
+    ],
+    sections: [
+      {
+        title: "01",
+        ko: [
+          "<em>A School Year in the Inbox</em>는 한 학년 동안 학과 공지방에 축적된 기록을 다시 읽어낸 데이터 기반 편집 디자인 프로젝트다. 매일 도착하고 곧 새로운 메시지에 밀려나던 공지를 한데 모아, 공지가 언제 얼마나 자주 등장했는지, 어떤 형식과 언어로 정보를 전달했는지를 분석했다. 일회적으로 소비되는 디지털 메시지를 다시 바라보는 과정에서 공지방은 단순한 정보 전달 채널을 넘어, 한 학년이 어떤 정보와 함께 학교생활을 보냈는지를 보여주는 공동의 수신함이 된다."
+        ],
+        en: [
+          "<em>A School Year in the Inbox</em> is a data-driven editorial project that revisits the notices accumulated in a department’s group chat over the course of one school year. Messages that were normally read once and quickly pushed out of view were collected and examined through their frequency, timing, formats, and recurring language. By reframing these ephemeral digital messages, the project reveals the announcement room not simply as an information channel, but as a shared inbox recording the information environment of an entire school year."
+        ]
+      },
+      {
+        title: "02",
+        ko: [
+          "분석된 데이터는 수치를 나열하기보다 학교생활에서 체감할 수 있는 형태로 시각화했다. 전체 379일 중 공지가 있었던 299일을 켜진 전구의 비율로 변환하고, 월별 공지량은 연속적인 꺾은선 그래프로 구성해 학사 일정에 따라 달라지는 정보의 밀도를 보여주었다. 특히 개강 시기에는 공지가 증가하고 방학에도 정보 전달이 완전히 멈추지 않는 패턴을 통해, 공지방이 학교의 시간과 함께 움직이고 있음을 드러낸다."
+        ],
+        en: [
+          "Rather than presenting the analysis as a series of raw statistics, the data was translated into visual forms that could be immediately related to everyday academic life. The 299 active notice days out of 379 were represented through illuminated light bulbs, while monthly activity was mapped as a continuous line graph showing changes in information density throughout the year. Peaks around the beginning of semesters and the continued activity during breaks reveal how closely the rhythm of the inbox followed the rhythm of the school year."
+        ]
+      },
+      {
+        title: "03—04",
+        ko: [
+          "인포그래픽은 공지의 양뿐 아니라 정보가 전달되는 방식까지 확장해 다룬다. 텍스트와 이미지의 비율, 반복적으로 등장한 이모지, 핵심 단어와 외부 링크를 서로 다른 그래픽 형식으로 구성하고, 각 데이터의 성격에 맞는 표현 방식을 선택했다. 노랑과 보라를 중심으로 제한한 색상 체계와 반복되는 표·그래프·격자는 서로 다른 분석 결과를 하나의 시각 언어로 연결한다. 특히 353종의 이모지를 동일한 격자 안에 배열하거나 실제 링크 화면을 단색으로 재구성함으로써, 공지 속 시각 기호와 디지털 인터페이스 자체도 분석의 대상으로 끌어들였다.",
+          "최종적으로 이 프로젝트는 빠르게 스크롤되어 사라지던 공지를 천천히 넘겨볼 수 있는 물리적 기록으로 전환한다. 시간, 형식, 언어, 기호와 링크에 대한 각각의 분석은 하나의 편집 서사 안에서 연결되고, 128 × 188mm의 중철 소책자로 완성되었다. 개별 공지는 지나갔지만 그것이 쌓인 방식은 한 학년의 속도와 활동, 그리고 정보 환경을 남긴다. <em>A School Year in the Inbox</em>는 익숙해서 쉽게 지나쳤던 디지털 기록을 수집하고 구조화하여, 한 학년의 일상을 다시 읽을 수 있는 시각적 아카이브로 만든다."
+        ],
+        en: [
+          "The infographics extend beyond the quantity of notices to examine how information itself was delivered. Media types, recurring emojis, repeated keywords, and external links are translated into different visual structures according to the nature of each dataset. A restrained system of yellow and purple, together with recurring grids, tables, and diagrams, unifies these different forms of analysis into a consistent visual language. By arranging 353 distinct emojis within a single grid and recoloring actual linked interfaces, the publication treats visual symbols and digital interfaces themselves as part of the information being studied.",
+          "Ultimately, the project transforms notices that once disappeared through continuous scrolling into a physical record that can be revisited at a slower pace. Analyses of time, format, language, symbols, and links are brought together through a single editorial narrative and materialized as a 128 × 188 mm saddle-stitched booklet. While individual notices quickly passed, the way they accumulated preserves the pace, activities, and information environment of a school year. <em>A School Year in the Inbox</em> turns an overlooked digital routine into a structured visual archive of everyday academic life."
+        ]
+      }
+    ],
+    caption: [
+      { label: "Project Name", value: "A School Year in the Inbox" },
+      { label: "Year", value: "2026" },
+      { label: "Project Type", value: "Individual Project" },
+      { label: "Final Output Specifications", value: "Booklet_24p, Saddle-Stitch Binding, 128 × 188 mm" },
+      { label: "Support", value: "DA InDesign Workshop" }
     ]
   },
   {
@@ -834,6 +915,37 @@ function stratumDetailMarkup(project) {
   `;
 }
 
+function schoolYearInboxDetailMarkup(project) {
+  return `
+    <h1 class="sr-only" id="detail-title" tabindex="-1" lang="en">${project.title}</h1>
+    <div class="image-led-flow">
+      <div class="image-led-sequence">
+        ${imageLedProjectImageMarkup(project.images[0], 0)}
+      </div>
+
+      ${imageLedStatementMarkup(project.sections[0], "A School Year in the Inbox introduction")}
+
+      <div class="image-led-sequence">
+        ${imageLedProjectImageMarkup(project.images[1], 1)}
+      </div>
+
+      ${imageLedStatementMarkup(project.sections[1], "A School Year in the Inbox data visualization statement")}
+
+      <div class="image-led-sequence">
+        ${imageLedProjectImageMarkup(project.images[2], 2)}
+      </div>
+
+      ${imageLedStatementMarkup(project.sections[2], "A School Year in the Inbox editorial statement")}
+
+      <div class="image-led-sequence">
+        ${imageLedProjectImageMarkup(project.images[3], 3)}
+      </div>
+
+      ${imageLedCaptionMarkup(project.caption, "school-year-inbox-caption-title")}
+    </div>
+  `;
+}
+
 function teoroDetailMarkup(project) {
   return `
     <h1 class="sr-only" id="detail-title" tabindex="-1" lang="${project.titleLang || "ko"}">${project.title}</h1>
@@ -968,7 +1080,8 @@ function renderDetail(project) {
   const isTeoro = project.detailLayout === "teoro";
   const isVisualDisaster = project.detailLayout === "visual-disaster";
   const isStratum = project.detailLayout === "stratum";
-  const isImageLedProject = isCancellationTerms || isAfterEvent || isTeoro || isVisualDisaster || isStratum;
+  const isSchoolYearInbox = project.detailLayout === "school-year-inbox";
+  const isImageLedProject = isCancellationTerms || isAfterEvent || isTeoro || isVisualDisaster || isStratum || isSchoolYearInbox;
   const detailProjectClass = [
     "detail-project",
     project.title.length > 15 ? "detail-project--long-title" : "",
@@ -984,7 +1097,9 @@ function renderDetail(project) {
           ? visualDisasterDetailMarkup(project)
           : isStratum
             ? stratumDetailMarkup(project)
-      : `
+            : isSchoolYearInbox
+              ? schoolYearInboxDetailMarkup(project)
+              : `
       <header class="detail-heading">
         <h1 class="detail-title" id="detail-title" tabindex="-1" lang="${project.titleLang || "en"}">${project.title}</h1>
         <div class="detail-subtitle" lang="en">
