@@ -2,6 +2,7 @@ const CANCELLATION_ASSET_ROOT = "./2026_Graphic_Cancellation-Terms/Web-Images";
 const TEORO_ASSET_ROOT = "./2026_Branding_터로(TEORO)";
 const AFTER_EVENT_ASSET_ROOT = "./2025_Photography_After-Event/Web-Images";
 const VISUAL_DISASTER_ASSET_ROOT = "./2025_Graphic_Visual-Disaster/Web-Images";
+const STRATUM_ASSET_ROOT = "./2026_Branding_Stratum/Web-Images";
 
 const projects = [
   {
@@ -94,6 +95,103 @@ const projects = [
       { label: "Final Output Specifications", value: "Spreadsheet(Prompt A), Website(Prompt B), Flipbook(Prompt C)<br>Flipbook_280p, Single-Sided Printing, 148*210mm, Perfect Binding" },
       { label: "Professor", value: "Prof. Yuseon Park" },
       { label: "Support", value: "Mindy Seu, Alvin Ashiatey" }
+    ]
+  },
+  {
+    id: "stratum",
+    title: "STRATUM",
+    year: "2026",
+    type: "School Individual Project",
+    categories: ["branding"],
+    categoryLabel: "Branding",
+    detailLayout: "stratum",
+    cover: {
+      src: `${STRATUM_ASSET_ROOT}/stratum-01.jpg`,
+      alt: "시간에 따라 산화된 구리 동판의 표면 위에 배치된 STRATUM 로고",
+      width: 3200,
+      height: 2560,
+      position: "50% 50%"
+    },
+    images: [
+      {
+        src: `${STRATUM_ASSET_ROOT}/stratum-01.jpg`,
+        alt: "시간에 따라 산화된 구리 동판의 표면 위에 배치된 STRATUM 로고",
+        width: 3200,
+        height: 2560
+      },
+      {
+        src: `${STRATUM_ASSET_ROOT}/stratum-02.jpg`,
+        alt: "지층의 적층 구조를 반영해 설계한 STRATUM 로고의 비례와 구조",
+        width: 3200,
+        height: 2560
+      },
+      {
+        src: `${STRATUM_ASSET_ROOT}/stratum-03.jpg`,
+        alt: "겹겹이 적층된 산화 구리판과 STRATUM 사인이 적용된 공유 독서 공간의 외관",
+        width: 3200,
+        height: 2560
+      },
+      {
+        src: `${STRATUM_ASSET_ROOT}/stratum-04.jpg`,
+        alt: "구리와 목재를 중심으로 구성된 STRATUM 공유 독서 공간에서 책에 기록을 남기는 독자들",
+        width: 3200,
+        height: 2560
+      },
+      {
+        src: `${STRATUM_ASSET_ROOT}/stratum-05.jpg`,
+        alt: "독자별 식별 색상으로 구성된 STRATUM 펜과 형광펜, 반투명 문구 키트",
+        width: 3200,
+        height: 2560
+      },
+      {
+        src: `${STRATUM_ASSET_ROOT}/stratum-06.jpg`,
+        alt: "독자의 기록을 위한 여백과 새로운 그리드가 적용된 STRATUM 전용 도서 내지",
+        width: 3200,
+        height: 2560
+      }
+    ],
+    sections: [
+      {
+        title: "Brand Concept / 브랜드 컨셉",
+        ko: [
+          "STRATUM은 자본의 논리에 의해 점차 사라지고 있는 도시의 공공적 공유 공간을 다시 회복하기 위한 브랜드이다. 경제적 위치나 사회적 배경과 관계없이 모든 사용자가 오직 ‘독자’라는 동등한 자격으로 머물고 교류하는 수평적 공간을 지향한다. 브랜드명 STRATUM은 시간이 흐르며 퇴적물이 겹겹이 쌓여 형성되는 ‘지층’을 의미하며, 서로 다른 시간에 이 공간을 거쳐간 독자들의 생각과 흔적이 하나의 지적 층위로 축적되는 브랜드의 구조를 상징한다.",
+          "STRATUM에서 책은 완성된 지식을 일방적으로 전달하는 결과물이 아니라, 독자의 개입을 기다리는 미완의 매체이다. 책의 여백에는 손글씨, 밑줄, 형광펜과 같은 사유의 흔적이 남고, 다음 독자는 앞선 독자의 생각을 따라가거나 그 위에 새로운 관점을 덧붙인다. 이렇게 개인의 독서는 다른 독자의 독서와 연결되고, 책 한 권은 시간이 흐를수록 여러 사람의 관점이 공존하는 동적인 아카이브로 변화한다. STRATUM은 독자를 콘텐츠의 수용자에서 지식을 함께 생산하고 확장하는 공동 저자로 전환한다."
+        ],
+        en: [
+          "STRATUM is a shared reading space conceived to restore a sense of publicness increasingly lost within cities shaped by the logic of capital. Regardless of social or economic background, every visitor enters the space on equal terms simply as a reader. The name STRATUM refers to layers of sediment formed over time, reflecting the brand’s central idea: the thoughts and traces left by readers at different moments gradually accumulate into collective layers of knowledge.",
+          "At STRATUM, a book is not treated as a finished object that delivers knowledge in one direction, but as an incomplete medium awaiting the reader’s intervention. Handwritten notes, underlines, and highlighted passages remain in its margins, allowing each new reader to follow previous lines of thought or add another perspective on top of them. Individual acts of reading therefore become interconnected, gradually transforming a single book into a living archive where multiple viewpoints coexist. Through this process, STRATUM shifts the reader from a passive recipient of content to a participant in the collective production of knowledge."
+        ]
+      },
+      {
+        title: "Material / 브랜드 메인 머티리얼",
+        ko: [
+          "STRATUM의 핵심 물성인 구리 동판은 이러한 ‘흔적의 축적’을 공간으로 확장한다. 구리는 시간과 공기, 수분, 그리고 사람의 접촉에 반응하며 표면이 산화되고 고유한 색과 패턴을 만들어가는 재료이다. 사용될수록 흔적이 지워지는 것이 아니라 오히려 더욱 뚜렷한 정체성을 획득한다는 점에서, 독자의 사유가 겹겹이 쌓이며 완성되어가는 STRATUM의 책과 동일한 시간성을 가진다. 건축과 공간에 적층된 구리판은 하나의 거대한 지층처럼 브랜드의 구조를 물리적으로 드러내며, 판화와 인쇄의 역사와 연결되는 동판의 특성은 기록과 출판을 중심으로 하는 STRATUM의 정체성을 더욱 강화한다."
+        ],
+        en: [
+          "Copper plate, the primary material of STRATUM, extends the idea of accumulated traces into the physical space. Copper reacts to time, air, moisture, and human touch, gradually developing oxidation, patina, and unique surface patterns. Rather than losing its character through use, the material becomes increasingly distinctive—mirroring the way STRATUM’s books are completed through layers of readers’ thoughts and marks. Applied throughout the architecture in overlapping plates, copper forms a physical stratum around the space, while its historical association with engraving and printing further reinforces STRATUM’s identity as a place centered on records, texts, and publishing."
+        ]
+      },
+      {
+        title: "Brand Applications / 브랜드 어플리케이션",
+        ko: [
+          "STRATUM의 어플리케이션은 독자의 참여와 사유의 축적을 실제 독서 경험으로 구현하기 위해 하나의 연속된 시스템으로 설계되었다. 출판사와의 협업을 통해 제작되는 STRATUM 전용 도서는 독자가 직접 기록을 남길 수 있도록 장르별 특성에 따라 새로운 판형과 여백 구조를 가진다. 소설과 에세이처럼 텍스트 중심의 도서는 본문의 흐름을 유지하면서 주변에 기록 공간을 확보하고, 여행서나 매거진과 같은 시각 중심의 도서는 이미지와 정보 가까이에 의견을 남길 수 있도록 새로운 그리드로 재구성된다.",
+          "공간에 입장한 사용자는 자신의 가치관이나 성향을 은유적으로 표현한 익명의 닉네임과 개인별 식별 색상을 부여받는다. 닉네임은 아카이브 태그에 기록되어 책을 거쳐간 독자들의 흐름을 남기고, 동일한 색상의 펜과 형광펜으로 구성된 문구 키트는 각 사용자의 사유를 책 위에서 시각적으로 구분한다. 이후의 독자는 특정 색상의 흔적만 따라가며 한 사람의 독서와 사고 과정을 추적하거나, 여러 색상이 교차하는 지점에서 서로 다른 관점이 어떻게 만나고 충돌했는지를 발견할 수 있다.",
+          "축적된 흔적은 STRATUM 안에서 머무르지 않고 다시 새로운 출판물로 이어진다. 매달 가장 활발한 독서와 기록이 이루어진 도서를 선정해 사용자들의 손글씨와 형광펜, 메모의 레이어를 그대로 복제한 Re-Compiled Edition으로 재출판한다. 최초에는 한 명의 저자가 완성했던 책이 수많은 독자의 개입을 거쳐 하나의 집단적 기록물로 다시 태어나면서, 독자는 단순히 책을 읽는 사람을 넘어 새로운 책을 완성하는 공동 저자가 된다. 이 순환 구조를 통해 STRATUM의 아카이브는 보존되는 기록이 아니라 계속 읽히고, 쓰이고, 다시 생산되는 살아 있는 지적 지층으로 확장된다."
+        ],
+        en: [
+          "STRATUM’s applications are designed as an interconnected system that turns reader participation and accumulated thought into a tangible reading experience. Produced in collaboration with publishers, books are reformatted exclusively for STRATUM with margins and layouts tailored to different genres. Text-driven works such as novels and essays preserve the continuity of the original text while providing dedicated areas for annotation, whereas visually driven publications such as travel books and magazines are reorganized through new grids that allow readers to respond directly beside images and information.",
+          "Upon entering the space, each reader is assigned an anonymous nickname that metaphorically reflects their perspective or background, together with an individual identifying color. The nickname is recorded on an archive tag, creating a trace of the readers who have encountered the book, while a stationery kit of matching pens and highlighters visually distinguishes each person’s contributions. Future readers can follow a single color throughout the book to trace one person’s line of thought, or observe where multiple colors intersect to discover moments of agreement, contrast, and dialogue.",
+          "The accumulated traces do not remain confined to the STRATUM space. Each month, a book that has generated particularly active reading and exchange is selected and republished as a Re-Compiled Edition, reproducing the readers’ handwriting, highlights, and annotations as they originally appeared. A work initially completed by a single author is thus transformed through the interventions of many readers into a new collective record, positioning them not only as readers but as co-authors of the resulting publication. Through this cycle of reading, marking, accumulation, and republication, STRATUM becomes a living intellectual stratum—one that continues to grow rather than simply preserving what has already been recorded."
+        ]
+      }
+    ],
+    caption: [
+      { label: "Project Name", value: "STRATUM" },
+      { label: "Year", value: "2026" },
+      { label: "Project Type", value: "School Individual Project" },
+      { label: "Course", value: "Hongik University Visual Communication Design / PracticeDesignStudio(1)" },
+      { label: "Final Output Specifications", value: "Brand Guideline" },
+      { label: "Professor", value: "Prof. Hyojin An" }
     ]
   },
   {
@@ -706,6 +804,36 @@ function visualDisasterDetailMarkup(project) {
   `;
 }
 
+function stratumDetailMarkup(project) {
+  return `
+    <h1 class="sr-only" id="detail-title" tabindex="-1" lang="en">${project.title}</h1>
+    <div class="image-led-flow">
+      <div class="image-led-sequence">
+        ${imageLedProjectImageMarkup(project.images[0], 0)}
+        ${imageLedProjectImageMarkup(project.images[1], 1)}
+      </div>
+
+      ${imageLedStatementMarkup(project.sections[0], "STRATUM brand concept")}
+
+      <div class="image-led-sequence">
+        ${imageLedProjectImageMarkup(project.images[2], 2)}
+        ${imageLedProjectImageMarkup(project.images[3], 3)}
+      </div>
+
+      ${imageLedStatementMarkup(project.sections[1], "STRATUM primary material")}
+
+      <div class="image-led-sequence">
+        ${imageLedProjectImageMarkup(project.images[4], 4)}
+        ${imageLedProjectImageMarkup(project.images[5], 5)}
+      </div>
+
+      ${imageLedStatementMarkup(project.sections[2], "STRATUM brand applications")}
+
+      ${imageLedCaptionMarkup(project.caption, "stratum-caption-title")}
+    </div>
+  `;
+}
+
 function teoroDetailMarkup(project) {
   return `
     <h1 class="sr-only" id="detail-title" tabindex="-1" lang="${project.titleLang || "ko"}">${project.title}</h1>
@@ -839,7 +967,8 @@ function renderDetail(project) {
   const isAfterEvent = project.detailLayout === "after-event";
   const isTeoro = project.detailLayout === "teoro";
   const isVisualDisaster = project.detailLayout === "visual-disaster";
-  const isImageLedProject = isCancellationTerms || isAfterEvent || isTeoro || isVisualDisaster;
+  const isStratum = project.detailLayout === "stratum";
+  const isImageLedProject = isCancellationTerms || isAfterEvent || isTeoro || isVisualDisaster || isStratum;
   const detailProjectClass = [
     "detail-project",
     project.title.length > 15 ? "detail-project--long-title" : "",
@@ -853,6 +982,8 @@ function renderDetail(project) {
         ? teoroDetailMarkup(project)
         : isVisualDisaster
           ? visualDisasterDetailMarkup(project)
+          : isStratum
+            ? stratumDetailMarkup(project)
       : `
       <header class="detail-heading">
         <h1 class="detail-title" id="detail-title" tabindex="-1" lang="${project.titleLang || "en"}">${project.title}</h1>
