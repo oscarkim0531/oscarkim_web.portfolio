@@ -550,7 +550,8 @@ const categories = {
   branding: { label: "Branding" },
   typography: { label: "Typography" },
   editorial: { label: "Editorial" },
-  photography: { label: "Photography" }
+  photography: { label: "Photography" },
+  "video-motion": { label: "Video/Motion" }
 };
 
 const projectGrid = document.querySelector("#project-grid");
