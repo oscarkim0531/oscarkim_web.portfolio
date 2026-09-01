@@ -853,6 +853,8 @@ figure {
 
 .image-led-sequence {
   display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
   gap: clamp(1rem, 1.4vw, 1.7rem);
 }
 
@@ -867,10 +869,9 @@ figure {
   height: auto;
 }
 
-@media (min-width: 1181px) and (hover: hover) {
+@media (max-width: 1024px) {
   .image-led-sequence {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    align-items: start;
+    grid-template-columns: minmax(0, 1fr);
   }
 }
 
