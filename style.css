@@ -392,7 +392,7 @@ figure {
   position: relative;
   aspect-ratio: 5 / 4;
   overflow: hidden;
-  background: var(--paper-deep);
+  background: var(--project-cover-background, var(--paper-deep));
   container-type: inline-size;
 }
 
@@ -409,7 +409,7 @@ figure {
 .project-card__image {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: var(--project-cover-fit, cover);
   object-position: var(--project-cover-position, 50% 50%);
   transition: filter 240ms ease, opacity 240ms ease, transform 300ms var(--ease);
 }
@@ -851,6 +851,26 @@ figure {
   padding: clamp(1.2rem, 1.8vw, 2.2rem) var(--page-pad) 0;
 }
 
+.image-led-video-list {
+  display: grid;
+  gap: clamp(1rem, 1.4vw, 1.7rem);
+  margin-bottom: clamp(1rem, 1.4vw, 1.7rem);
+}
+
+.image-led-video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: #000000;
+}
+
+.image-led-video iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
 .image-led-sequence {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -862,6 +882,19 @@ figure {
   width: 100%;
   overflow: hidden;
   background: #000000;
+}
+
+.detail-project--motion-study .image-led-image {
+  position: relative;
+}
+
+.detail-project--motion-study .image-led-image::after {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  border: 0.5px solid #000000;
+  content: "";
+  pointer-events: none;
 }
 
 .image-led-image img {
@@ -899,6 +932,17 @@ figure {
 
 .image-led-statement__language p + p {
   margin-top: 1.75em;
+}
+
+.image-led-statement__marker {
+  display: block;
+  margin-bottom: 0.72rem;
+  font-family: var(--serif);
+  font-size: 0.78em;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  line-height: 1;
 }
 
 .image-led-statement__language--ko {

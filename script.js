@@ -4,6 +4,9 @@ const AFTER_EVENT_ASSET_ROOT = "./2025_Photography_After-Event/Web-Images";
 const VISUAL_DISASTER_ASSET_ROOT = "./2025_Graphic_Visual-Disaster/Web-Images";
 const STRATUM_ASSET_ROOT = "./2026_Branding_Stratum/Web-Images";
 const SCHOOL_YEAR_INBOX_ASSET_ROOT = "./2026_Editorial_A-School-Year-in-the-Inbox/Web-Images";
+const TYPOGRAPHY_MOTION_ASSET_ROOT = "./2025_Video:Motion_Typography-Motion/Web-Images";
+const FORMATIVE_COMPOSITION_ASSET_ROOT = "./2025_Video:Motion_Formative-Composition/Web-Images";
+const THE_SHAPE_OF_WATER_ASSET_ROOT = "./2025_Video:Motion_The-Shape-of-Water/Web-Images";
 
 const projects = [
   {
@@ -361,6 +364,272 @@ const projects = [
     ]
   },
   {
+    id: "typography-motion-goudy-old-style",
+    title: "Typography Motion_Goudy Old Style",
+    year: "2025",
+    type: "School Individual Project",
+    categories: ["video-motion"],
+    categoryLabel: "Video/Motion",
+    detailLayout: "typography-motion",
+    cover: {
+      src: `${TYPOGRAPHY_MOTION_ASSET_ROOT}/typography-motion-04.jpg`,
+      alt: "질감 있는 종이 위에 Goudy Old Style 글자 파편과 diamond 단어가 흩어진 장면",
+      width: 3200,
+      height: 1800,
+      position: "50% 50%",
+      fit: "contain",
+      background: "#000000"
+    },
+    video: {
+      src: "https://www.youtube-nocookie.com/embed/rFsGE2HQ-fc?rel=0",
+      title: "Typography Motion_Goudy Old Style"
+    },
+    images: [
+      {
+        src: `${TYPOGRAPHY_MOTION_ASSET_ROOT}/typography-motion-01.jpg`,
+        alt: "질감 있는 종이 위에 Goudy Old Style의 역사와 배경을 조판한 장면",
+        width: 3200,
+        height: 1800
+      },
+      {
+        src: `${TYPOGRAPHY_MOTION_ASSET_ROOT}/typography-motion-02.jpg`,
+        alt: "주황색 배경 위에 Goudy Old Style 글자 형태를 크게 확대한 장면",
+        width: 3200,
+        height: 1800
+      },
+      {
+        src: `${TYPOGRAPHY_MOTION_ASSET_ROOT}/typography-motion-03.jpg`,
+        alt: "Goudy Old Style의 세리프와 다이아몬드 형태를 주황색 그래픽으로 반복한 장면",
+        width: 3200,
+        height: 1800
+      },
+      {
+        src: `${TYPOGRAPHY_MOTION_ASSET_ROOT}/typography-motion-04.jpg`,
+        alt: "질감 있는 종이 위에 Goudy Old Style 글자 파편과 diamond 단어가 흩어진 장면",
+        width: 3200,
+        height: 1800
+      }
+    ],
+    statements: [
+      {
+        ko: [
+          "Goudy Old Style의 조형적 특성을 모션을 통해 분석하고 재해석한 타이포그래피 영상 작업이다. 서체를 단순히 문자를 전달하는 수단으로 다루기보다, 기울어진 중심축과 유기적인 획의 굵기 변화, 넉넉한 속공간, 올드 스타일 특유의 세리프, 다이아몬드 형태의 점과 같이 서체의 인상을 형성하는 세부 구조에 주목했다. 각각의 형태를 확대하고 분리하거나 반복적으로 움직이며, 정적인 활자 안에 존재하는 방향성과 리듬을 시간의 흐름 속에서 드러내고자 했다."
+        ],
+        en: [
+          "This typography motion project analyzes and reinterprets the formal characteristics of Goudy Old Style through movement. Rather than treating the typeface simply as a vehicle for written information, the project focuses on the structural details that define its distinctive character: its diagonal stress, organic variation in stroke weight, generous counters, Old Style serifs, and diamond-shaped tittles. By enlarging, separating, repeating, and animating these elements, the motion reveals the direction and rhythm embedded within an otherwise static typeface."
+        ]
+      },
+      {
+        ko: [
+          "영상에서는 글자가 완전한 문자에서 부분적인 형태로 해체되고 다시 조합되는 과정을 통해, 읽기의 대상이었던 타이포그래피를 시각적으로 관찰하는 대상으로 전환한다. 글자의 획과 속공간, 세리프와 점은 각각 독립적인 그래픽 요소로 확장되며 서로 다른 스케일과 움직임을 형성한다. 이를 통해 Goudy Old Style이 지닌 고전적인 형태와 손으로 그린 듯한 유기성을 유지하면서도, 서체의 구조를 동시대적인 모션그래픽 언어로 경험할 수 있도록 구성했다."
+        ],
+        en: [
+          "Throughout the sequence, letterforms shift between complete characters and fragmented shapes, transforming typography from something to be read into something to be visually examined. Strokes, counters, serifs, and dots become independent graphic elements, creating changing relationships of scale, space, and movement. The project preserves the classical character and handcrafted quality of Goudy Old Style while translating its underlying anatomy into a contemporary motion-graphic experience."
+        ]
+      }
+    ],
+    caption: [
+      { label: "Project Name", value: "Typography Motion_Goudy Old Style" },
+      { label: "Year", value: "2025" },
+      { label: "Project Type", value: "School Individual Project" },
+      { label: "Course", value: "Hongik University Visual Communication Design / Video(1)" },
+      { label: "Final Output Specifications", value: "41s 1920*1080px Motion Graphic Video" },
+      { label: "Professor", value: "Prof. Seoyoung Choi" }
+    ]
+  },
+  {
+    id: "formative-composition",
+    title: "Formative Composition",
+    year: "2025",
+    type: "School Individual Project",
+    categories: ["video-motion"],
+    categoryLabel: "Video/Motion",
+    detailLayout: "formative-composition",
+    cover: {
+      src: `${FORMATIVE_COMPOSITION_ASSET_ROOT}/formative-composition-02.jpg`,
+      alt: "여섯 개의 흑백 기하학 모션 컴포지션 장면을 하나의 화면에 배열한 이미지",
+      width: 3200,
+      height: 1800,
+      position: "50% 50%",
+      fit: "contain",
+      background: "#000000"
+    },
+    videos: [
+      {
+        src: "https://www.youtube-nocookie.com/embed/Y2BvYlE4vQg?rel=0",
+        title: "Formative Composition — 5 second version"
+      },
+      {
+        src: "https://www.youtube-nocookie.com/embed/OOzswC1AgA8?rel=0",
+        title: "Formative Composition — 30 second version"
+      }
+    ],
+    images: [
+      {
+        src: `${FORMATIVE_COMPOSITION_ASSET_ROOT}/formative-composition-01.jpg`,
+        alt: "선과 원, 사각형과 삼각형으로 구성된 여섯 개의 흑백 모션 시퀀스",
+        width: 3200,
+        height: 1800
+      },
+      {
+        src: `${FORMATIVE_COMPOSITION_ASSET_ROOT}/formative-composition-02.jpg`,
+        alt: "서로 다른 순간의 여섯 개 흑백 기하학 모션 시퀀스를 병렬로 배열한 화면",
+        width: 3200,
+        height: 1800
+      },
+      {
+        src: `${FORMATIVE_COMPOSITION_ASSET_ROOT}/formative-composition-03.jpg`,
+        alt: "검은 배경과 흰 면, 원과 삼각형이 크게 교차하는 모션그래픽 장면",
+        width: 3200,
+        height: 1800
+      },
+      {
+        src: `${FORMATIVE_COMPOSITION_ASSET_ROOT}/formative-composition-04.jpg`,
+        alt: "사각형과 원, 삼각형과 평행사변형을 흑백으로 배치한 모션그래픽 장면",
+        width: 3200,
+        height: 1800
+      },
+      {
+        src: `${FORMATIVE_COMPOSITION_ASSET_ROOT}/formative-composition-05.jpg`,
+        alt: "교차하는 여러 개의 검은 선과 원으로 공간감을 만든 모션그래픽 장면",
+        width: 3200,
+        height: 1800
+      },
+      {
+        src: `${FORMATIVE_COMPOSITION_ASSET_ROOT}/formative-composition-06.jpg`,
+        alt: "점선 형태의 원과 비스듬한 평행선이 움직이는 흑백 모션그래픽 장면",
+        width: 3200,
+        height: 1800
+      }
+    ],
+    statements: [
+      {
+        markers: ["01"],
+        ko: [
+          "<em>Formative Composition</em>은 흑백의 제한된 색상과 원, 사각형, 삼각형, 선과 같은 단순한 조형 요소만을 사용해 사운드에 반응하는 모션 컴포지션을 구성한 프로젝트다. 총 여섯 개의 5초 시퀀스로 이루어져 있으며, 스케일, 위치와 형태의 변형, 오퍼시티 등 모션그래픽의 기본적인 속성을 중심으로 정적인 형태가 시간 안에서 어떻게 변화하고 관계를 형성하는지를 실험했다. 제한된 시각 언어를 설정함으로써 장식적인 표현보다 형태의 변화와 움직임 자체에 집중하고자 했다."
+        ],
+        en: [
+          "<em>Formative Composition</em> is a motion graphics project that explores sound-responsive composition through a restricted visual system of black and white and simple geometric forms such as circles, rectangles, triangles, and lines. The project consists of six five-second sequences, each developed around fundamental motion principles including scale, transformation, position, and opacity. By deliberately limiting the visual vocabulary, the project shifts attention away from decorative expression and toward the ways static forms can change, interact, and establish relationships over time."
+        ]
+      },
+      {
+        markers: ["02", "03"],
+        ko: [
+          "각 시퀀스에서 사운드는 단순히 영상에 덧붙여지는 배경 요소가 아니라 움직임과 화면 구성을 결정하는 구조적 기준으로 작동한다. 리듬과 강약, 타이밍의 변화에 따라 도형의 크기와 위치, 방향, 중첩과 가시성을 조절하고, 서로 다른 요소가 충돌하거나 분리되고 다시 결합하는 과정을 통해 화면의 균형을 지속적으로 변화시켰다. 이를 통해 단순한 기하학적 형태만으로도 움직임의 속도와 간격, 반복과 대비에 따라 서로 다른 시각적 리듬을 형성할 수 있음을 탐구했다.",
+          "완성된 여섯 개의 시퀀스는 두 가지 방식으로 다시 구성되었다. 하나는 모든 영상을 하나의 화면에서 동시에 재생하여 각 컴포지션의 움직임과 리듬을 병렬적으로 비교할 수 있도록 한 5초 영상이며, 다른 하나는 여섯 개의 시퀀스를 순차적으로 연결한 30초 영상이다. 동일한 모션 요소도 배열 방식에 따라 서로 다른 관계와 흐름을 만들어낸다는 점을 보여주며, 이 프로젝트는 기초적인 모션 속성을 개별 효과로 다루는 데서 나아가 사운드, 형태, 시간의 관계를 하나의 컴포지션으로 조직하는 과정에 초점을 맞추었다."
+        ],
+        en: [
+          "In each sequence, sound functions not simply as a background element but as a structural cue that determines movement and composition. Changes in rhythm, intensity, and timing are translated into variations in scale, position, direction, overlap, and visibility, allowing geometric elements to collide, separate, and reorganize across the frame. Through these controlled transformations, the project examines how even a minimal set of forms can generate distinct visual rhythms through differences in speed, interval, repetition, and contrast.",
+          "The six sequences were ultimately reorganized into two different viewing structures. In the first, all compositions are played simultaneously within a single frame, creating a five-second piece that allows their movements and rhythms to be read in parallel. In the second, the six sequences are arranged consecutively as a thirty-second composition, emphasizing progression, contrast, and continuity over time. Together, these two formats demonstrate how the same basic motion elements can produce different relationships depending on their arrangement, extending the project from an exercise in fundamental motion parameters into a study of how sound, form, and time can be organized as a unified composition."
+        ]
+      }
+    ],
+    caption: [
+      { label: "Project Name", value: "Formative Composition" },
+      { label: "Year", value: "2025" },
+      { label: "Project Type", value: "School Individual Project" },
+      { label: "Course", value: "Hongik University Visual Communication Design / Video(1)" },
+      { label: "Final Output Specifications", value: "5s 1920*720px Motion Graphic Video<br>30s 1280*720px Motion Graphic Video" },
+      { label: "Professor", value: "Prof. Seoyoung Choi" }
+    ]
+  },
+  {
+    id: "the-shape-of-water-formation-and-dissolution",
+    title: "The Shape of Water - Formation and Dissolution",
+    year: "2025",
+    type: "School Individual Project",
+    categories: ["video-motion"],
+    categoryLabel: "Video/Motion",
+    detailLayout: "the-shape-of-water",
+    cover: {
+      src: `${THE_SHAPE_OF_WATER_ASSET_ROOT}/the-shape-of-water-06.jpg`,
+      alt: "검은 배경 위에 수소와 산소를 상징하는 붉은색과 흰색 원, 방사형 선이 구성된 장면",
+      width: 3200,
+      height: 1800,
+      position: "50% 50%",
+      fit: "contain",
+      background: "#000000"
+    },
+    videos: [
+      {
+        src: "https://www.youtube-nocookie.com/embed/W0bgJQfsl6s?rel=0",
+        title: "The Shape of Water - Formation and Dissolution"
+      }
+    ],
+    images: [
+      {
+        src: `${THE_SHAPE_OF_WATER_ASSET_ROOT}/the-shape-of-water-01.jpg`,
+        alt: "흰 배경 위에 크기가 다른 푸른 입자들이 불규칙하게 흩어진 장면",
+        width: 3200,
+        height: 1800
+      },
+      {
+        src: `${THE_SHAPE_OF_WATER_ASSET_ROOT}/the-shape-of-water-02.jpg`,
+        alt: "흰 배경 위에 붉은 입자와 이동 방향을 나타내는 검은 평행선이 놓인 장면",
+        width: 3200,
+        height: 1800
+      },
+      {
+        src: `${THE_SHAPE_OF_WATER_ASSET_ROOT}/the-shape-of-water-03.jpg`,
+        alt: "검은색과 흰색의 동심원과 방사형 선으로 에너지의 확산을 표현한 장면",
+        width: 3200,
+        height: 1800
+      },
+      {
+        src: `${THE_SHAPE_OF_WATER_ASSET_ROOT}/the-shape-of-water-04.jpg`,
+        alt: "두 가지 푸른 면의 유기적인 경계와 흰 평행선으로 물의 흐름을 표현한 장면",
+        width: 3200,
+        height: 1800
+      },
+      {
+        src: `${THE_SHAPE_OF_WATER_ASSET_ROOT}/the-shape-of-water-05.jpg`,
+        alt: "검은 배경 위에 물 분자 모형과 붉은 입자, 연두색 궤적이 중첩된 장면",
+        width: 3200,
+        height: 1800
+      },
+      {
+        src: `${THE_SHAPE_OF_WATER_ASSET_ROOT}/the-shape-of-water-06.jpg`,
+        alt: "검은 배경 위에 수소와 산소를 상징하는 붉은색과 흰색 원, 방사형 선이 구성된 장면",
+        width: 3200,
+        height: 1800
+      }
+    ],
+    statements: [
+      {
+        ko: [
+          "<em>The Shape of Water — Formation and Dissolution</em>은 물을 하나의 고정된 형태가 아니라, 미세한 입자와 분자의 결합으로 이루어진 끊임없이 변화하는 물질로 바라본 모션그래픽 작업이다. 영상은 우리가 일상적으로 인식하는 물의 유동적인 이미지에서 출발해, 점과 선, 원과 같은 기하학적 요소를 통해 물의 성질을 점차 추상적인 시각 언어로 전환한다. 불규칙하게 흩어진 입자와 유기적으로 움직이는 면은 물이 지닌 흐름과 불확정성을 나타내며, 영상이 진행될수록 이러한 추상적 형태는 물질을 구성하는 보다 구체적인 분자 구조로 연결된다."
+        ],
+        en: [
+          "<em>The Shape of Water — Formation and Dissolution</em> is a motion graphic project that approaches water not as a fixed form, but as a continuously changing material composed of particles and molecular bonds. Beginning with the familiar idea of water as something fluid and unstable, the film gradually translates its physical qualities into an abstract visual language of points, lines, circles, and shifting surfaces. Scattered particles and organically changing fields suggest the movement and indeterminacy of water, while these abstract forms progressively develop into a more explicit representation of its molecular structure."
+        ]
+      },
+      {
+        ko: [
+          "영상의 중심에는 물의 전기분해(electrolysis)라는 화학적 사건이 있다. 물 분자를 구성하는 수소와 산소의 결합 구조를 단순화된 원형의 분자 모형으로 시각화하고, 외부에서 가해지는 전기적 에너지를 선의 이동과 방향성, 반복되는 방사형 구조와 급격한 형태 변화로 표현했다. 하나의 안정된 구조를 이루던 물 분자는 전기분해를 기점으로 결합 관계를 잃고 서로 다른 원자와 분자로 분리되기 시작한다. 이를 통해 보이지 않는 미시적 화학 반응을 단순한 과학적 도식이 아니라, 시간과 움직임을 통해 경험할 수 있는 시각적 사건으로 재구성했다."
+        ],
+        en: [
+          "At the center of the film is the chemical process of water electrolysis. The molecular structure of hydrogen and oxygen is reduced to a system of simple circular forms, while the introduction of electrical energy is expressed through directional lines, repeated radial structures, and abrupt transformations in movement. Once the reaction begins, the stable molecular configuration of water is disrupted, allowing its constituent elements to separate and reorganize into different molecular states. Rather than presenting the reaction as a conventional scientific diagram, the project reconstructs this invisible microscopic process as a visual event that unfolds through time and motion."
+        ]
+      },
+      {
+        ko: [
+          "프로젝트 전반에서는 형성(Formation)과 해체(Dissolution)라는 두 상태의 대비를 모션의 주요 원리로 사용했다. 입자의 집합과 분산, 크기의 변화, 중첩과 분리, 직선적인 운동과 유기적인 흐름을 반복하면서 물질이 하나의 구조로 인식되고 다시 해체되는 과정을 단계적으로 전개한다. 색채와 기하학적 형태 역시 실제 물의 외형을 재현하기보다는 수소와 산소, 에너지의 이동, 분자 간 관계를 구분하기 위한 시각적 기호로 기능한다. 결과적으로 이 작업은 물이라는 익숙한 물질을 미시적인 관점에서 다시 바라보고, 화학적 변화의 메커니즘을 추상적 모션그래픽의 언어로 번역한 실험이다."
+        ],
+        en: [
+          "Throughout the project, the contrast between formation and dissolution becomes the primary principle of movement. Aggregation and dispersion, changes in scale, overlapping and separation, and the transition between linear trajectories and organic motion repeatedly construct and destabilize visual structures. Color and geometric forms are used not to reproduce the literal appearance of water, but as visual codes that distinguish hydrogen, oxygen, energy, and the relationships between molecular components. Ultimately, the project reconsiders an ordinary substance from a microscopic perspective, translating the mechanism of chemical transformation into the abstract language of motion graphics."
+        ]
+      }
+    ],
+    caption: [
+      { label: "Project Name", value: "The Shape of Water - Formation and Dissolution" },
+      { label: "Year", value: "2025" },
+      { label: "Project Type", value: "School Individual Project" },
+      { label: "Course", value: "Hongik University Visual Communication Design / Video(1)" },
+      { label: "Final Output Specifications", value: "1m 15s 1920*1080px Motion Graphic Video" },
+      { label: "Professor", value: "Prof. Seoyoung Choi" }
+    ]
+  },
+  {
     id: "after-event",
     title: "After Event",
     year: "2025",
@@ -585,7 +854,7 @@ function projectCardVisualMarkup(project, index) {
       height="${project.cover.height || 2813}"
       ${loadingAttributes}
       decoding="async"
-      style="--project-cover-position: ${project.cover.position || "50% 50%"}"
+      style="--project-cover-position: ${project.cover.position || "50% 50%"}; --project-cover-fit: ${project.cover.fit || "cover"}"
     >
   `;
 }
@@ -756,10 +1025,10 @@ function imageLedProjectImageMarkup(image, index) {
 
 function imageLedStatementMarkup(statement, ariaLabel) {
   const englishParagraphs = statement.en
-    .map((paragraph) => `<p>${paragraph}</p>`)
+    .map((paragraph, index) => `<p>${statement.markers?.[index] ? `<span class="image-led-statement__marker" aria-hidden="true">${statement.markers[index]}</span>` : ""}${paragraph}</p>`)
     .join("");
   const koreanParagraphs = statement.ko
-    .map((paragraph) => `<p>${paragraph}</p>`)
+    .map((paragraph, index) => `<p>${statement.markers?.[index] ? `<span class="image-led-statement__marker" aria-hidden="true">${statement.markers[index]}</span>` : ""}${paragraph}</p>`)
     .join("");
 
   return `
@@ -976,6 +1245,108 @@ function teoroDetailMarkup(project) {
   `;
 }
 
+function typographyMotionDetailMarkup(project) {
+  return `
+    <h1 class="sr-only" id="detail-title" tabindex="-1" lang="en">${project.title}</h1>
+    <div class="image-led-flow">
+      ${imageLedVideosMarkup(project.video ? [project.video] : project.videos)}
+
+      <div class="image-led-sequence">
+        ${imageLedProjectImageMarkup(project.images[0], 0)}
+        ${imageLedProjectImageMarkup(project.images[1], 1)}
+      </div>
+
+      ${imageLedStatementMarkup(project.statements[0], "Typography Motion formal analysis")}
+
+      <div class="image-led-sequence">
+        ${imageLedProjectImageMarkup(project.images[2], 2)}
+        ${imageLedProjectImageMarkup(project.images[3], 3)}
+      </div>
+
+      ${imageLedStatementMarkup(project.statements[1], "Typography Motion sequence and movement")}
+
+      ${imageLedCaptionMarkup(project.caption, "typography-motion-caption-title")}
+    </div>
+  `;
+}
+
+function imageLedVideosMarkup(videos) {
+  return `
+    <div class="image-led-video-list">
+      ${videos.map((video) => `
+        <div class="image-led-video">
+          <iframe
+            src="${video.src}"
+            title="${video.title} — YouTube video"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      `).join("")}
+    </div>
+  `;
+}
+
+function formativeCompositionDetailMarkup(project) {
+  return `
+    <h1 class="sr-only" id="detail-title" tabindex="-1" lang="en">${project.title}</h1>
+    <div class="image-led-flow">
+      ${imageLedVideosMarkup(project.videos)}
+
+      <div class="image-led-sequence">
+        ${imageLedProjectImageMarkup(project.images[0], 0)}
+        ${imageLedProjectImageMarkup(project.images[1], 1)}
+      </div>
+
+      ${imageLedStatementMarkup(project.statements[0], "Formative Composition introduction")}
+
+      <div class="image-led-sequence">
+        ${imageLedProjectImageMarkup(project.images[2], 2)}
+        ${imageLedProjectImageMarkup(project.images[3], 3)}
+        ${imageLedProjectImageMarkup(project.images[4], 4)}
+        ${imageLedProjectImageMarkup(project.images[5], 5)}
+      </div>
+
+      ${imageLedStatementMarkup(project.statements[1], "Formative Composition sound and final sequence structure")}
+
+      ${imageLedCaptionMarkup(project.caption, "formative-composition-caption-title")}
+    </div>
+  `;
+}
+
+function theShapeOfWaterDetailMarkup(project) {
+  return `
+    <h1 class="sr-only" id="detail-title" tabindex="-1" lang="en">${project.title}</h1>
+    <div class="image-led-flow">
+      ${imageLedVideosMarkup(project.videos)}
+
+      <div class="image-led-sequence">
+        ${imageLedProjectImageMarkup(project.images[0], 0)}
+        ${imageLedProjectImageMarkup(project.images[1], 1)}
+      </div>
+
+      ${imageLedStatementMarkup(project.statements[0], "The Shape of Water introduction")}
+
+      <div class="image-led-sequence">
+        ${imageLedProjectImageMarkup(project.images[2], 2)}
+        ${imageLedProjectImageMarkup(project.images[3], 3)}
+      </div>
+
+      ${imageLedStatementMarkup(project.statements[1], "The Shape of Water electrolysis statement")}
+
+      <div class="image-led-sequence">
+        ${imageLedProjectImageMarkup(project.images[4], 4)}
+        ${imageLedProjectImageMarkup(project.images[5], 5)}
+      </div>
+
+      ${imageLedStatementMarkup(project.statements[2], "The Shape of Water formation and dissolution statement")}
+
+      ${imageLedCaptionMarkup(project.caption, "the-shape-of-water-caption-title")}
+    </div>
+  `;
+}
+
 function imageLedDetailMarkupForPrint(project) {
   if (project.detailLayout === "cancellation-terms") return cancellationTermsDetailMarkup(project);
   if (project.detailLayout === "after-event") return afterEventDetailMarkup(project);
@@ -983,6 +1354,9 @@ function imageLedDetailMarkupForPrint(project) {
   if (project.detailLayout === "visual-disaster") return visualDisasterDetailMarkup(project);
   if (project.detailLayout === "stratum") return stratumDetailMarkup(project);
   if (project.detailLayout === "school-year-inbox") return schoolYearInboxDetailMarkup(project);
+  if (project.detailLayout === "typography-motion") return typographyMotionDetailMarkup(project);
+  if (project.detailLayout === "formative-composition") return formativeCompositionDetailMarkup(project);
+  if (project.detailLayout === "the-shape-of-water") return theShapeOfWaterDetailMarkup(project);
 
   return `
     <div class="image-led-flow">
@@ -1224,7 +1598,7 @@ function projectCardMarkup(project, index) {
         href="#project/${activeCategory}/${project.id}"
         data-project-id="${project.id}"
       >
-        <div class="project-card__media">
+        <div class="project-card__media" style="--project-cover-background: ${project.cover.background || "var(--paper-deep)"}">
           ${projectCardVisualMarkup(project, index)}
         </div>
         <div class="project-card__meta">
@@ -1323,11 +1697,16 @@ function renderDetail(project) {
   const isVisualDisaster = project.detailLayout === "visual-disaster";
   const isStratum = project.detailLayout === "stratum";
   const isSchoolYearInbox = project.detailLayout === "school-year-inbox";
-  const isImageLedProject = isCancellationTerms || isAfterEvent || isTeoro || isVisualDisaster || isStratum || isSchoolYearInbox;
+  const isTypographyMotion = project.detailLayout === "typography-motion";
+  const isFormativeComposition = project.detailLayout === "formative-composition";
+  const isTheShapeOfWater = project.detailLayout === "the-shape-of-water";
+  const isMotionStudy = isTypographyMotion || isFormativeComposition || isTheShapeOfWater;
+  const isImageLedProject = isCancellationTerms || isAfterEvent || isTeoro || isVisualDisaster || isStratum || isSchoolYearInbox || isTypographyMotion || isFormativeComposition || isTheShapeOfWater;
   const detailProjectClass = [
     "detail-project",
     project.title.length > 15 ? "detail-project--long-title" : "",
-    isImageLedProject ? "detail-project--image-led" : ""
+    isImageLedProject ? "detail-project--image-led" : "",
+    isMotionStudy ? "detail-project--motion-study" : ""
   ].filter(Boolean).join(" ");
   const detailContent = isCancellationTerms
     ? cancellationTermsDetailMarkup(project)
@@ -1341,6 +1720,12 @@ function renderDetail(project) {
             ? stratumDetailMarkup(project)
             : isSchoolYearInbox
               ? schoolYearInboxDetailMarkup(project)
+              : isTypographyMotion
+                ? typographyMotionDetailMarkup(project)
+                : isFormativeComposition
+                  ? formativeCompositionDetailMarkup(project)
+                  : isTheShapeOfWater
+                    ? theShapeOfWaterDetailMarkup(project)
               : `
       <header class="detail-heading">
         <h1 class="detail-title" id="detail-title" tabindex="-1" lang="${project.titleLang || "en"}">${project.title}</h1>
