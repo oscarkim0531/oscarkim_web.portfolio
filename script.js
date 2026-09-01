@@ -560,6 +560,7 @@ const viewTitle = document.querySelector("#view-title");
 const categoryLinks = [...document.querySelectorAll(".category-link")];
 const announcer = document.querySelector("#app-announcer");
 const workView = document.querySelector("#work-view");
+const printPortfolio = document.querySelector("#print-portfolio");
 
 let activeCategory = "all";
 let activeProjectId = null;
@@ -975,6 +976,246 @@ function teoroDetailMarkup(project) {
   `;
 }
 
+function imageLedDetailMarkupForPrint(project) {
+  if (project.detailLayout === "cancellation-terms") return cancellationTermsDetailMarkup(project);
+  if (project.detailLayout === "after-event") return afterEventDetailMarkup(project);
+  if (project.detailLayout === "teoro") return teoroDetailMarkup(project);
+  if (project.detailLayout === "visual-disaster") return visualDisasterDetailMarkup(project);
+  if (project.detailLayout === "stratum") return stratumDetailMarkup(project);
+  if (project.detailLayout === "school-year-inbox") return schoolYearInboxDetailMarkup(project);
+
+  return `
+    <div class="image-led-flow">
+      <div class="image-led-sequence">
+        ${imageLedProjectImageMarkup(project.cover, 0)}
+      </div>
+    </div>
+  `;
+}
+
+function printCaptionRowsMarkup(project) {
+  const caption = project.caption || [
+    { label: "Project Name", value: project.title },
+    { label: "Year", value: project.year },
+    { label: "Project Type", value: project.type },
+    { label: "Discipline", value: project.categoryLabel }
+  ];
+
+  return caption.map((item) => `
+    <div class="print-project-meta__row">
+      <dt>${item.label}</dt>
+      <dd>${item.value}</dd>
+    </div>
+  `).join("");
+}
+
+function printProjectOpenerMarkup(project, projectIndex) {
+  return `
+    <section class="print-project-opener">
+      <p class="print-project-opener__number">${twoDigits(projectIndex + 1)}</p>
+      <h2 lang="${project.titleLang || "en"}">${project.title}</h2>
+      <p class="print-project-opener__discipline">${project.categoryLabel}</p>
+      <dl class="print-project-meta">
+        ${printCaptionRowsMarkup(project)}
+      </dl>
+    </section>
+  `;
+}
+
+function printMediaPageMarkup(project, sequence, sequenceIndex) {
+  const images = [...sequence.querySelectorAll("img")];
+  const mediaItems = images.map((image, imageIndex) => `
+    <figure class="print-media-item">
+      <img
+        src="${image.getAttribute("src") || ""}"
+        alt="${image.getAttribute("alt") || ""}"
+        width="${image.getAttribute("width") || "3200"}"
+        height="${image.getAttribute("height") || "2560"}"
+      >
+      <figcaption>${twoDigits(sequenceIndex + 1)}.${twoDigits(imageIndex + 1)}</figcaption>
+    </figure>
+  `).join("");
+
+  return `
+    <section class="print-project-media">
+      <header class="print-project-section-heading">
+        <p>${project.title}</p>
+        <p>Project Images / ${twoDigits(sequenceIndex + 1)}</p>
+      </header>
+      <div class="print-media-grid print-media-grid--${Math.min(images.length, 3)}">
+        ${mediaItems}
+      </div>
+    </section>
+  `;
+}
+
+function printStatementPageMarkup(project, statement, statementIndex) {
+  const title = statement.querySelector(".image-led-statement__title")?.innerHTML
+    || `Project Note / ${twoDigits(statementIndex + 1)}`;
+  const korean = statement.querySelector(".image-led-statement__language--ko")?.innerHTML || "";
+  const english = statement.querySelector(".image-led-statement__language--en")?.innerHTML || "";
+
+  return `
+    <section class="print-project-statement">
+      <header class="print-project-section-heading">
+        <p>${project.title}</p>
+        <p>${title}</p>
+      </header>
+      <div class="print-project-statement__body">
+        <div class="print-project-statement__language" lang="ko">
+          <p class="print-language-label">KR</p>
+          ${korean}
+        </div>
+        <div class="print-project-statement__language print-project-statement__language--en" lang="en">
+          <p class="print-language-label">EN</p>
+          ${english}
+        </div>
+      </div>
+    </section>
+  `;
+}
+
+function buildPrintProjectPages(project, projectIndex) {
+  const template = document.createElement("template");
+  template.innerHTML = imageLedDetailMarkupForPrint(project);
+  const flow = template.content.querySelector(".image-led-flow");
+  const pages = [{
+    className: "print-page--project-opener",
+    projectTitle: project.title,
+    content: printProjectOpenerMarkup(project, projectIndex)
+  }];
+
+  let sequenceIndex = 0;
+  let statementIndex = 0;
+
+  [...(flow?.children || [])].forEach((element) => {
+    if (element.classList.contains("image-led-sequence")) {
+      pages.push({
+        className: "print-page--media",
+        projectTitle: project.title,
+        content: printMediaPageMarkup(project, element, sequenceIndex)
+      });
+      sequenceIndex += 1;
+    }
+
+    if (element.classList.contains("image-led-statement")) {
+      pages.push({
+        className: "print-page--statement",
+        projectTitle: project.title,
+        content: printStatementPageMarkup(project, element, statementIndex)
+      });
+      statementIndex += 1;
+    }
+  });
+
+  return pages;
+}
+
+function printPageMarkup(page, pageNumber, totalPages) {
+  const isCover = page.className === "print-page--cover";
+  const runningHeader = isCover ? "" : `
+    <header class="print-running-header">
+      <span>Oscar Kim — Portfolio</span>
+      <span>${page.projectTitle || "Selected Works"}</span>
+      <span>2026</span>
+    </header>
+  `;
+  const runningFooter = isCover ? "" : `
+    <footer class="print-running-footer">
+      <span>Visual Communication Design</span>
+      <span>${twoDigits(pageNumber)} / ${twoDigits(totalPages)}</span>
+    </footer>
+  `;
+
+  return `
+    <article class="print-page ${page.className}">
+      ${runningHeader}
+      ${page.content}
+      ${runningFooter}
+    </article>
+  `;
+}
+
+function renderPrintPortfolio() {
+  if (!printPortfolio) return;
+
+  const orderedProjects = [...projects].sort((a, b) => (
+    Number(b.year) - Number(a.year)
+    || a.title.localeCompare(b.title, "en")
+  ));
+  const projectPageGroups = orderedProjects.map(buildPrintProjectPages);
+  let nextProjectPage = 3;
+  const indexRows = projectPageGroups.map((pages, index) => {
+    const project = orderedProjects[index];
+    const startPage = nextProjectPage;
+    nextProjectPage += pages.length;
+    return `
+      <div class="print-index__row">
+        <span>${twoDigits(index + 1)}</span>
+        <span lang="${project.titleLang || "en"}">${project.title}</span>
+        <span>${project.year}</span>
+        <span>${project.categoryLabel}</span>
+        <span>${twoDigits(startPage)}</span>
+      </div>
+    `;
+  }).join("");
+  const pages = [
+    {
+      className: "print-page--cover",
+      content: `
+        <section class="print-cover">
+          <div class="print-cover__topline">
+            <p>Visual Communication Designer<br>Oscar Kim</p>
+            <p>Selected Works<br>2024—2026</p>
+          </div>
+          <div class="print-cover__axis" aria-hidden="true"></div>
+          <h1>PORTFOLIO</h1>
+          <p class="print-cover__edition">ver.2026</p>
+        </section>
+      `
+    },
+    {
+      className: "print-page--index",
+      content: `
+        <section class="print-index">
+          <div class="print-index__heading">
+            <p>Index</p>
+            <h2>Selected<br>Works</h2>
+          </div>
+          <div class="print-index__list">
+            <div class="print-index__labels">
+              <span>No.</span>
+              <span>Project</span>
+              <span>Year</span>
+              <span>Discipline</span>
+              <span>Page</span>
+            </div>
+            ${indexRows}
+          </div>
+        </section>
+      `
+    },
+    ...projectPageGroups.flat(),
+    {
+      className: "print-page--closing",
+      content: `
+        <section class="print-closing">
+          <p>Thank you.</p>
+          <div>
+            <span>Oscar Kim</span>
+            <span>Based in Seoul</span>
+            <span>© 2026 Oscar Kim. All rights reserved.</span>
+          </div>
+        </section>
+      `
+    }
+  ];
+
+  printPortfolio.innerHTML = pages
+    .map((page, index) => printPageMarkup(page, index + 1, pages.length))
+    .join("");
+}
+
 function projectCardMarkup(project, index) {
   return `
     <article class="project-card-wrap">
@@ -1287,9 +1528,11 @@ document.addEventListener("keydown", (event) => {
 });
 
 window.addEventListener("hashchange", () => renderRoute());
+window.addEventListener("beforeprint", renderPrintPortfolio);
 
 if (!window.location.hash) {
   history.replaceState(null, "", "#category/all");
 }
 
 renderRoute({ isInitial: true });
+renderPrintPortfolio();
