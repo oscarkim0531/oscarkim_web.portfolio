@@ -934,17 +934,6 @@ figure {
   margin-top: 1.75em;
 }
 
-.image-led-statement__marker {
-  display: block;
-  margin-bottom: 0.72rem;
-  font-family: var(--serif);
-  font-size: 0.78em;
-  font-style: italic;
-  font-weight: 400;
-  letter-spacing: 0.04em;
-  line-height: 1;
-}
-
 .image-led-statement__language--ko {
   word-break: keep-all;
 }

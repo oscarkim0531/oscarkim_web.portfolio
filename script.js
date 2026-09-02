@@ -504,7 +504,6 @@ const projects = [
     ],
     statements: [
       {
-        markers: ["01"],
         ko: [
           "<em>Formative Composition</em>은 흑백의 제한된 색상과 원, 사각형, 삼각형, 선과 같은 단순한 조형 요소만을 사용해 사운드에 반응하는 모션 컴포지션을 구성한 프로젝트다. 총 여섯 개의 5초 시퀀스로 이루어져 있으며, 스케일, 위치와 형태의 변형, 오퍼시티 등 모션그래픽의 기본적인 속성을 중심으로 정적인 형태가 시간 안에서 어떻게 변화하고 관계를 형성하는지를 실험했다. 제한된 시각 언어를 설정함으로써 장식적인 표현보다 형태의 변화와 움직임 자체에 집중하고자 했다."
         ],
@@ -513,7 +512,6 @@ const projects = [
         ]
       },
       {
-        markers: ["02", "03"],
         ko: [
           "각 시퀀스에서 사운드는 단순히 영상에 덧붙여지는 배경 요소가 아니라 움직임과 화면 구성을 결정하는 구조적 기준으로 작동한다. 리듬과 강약, 타이밍의 변화에 따라 도형의 크기와 위치, 방향, 중첩과 가시성을 조절하고, 서로 다른 요소가 충돌하거나 분리되고 다시 결합하는 과정을 통해 화면의 균형을 지속적으로 변화시켰다. 이를 통해 단순한 기하학적 형태만으로도 움직임의 속도와 간격, 반복과 대비에 따라 서로 다른 시각적 리듬을 형성할 수 있음을 탐구했다.",
           "완성된 여섯 개의 시퀀스는 두 가지 방식으로 다시 구성되었다. 하나는 모든 영상을 하나의 화면에서 동시에 재생하여 각 컴포지션의 움직임과 리듬을 병렬적으로 비교할 수 있도록 한 5초 영상이며, 다른 하나는 여섯 개의 시퀀스를 순차적으로 연결한 30초 영상이다. 동일한 모션 요소도 배열 방식에 따라 서로 다른 관계와 흐름을 만들어낸다는 점을 보여주며, 이 프로젝트는 기초적인 모션 속성을 개별 효과로 다루는 데서 나아가 사운드, 형태, 시간의 관계를 하나의 컴포지션으로 조직하는 과정에 초점을 맞추었다."
@@ -1025,10 +1023,10 @@ function imageLedProjectImageMarkup(image, index) {
 
 function imageLedStatementMarkup(statement, ariaLabel) {
   const englishParagraphs = statement.en
-    .map((paragraph, index) => `<p>${statement.markers?.[index] ? `<span class="image-led-statement__marker" aria-hidden="true">${statement.markers[index]}</span>` : ""}${paragraph}</p>`)
+    .map((paragraph) => `<p>${paragraph}</p>`)
     .join("");
   const koreanParagraphs = statement.ko
-    .map((paragraph, index) => `<p>${statement.markers?.[index] ? `<span class="image-led-statement__marker" aria-hidden="true">${statement.markers[index]}</span>` : ""}${paragraph}</p>`)
+    .map((paragraph) => `<p>${paragraph}</p>`)
     .join("");
 
   return `
@@ -1251,19 +1249,19 @@ function typographyMotionDetailMarkup(project) {
     <div class="image-led-flow">
       ${imageLedVideosMarkup(project.video ? [project.video] : project.videos)}
 
+      ${imageLedStatementMarkup(project.statements[0], "Typography Motion formal analysis")}
+
       <div class="image-led-sequence">
         ${imageLedProjectImageMarkup(project.images[0], 0)}
         ${imageLedProjectImageMarkup(project.images[1], 1)}
       </div>
 
-      ${imageLedStatementMarkup(project.statements[0], "Typography Motion formal analysis")}
+      ${imageLedStatementMarkup(project.statements[1], "Typography Motion sequence and movement")}
 
       <div class="image-led-sequence">
         ${imageLedProjectImageMarkup(project.images[2], 2)}
         ${imageLedProjectImageMarkup(project.images[3], 3)}
       </div>
-
-      ${imageLedStatementMarkup(project.statements[1], "Typography Motion sequence and movement")}
 
       ${imageLedCaptionMarkup(project.caption, "typography-motion-caption-title")}
     </div>
@@ -1294,12 +1292,14 @@ function formativeCompositionDetailMarkup(project) {
     <div class="image-led-flow">
       ${imageLedVideosMarkup(project.videos)}
 
+      ${imageLedStatementMarkup(project.statements[0], "Formative Composition introduction")}
+
       <div class="image-led-sequence">
         ${imageLedProjectImageMarkup(project.images[0], 0)}
         ${imageLedProjectImageMarkup(project.images[1], 1)}
       </div>
 
-      ${imageLedStatementMarkup(project.statements[0], "Formative Composition introduction")}
+      ${imageLedStatementMarkup(project.statements[1], "Formative Composition sound and final sequence structure")}
 
       <div class="image-led-sequence">
         ${imageLedProjectImageMarkup(project.images[2], 2)}
@@ -1307,8 +1307,6 @@ function formativeCompositionDetailMarkup(project) {
         ${imageLedProjectImageMarkup(project.images[4], 4)}
         ${imageLedProjectImageMarkup(project.images[5], 5)}
       </div>
-
-      ${imageLedStatementMarkup(project.statements[1], "Formative Composition sound and final sequence structure")}
 
       ${imageLedCaptionMarkup(project.caption, "formative-composition-caption-title")}
     </div>
@@ -1321,26 +1319,26 @@ function theShapeOfWaterDetailMarkup(project) {
     <div class="image-led-flow">
       ${imageLedVideosMarkup(project.videos)}
 
+      ${imageLedStatementMarkup(project.statements[0], "The Shape of Water introduction")}
+
       <div class="image-led-sequence">
         ${imageLedProjectImageMarkup(project.images[0], 0)}
         ${imageLedProjectImageMarkup(project.images[1], 1)}
       </div>
 
-      ${imageLedStatementMarkup(project.statements[0], "The Shape of Water introduction")}
+      ${imageLedStatementMarkup(project.statements[1], "The Shape of Water electrolysis statement")}
 
       <div class="image-led-sequence">
         ${imageLedProjectImageMarkup(project.images[2], 2)}
         ${imageLedProjectImageMarkup(project.images[3], 3)}
       </div>
 
-      ${imageLedStatementMarkup(project.statements[1], "The Shape of Water electrolysis statement")}
+      ${imageLedStatementMarkup(project.statements[2], "The Shape of Water formation and dissolution statement")}
 
       <div class="image-led-sequence">
         ${imageLedProjectImageMarkup(project.images[4], 4)}
         ${imageLedProjectImageMarkup(project.images[5], 5)}
       </div>
-
-      ${imageLedStatementMarkup(project.statements[2], "The Shape of Water formation and dissolution statement")}
 
       ${imageLedCaptionMarkup(project.caption, "the-shape-of-water-caption-title")}
     </div>
