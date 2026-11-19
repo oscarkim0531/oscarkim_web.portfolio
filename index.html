@@ -117,7 +117,7 @@
           <span>Based in Seoul</span>
           <span>© 2026 Oscar Kim.<br>All rights reserved.</span>
         </div>
-        <p class="sidebar__version" aria-label="Website version">ver.01.09</p>
+        <p class="sidebar__version" aria-label="Website version">ver.01.10</p>
       </div>
     </aside>
 
@@ -133,6 +133,20 @@
       </noscript>
     </section>
   </main>
+
+  <dialog class="image-lightbox" id="image-lightbox" aria-label="확대된 프로젝트 이미지">
+    <div class="image-lightbox__stage">
+      <img class="image-lightbox__image" id="image-lightbox-image" alt="">
+    </div>
+    <button
+      class="image-lightbox__close"
+      type="button"
+      data-image-lightbox-close
+      aria-label="확대 이미지 닫기"
+    >
+      <span aria-hidden="true">×</span>
+    </button>
+  </dialog>
 
   <section class="print-portfolio" id="print-portfolio" aria-hidden="true"></section>
 

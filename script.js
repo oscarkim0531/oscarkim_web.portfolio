@@ -241,7 +241,6 @@ const projects = [
     ],
     sections: [
       {
-        title: "01",
         ko: [
           "<em>A School Year in the Inbox</em>는 한 학년 동안 학과 공지방에 축적된 기록을 다시 읽어낸 데이터 기반 편집 디자인 프로젝트다. 매일 도착하고 곧 새로운 메시지에 밀려나던 공지를 한데 모아, 공지가 언제 얼마나 자주 등장했는지, 어떤 형식과 언어로 정보를 전달했는지를 분석했다. 일회적으로 소비되는 디지털 메시지를 다시 바라보는 과정에서 공지방은 단순한 정보 전달 채널을 넘어, 한 학년이 어떤 정보와 함께 학교생활을 보냈는지를 보여주는 공동의 수신함이 된다."
         ],
@@ -250,7 +249,6 @@ const projects = [
         ]
       },
       {
-        title: "02",
         ko: [
           "분석된 데이터는 수치를 나열하기보다 학교생활에서 체감할 수 있는 형태로 시각화했다. 전체 379일 중 공지가 있었던 299일을 켜진 전구의 비율로 변환하고, 월별 공지량은 연속적인 꺾은선 그래프로 구성해 학사 일정에 따라 달라지는 정보의 밀도를 보여주었다. 특히 개강 시기에는 공지가 증가하고 방학에도 정보 전달이 완전히 멈추지 않는 패턴을 통해, 공지방이 학교의 시간과 함께 움직이고 있음을 드러낸다."
         ],
@@ -259,7 +257,6 @@ const projects = [
         ]
       },
       {
-        title: "03—04",
         ko: [
           "인포그래픽은 공지의 양뿐 아니라 정보가 전달되는 방식까지 확장해 다룬다. 텍스트와 이미지의 비율, 반복적으로 등장한 이모지, 핵심 단어와 외부 링크를 서로 다른 그래픽 형식으로 구성하고, 각 데이터의 성격에 맞는 표현 방식을 선택했다. 노랑과 보라를 중심으로 제한한 색상 체계와 반복되는 표·그래프·격자는 서로 다른 분석 결과를 하나의 시각 언어로 연결한다. 특히 353종의 이모지를 동일한 격자 안에 배열하거나 실제 링크 화면을 단색으로 재구성함으로써, 공지 속 시각 기호와 디지털 인터페이스 자체도 분석의 대상으로 끌어들였다.",
           "최종적으로 이 프로젝트는 빠르게 스크롤되어 사라지던 공지를 천천히 넘겨볼 수 있는 물리적 기록으로 전환한다. 시간, 형식, 언어, 기호와 링크에 대한 각각의 분석은 하나의 편집 서사 안에서 연결되고, 128 × 188mm의 중철 소책자로 완성되었다. 개별 공지는 지나갔지만 그것이 쌓인 방식은 한 학년의 속도와 활동, 그리고 정보 환경을 남긴다. <em>A School Year in the Inbox</em>는 익숙해서 쉽게 지나쳤던 디지털 기록을 수집하고 구조화하여, 한 학년의 일상을 다시 읽을 수 있는 시각적 아카이브로 만든다."
@@ -751,7 +748,7 @@ const projects = [
     ],
     sections: [
       {
-        title: "01. Visual Disaster — Overall Concept",
+        title: "Visual Disaster — Overall Concept",
         ko: [
           "〈Visual Disaster〉는 ‘재난(Disaster)’이라는 공통 주제를 서로 다른 시각 커뮤니케이션 방식으로 탐구한 세 개의 연속 프로젝트이다. 첫 번째 프로젝트 Visual Disaster — Observed에서는 우연하거나 통제하기 어려운 시각적 혼란을 관찰하고 기록했으며, 두 번째 프로젝트 Visual Disaster — Interfered In에서는 앞서 만들어진 시각적 재난에 디자이너가 직접 개입해 새로운 구조와 의미를 부여했다. 마지막 Disaster Preparedness에서는 표현적이고 추상적인 접근에서 벗어나, 실제 재난 정보를 특정 사용자에게 명확하고 효과적으로 전달하는 정보디자인으로 작업의 관점을 확장했다."
         ],
@@ -760,7 +757,7 @@ const projects = [
         ]
       },
       {
-        title: "02. Project 01 — Visual Disaster: Observed",
+        title: "Visual Disaster: Observed",
         ko: [
           "첫 번째 프로젝트에서는 ‘Observed’라는 조건을 바탕으로, 안약을 넣은 뒤 일시적으로 변화한 나의 시야를 하나의 시각적 재난으로 관찰했다. 초점이 흐려지고 빛과 색이 과장되어 보이며, 평소에는 안정적으로 인식하던 공간이 흔들리는 경험에 주목했다. 여기서 재난은 외부의 물리적 사건이 아니라, 인위적인 자극에 의해 시각 시스템이 정상적으로 작동하지 않는 순간이었다. 이러한 경험을 바탕으로 흐릿한 색면과 강한 색채, 노이즈와 불완전한 형태를 통해 시야가 통제되지 않는 감각을 시각화했다.",
           "초기의 그래픽 실험에서는 블러와 그라디언트를 중심으로 안약 이후의 몽환적이고 불분명한 시야를 표현했지만, 이후 단순한 분위기보다 ‘시각 체계의 붕괴’ 자체를 드러내는 방향으로 발전시켰다. 최종적으로 화면 상부에는 이미지가 수평 방향으로 잘리고 어긋나는 Horizontal Pixel Shift를, 하부에는 공간이 길게 늘어지고 흔들리는 Vertical Distortion을 적용했다. 서로 다른 두 방향의 왜곡이 한 화면 안에서 충돌하도록 구성함으로써, 정상적인 시각 정보가 분해되고 다시 조립되는 불안정한 상태를 표현했다."
@@ -771,7 +768,7 @@ const projects = [
         ]
       },
       {
-        title: "03. Project 02 — Visual Disaster: Interfered In",
+        title: "Visual Disaster: Interfered In",
         ko: [
           "두 번째 프로젝트는 첫 번째 프로젝트에서 만들어진 시각적 재난을 출발점으로 삼아, 디자이너가 그 혼란에 직접 개입하는 방식으로 진행했다. 첫 번째 작업이 안약이라는 인위적인 원인에 의해 발생한 시각적 붕괴를 다루었다면, 이번에는 강한 태양을 바라본 뒤 남는 잔상(Solar Afterimage)이라는 자연적인 원인으로 동일한 ‘시야의 실패’를 확장했다. Project 01의 이미지를 완성된 결과물로 그대로 사용하는 대신, 이미지를 여러 조각으로 해체하고 그중 일부를 선택하여 새로운 시각적 맥락 안에 배치했다.",
           "그래픽 실험을 통해 강한 광원과 렌즈 플레어가 만드는 흐릿한 배경 위에 Project 01의 선명한 파편들을 배치했고, 이 파편들이 화면 안에서 회전하고 이동하는 듯한 흐름을 형성하도록 구성했다. 밝은 태양빛에 의해 전체 시야는 흐려지고 사라지지만, 일부 조각만은 선명하게 남아 현실의 부분적인 정보를 붙잡는 상태를 표현한다. 이러한 Partial Perception을 통해, 두 번째 프로젝트는 첫 번째 프로젝트에서 생성된 혼란을 단순히 반복하는 것이 아니라 해체하고 선택하며 재조직하는 디자이너의 개입 과정을 보여준다."
@@ -782,7 +779,7 @@ const projects = [
         ]
       },
       {
-        title: "04. Project 03 — Disaster Preparedness",
+        title: "Disaster Preparedness",
         ko: [
           "세 번째 프로젝트에서는 앞선 두 프로젝트의 추상적이고 표현적인 접근에서 벗어나, 실제 재난 정보를 전달하는 정보디자인으로 방향을 전환했다. 주어진 주제는 홍대 인근 침수 상황에서 외국인을 위한 재난 대비 정보였으며, 핵심 개념을 “Simplicity for Maximum Clarity”로 설정했다. 침수 위험 지역과 대피소 위치를 가장 중요한 정보로 배치하고, 행동 지침과 비상 물품, 강우 증가 추세를 정보의 성격에 따라 지도, 텍스트, 아이콘, 그래프로 구분했다. 또한 빨강·라이트 시안·딥 네이비의 제한된 색상 체계를 통해 정보의 긴급도와 중요도를 구분하고, 충분한 여백과 단순한 그리드를 사용해 사용자가 필요한 내용을 빠르고 정확하게 찾을 수 있도록 구성했다."
         ],
@@ -791,7 +788,7 @@ const projects = [
         ]
       },
       {
-        title: "05. Process Book",
+        title: "Process Book",
         ko: [
           "한 학기 동안 진행한 세 프로젝트의 결과물과 발전 과정을 하나의 Process Book으로 기록했다. 각 프로젝트의 출발점과 컨셉, 초기 아이디어와 그래픽 실험, 최종 결과물에 이르기까지의 시각적 의사결정 과정을 정리했으며, 수업 중 진행한 In-class Activities도 함께 수록했다. 완성된 결과물만을 보여주는 것이 아니라, 관찰과 실험, 피드백과 수정이 반복되며 각 프로젝트가 구체화되는 전체 과정을 하나의 기록으로 구성했다."
         ],
@@ -828,11 +825,15 @@ const categoryLinks = [...document.querySelectorAll(".category-link")];
 const announcer = document.querySelector("#app-announcer");
 const workView = document.querySelector("#work-view");
 const printPortfolio = document.querySelector("#print-portfolio");
+const imageLightbox = document.querySelector("#image-lightbox");
+const imageLightboxImage = document.querySelector("#image-lightbox-image");
+const imageLightboxClose = document.querySelector("[data-image-lightbox-close]");
 
 let activeCategory = "all";
 let activeProjectId = null;
 let previousRouteWasDetail = false;
 let listScrollPosition = 0;
+let imageLightboxTrigger = null;
 
 function twoDigits(value) {
   return String(value).padStart(2, "0");
@@ -890,7 +891,7 @@ function detailOverviewMarkup(project) {
 
   return `
     <section class="detail-copy" aria-labelledby="overview-${project.id}">
-      <h2 class="detail-copy__label" id="overview-${project.id}" lang="en">01 / Overview</h2>
+      <h2 class="detail-copy__label" id="overview-${project.id}" lang="en">Overview</h2>
       <div class="detail-copy__body">
         <p class="detail-copy__lead" lang="ko">${paragraphs[0]}</p>
         ${supportingParagraphs}
@@ -968,7 +969,7 @@ function detailMediaMarkup(project) {
   return `
     <section class="detail-media-section" aria-labelledby="media-${project.id}">
       <header class="detail-media-section__header">
-        <h2 id="media-${project.id}" lang="en">02 / Project Media</h2>
+        <h2 id="media-${project.id}" lang="en">Project Media</h2>
         <p lang="en">${twoDigits(imageCount)} Images · ${twoDigits(videoCount)} Film</p>
       </header>
       <div class="detail-media-sequence">
@@ -983,7 +984,7 @@ function detailCreditsMarkup(project) {
 
   return `
     <section class="detail-credits" aria-labelledby="credits-${project.id}">
-      <h2 class="detail-credits__label" id="credits-${project.id}" lang="en">03 / Credits</h2>
+      <h2 class="detail-credits__label" id="credits-${project.id}" lang="en">Credits</h2>
       <div class="detail-credits__body">
         <p class="detail-credits__course" lang="ko">${project.credits.courseKo}</p>
         <p class="detail-credits__course-en" lang="en">${project.credits.courseEn}</p>
@@ -1009,14 +1010,21 @@ function imageLedProjectImageMarkup(image, index) {
 
   return `
     <figure class="image-led-image">
-      <img
-        src="${image.src}"
-        alt="${image.alt}"
-        width="${image.width}"
-        height="${image.height}"
-        decoding="async"
-        ${loadingAttributes}
+      <button
+        class="image-led-image__button"
+        type="button"
+        data-image-lightbox-trigger
+        aria-label="${image.alt} 크게 보기"
       >
+        <img
+          src="${image.src}"
+          alt="${image.alt}"
+          width="${image.width}"
+          height="${image.height}"
+          decoding="async"
+          ${loadingAttributes}
+        >
+      </button>
     </figure>
   `;
 }
@@ -1423,7 +1431,7 @@ function printMediaPageMarkup(project, sequence, sequenceIndex) {
 
 function printStatementPageMarkup(project, statement, statementIndex) {
   const title = statement.querySelector(".image-led-statement__title")?.innerHTML
-    || `Project Note / ${twoDigits(statementIndex + 1)}`;
+    || "Project Note";
   const korean = statement.querySelector(".image-led-statement__language--ko")?.innerHTML || "";
   const english = statement.querySelector(".image-led-statement__language--en")?.innerHTML || "";
 
@@ -1856,9 +1864,29 @@ function renderRoute({ isInitial = false } = {}) {
   }
 }
 
+function openImageLightbox(trigger) {
+  const image = trigger?.querySelector("img");
+
+  if (!image || !imageLightbox || !imageLightboxImage || imageLightbox.open) return;
+
+  imageLightboxTrigger = trigger;
+  imageLightboxImage.src = image.currentSrc || image.src;
+  imageLightboxImage.alt = image.alt;
+  document.body.classList.add("is-lightbox-open");
+  imageLightbox.showModal();
+  imageLightboxClose?.focus({ preventScroll: true });
+}
+
+function closeImageLightbox() {
+  if (!imageLightbox?.open) return;
+  imageLightbox.close();
+}
+
 document.addEventListener("click", (event) => {
   const projectCard = event.target.closest?.(".project-card");
   const detailBack = event.target.closest?.("[data-detail-back]");
+  const lightboxTrigger = event.target.closest?.("[data-image-lightbox-trigger]");
+  const lightboxClose = event.target.closest?.("[data-image-lightbox-close]");
   const isModifiedClick = event.button !== 0
     || event.metaKey
     || event.ctrlKey
@@ -1866,6 +1894,18 @@ document.addEventListener("click", (event) => {
     || event.altKey;
 
   if (isModifiedClick) return;
+
+  if (lightboxTrigger) {
+    event.preventDefault();
+    openImageLightbox(lightboxTrigger);
+    return;
+  }
+
+  if (lightboxClose) {
+    event.preventDefault();
+    closeImageLightbox();
+    return;
+  }
 
   if (projectCard) {
     event.preventDefault();
@@ -1890,6 +1930,20 @@ document.addEventListener("click", (event) => {
   }
 });
 
+imageLightbox?.addEventListener("click", (event) => {
+  if (event.target === imageLightbox || event.target.classList.contains("image-lightbox__stage")) {
+    closeImageLightbox();
+  }
+});
+
+imageLightbox?.addEventListener("close", () => {
+  document.body.classList.remove("is-lightbox-open");
+  imageLightboxImage?.removeAttribute("src");
+  if (imageLightboxImage) imageLightboxImage.alt = "";
+  imageLightboxTrigger?.focus({ preventScroll: true });
+  imageLightboxTrigger = null;
+});
+
 function returnToProjectList() {
   const canReturnThroughHistory = history.state?.view === "project"
     && history.state?.fromList
@@ -1905,6 +1959,8 @@ function returnToProjectList() {
 }
 
 document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && imageLightbox?.open) return;
+
   if (event.key === "Escape" && previousRouteWasDetail) {
     returnToProjectList();
   }
