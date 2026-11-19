@@ -985,16 +985,17 @@ body.is-lightbox-open {
   padding: 0;
   place-items: center;
   border: 0;
+  border-radius: 0;
   background: transparent;
+  box-shadow: none;
   color: #ffffff;
   cursor: pointer;
   font-family: var(--sans);
 }
 
-.image-lightbox__close:hover,
 .image-lightbox__close:focus-visible {
   outline: 1px solid #ffffff;
-  outline-offset: 3px;
+  outline-offset: 2px;
 }
 
 .image-lightbox__close-icon {
